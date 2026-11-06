@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="DJ Pack: Pull Up by Boosie Badazz &amp; Webbie. Clean, explicit and instrumental. 81 BPM · F minor (4A).">
+<meta property="og:title" content="Pull Up – DJ Pack">
+<meta property="og:description" content="DJ Pack: Pull Up by Boosie Badazz &amp; Webbie. Clean, explicit and instrumental. 81 BPM · F minor (4A).">
+<meta name="theme-color" content="#07080C">
+<title>Pull Up – DJ Pack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{color-scheme:dark}
+html,body{background:#07080C;color:#E8EBF4}
+body{padding-inline:16px;padding-block:24px 48px;font-family:"Exo 2","Segoe UI",system-ui,sans-serif}
+main{max-width:920px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.hint{font:11px "JetBrains Mono",ui-monospace,monospace;color:#5E6579;letter-spacing:.06em;text-align:center;margin:0}
+.msg{font-size:13px;color:#8A91A6;min-height:1.4em;margin:0;text-align:center}
+.msg.warn{color:#E3B54C}
+
+.djp-wrap{container-type:inline-size}
+.djp{--djp-bg:#07080C;--djp-panel:#0E1017;--djp-panel2:#141722;--djp-line:#232838;--djp-text:#E8EBF4;--djp-muted:#8A91A6;--djp-cyan:#00E5FF;--djp-violet:#8B5CFF;--djp-gold:#E3B54C;--djp-red:#FF5C7A;
+  background:radial-gradient(120% 80% at 100% 0%,rgba(139,92,255,.16),transparent 60%),radial-gradient(90% 70% at 0% 100%,rgba(0,229,255,.08),transparent 60%),var(--djp-bg);
+  color:var(--djp-text);font-family:"Exo 2","Segoe UI",system-ui,sans-serif;border:1px solid var(--djp-line);border-radius:14px;padding:20px;display:flex;flex-direction:column;gap:18px;overflow:hidden;position:relative}
+.djp *{box-sizing:border-box}
+.djp-top{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;align-items:center}
+@container (min-width:600px){.djp-top{grid-template-columns:260px minmax(0,1fr);gap:24px}}
+.djp-sleeve{position:relative;width:72%;max-width:260px;aspect-ratio:1}
+@container (min-width:600px){.djp-sleeve{width:74%}}
+.djp-disc{position:absolute;inset:3%;border-radius:50%;transition:transform .7s cubic-bezier(.2,.8,.2,1);z-index:0}
+.djp.playing .djp-disc{transform:translateX(36%)}
+.djp-grooves{position:absolute;inset:0;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#0B0C11 0 1.5px,#191B24 1.5px 2.6px);box-shadow:0 10px 30px rgba(0,0,0,.6),inset 0 0 0 1px #2A2E3C}
+.djp-grooves::after{content:"";position:absolute;inset:0;border-radius:50%;background:conic-gradient(from 20deg,transparent 0 10%,rgba(255,255,255,.07) 14%,transparent 20% 60%,rgba(255,255,255,.05) 64%,transparent 70%)}
+.djp-lbl{position:absolute;inset:33%;border-radius:50%;background:var(--djp-panel2) center/cover no-repeat;box-shadow:0 0 0 3px #0B0C11}
+.djp-lbl::after{content:"";position:absolute;left:50%;top:50%;width:8%;height:8%;margin:-4% 0 0 -4%;border-radius:50%;background:#050608}
+.djp.playing .djp-grooves{animation:djp-spin 1.8s linear infinite}
+@keyframes djp-spin{to{transform:rotate(360deg)}}
+.djp-cover{position:relative;z-index:1;width:100%;height:100%;border-radius:6px;overflow:hidden;background:var(--djp-panel2);box-shadow:0 18px 40px rgba(0,0,0,.55),inset 0 0 0 1px rgba(255,255,255,.06)}
+.djp-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.djp-cover .djp-noart{position:absolute;inset:0;display:grid;place-items:center;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--djp-muted)}
+.djp-meta{display:flex;flex-direction:column;gap:8px;min-width:0}
+.djp-eyebrow{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--djp-cyan)}
+.djp-title{font-family:"Bebas Neue","Oswald",Impact,sans-serif;font-weight:400;font-size:clamp(40px,11cqi,72px);line-height:.9;letter-spacing:.02em;margin:0;text-wrap:balance;overflow-wrap:anywhere}
+.djp-artist{font-size:18px;font-weight:600;color:var(--djp-text);opacity:.9}
+.djp-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.djp-chip{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.06em;border:1px solid var(--djp-line);background:rgba(20,23,34,.8);border-radius:5px;padding:4px 8px;color:var(--djp-muted);font-variant-numeric:tabular-nums}
+.djp-chip b{color:var(--djp-text);font-weight:600}
+.djp-pads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@container (min-width:520px){.djp-pads{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.djp-pad{--c:var(--djp-cyan);text-align:left;background:linear-gradient(180deg,#171A26,#10121A);border:1px solid var(--djp-line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--djp-text);display:flex;flex-direction:column;gap:2px;position:relative;transition:border-color .15s,box-shadow .15s,transform .1s}
+.djp-pad:hover{border-color:#3A4260}
+.djp-pad:active{transform:translateY(1px)}
+.djp-pad[data-k="dirty"]{--c:var(--djp-red)}.djp-pad[data-k="inst"]{--c:var(--djp-violet)}.djp-pad[data-k="acap"]{--c:var(--djp-gold)}
+.djp-pad .t{font-family:"Bebas Neue","Oswald",Impact,sans-serif;font-size:24px;letter-spacing:.06em;line-height:1;color:var(--c)}
+.djp-pad .l{font-size:12px;color:var(--djp-muted)}
+.djp-pad .d{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--djp-muted);font-variant-numeric:tabular-nums}
+.djp-pad .led{position:absolute;top:10px;right:10px;width:7px;height:7px;border-radius:50%;background:#262A38}
+.djp-pad.on{border-color:var(--c);box-shadow:0 0 0 1px var(--c) inset,0 0 22px -6px var(--c)}
+.djp-pad.on .led{background:var(--c);box-shadow:0 0 8px var(--c)}
+.djp-pad[disabled]{opacity:.38;cursor:not-allowed}
+.djp-pad kbd{position:absolute;bottom:9px;right:10px;font-family:"JetBrains Mono",monospace;font-size:10px;color:#4A5066}
+.djp-wave{position:relative;height:96px;border-radius:10px;background:#0A0B11;border:1px solid var(--djp-line);cursor:pointer;touch-action:none}
+.djp-wave canvas{display:block;width:100%;height:100%}
+.djp-tr{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.djp-play{width:54px;height:54px;border-radius:50%;border:0;background:var(--djp-cyan);color:#041014;display:grid;place-items:center;cursor:pointer;box-shadow:0 0 24px -4px rgba(0,229,255,.7);flex:none}
+.djp-play:hover{background:#5CF0FF}
+.djp-play svg{width:22px;height:22px}
+.djp-sm{border:1px solid var(--djp-line);background:transparent;color:var(--djp-text);border-radius:8px;padding:7px 10px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.06em;cursor:pointer}
+.djp-sm:hover{border-color:var(--djp-cyan);color:var(--djp-cyan)}
+.djp-sm[aria-pressed="true"]{border-color:var(--djp-gold);color:var(--djp-gold)}
+.djp-time{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;font-size:13px;display:flex;flex-direction:column;line-height:1.3;margin-right:auto}
+.djp-time .bar{font-size:10.5px;color:var(--djp-muted);letter-spacing:.08em}
+.djp-dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.djp-dla{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--djp-line);border-radius:8px;padding:9px 12px;text-decoration:none;color:var(--djp-text);font-size:13px;font-weight:600;background:rgba(14,16,23,.8)}
+.djp-dla span{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--djp-muted);font-weight:400}
+button.djp-dla{font:inherit;font-size:13px;font-weight:600;cursor:pointer;text-align:left;width:100%}
+.djp-dla.all{border-color:var(--djp-cyan);color:var(--djp-cyan)}
+.djp-dla[aria-busy="true"]{opacity:.6;pointer-events:none}
+.djp-dla:hover{border-color:var(--djp-cyan)}
+.djp-dla.off{opacity:.5;pointer-events:none}
+.djp-sec{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--djp-muted);margin:0}
+.djp-notes{font-size:14px;line-height:1.55;color:#C9CDDA;white-space:pre-line;max-width:65ch;margin:0}
+.djp-about{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;border-top:1px solid var(--djp-line);padding-top:16px}
+@container (min-width:640px){.djp-about.two{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}}
+.djp-about h2{font-family:"Bebas Neue","Oswald",Impact,sans-serif;font-weight:400;font-size:26px;letter-spacing:.05em;margin:0 0 6px;line-height:1}
+.djp-bio{font-size:15px;line-height:1.65;color:#D3D7E3;margin:0;max-width:65ch;white-space:pre-line}
+.djp-tips{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.djp-tips li{font-size:13.5px;line-height:1.45;color:#C9CDDA;padding-left:16px;position:relative}
+.djp-tips li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:50%;background:var(--djp-gold);box-shadow:0 0 8px var(--djp-gold)}
+.djp-side{display:flex;flex-direction:column;gap:16px}
+.djp-socs{display:flex;flex-direction:column;gap:6px}
+.djp-soc{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border:1px solid var(--djp-line);border-radius:8px;padding:9px 12px;font-size:12.5px;font-weight:600;color:var(--djp-text);text-decoration:none;background:rgba(20,23,34,.8)}
+.djp-soc span{font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:400;color:var(--djp-muted)}
+.djp-soc:hover{border-color:var(--djp-cyan);color:var(--djp-cyan)}
+.djp-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;border-top:1px solid var(--djp-line);padding-top:12px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--djp-muted)}
+.djp-empty{padding:32px;text-align:center;color:var(--djp-muted);font-size:14px}
+@media (prefers-reduced-motion:reduce){.djp.playing .djp-grooves{animation:none}.djp-disc{transition:none}}
+</style>
+<style>html,body{margin:0}</style>
+</head>
+<body>
+<main><div id="app"></div><p class="msg" id="msg" role="status" aria-live="polite"></p><p class="hint">SPACE play/pause · 1–3 switch version · ← → jump one bar · MP3 downloads</p></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const PACK={"artist": "Boosie Badazz & Webbie", "title": "Pull Up", "label": "Bad Azz Ent \u00b7 Savage Life Entertainment", "genre": "", "bpm": "81", "keyName": "F MIN", "camelot": "4A", "release": "2026-10-24", "isrc": "", "contact": "", "bio": "Pull Up is Boosie Badazz and Webbie back on a record together, the way Baton Rouge has wanted it for over a decade. It\u2019s the opener on Back At It: The Mixtape, their first joint project since the Trill days, and it sets the tone: a J BUC beat with that Louisiana bounce and two voices DJs have been breaking for twenty years.\n\nThis pack carries the clean and explicit masters plus the instrumental, so it\u2019s ready for the club, radio, mixshows and remixes. Released October 24, 2026 through Bad Azz Entertainment and Savage Life Entertainment.", "playIt": ["Counted at 81 BPM; most software reads it double-time at 161", "Mixes in key with 3A, 5A and 4B (Bb minor, C minor, Ab major)", "Tight 2:33 edit with a short intro: cut in on the one or blend the first 4 bars", "Clean and explicit masters line up bar for bar, so you can switch mid-record", "Instrumental matches the main mix start for blends and acapella drops"], "socials": [{"name": "Savage Life Entertainment", "url": "https://www.savagelifeentertainment.com", "handle": "savagelifeentertainment.com"}, {"name": "Webbie on X", "url": "https://x.com/OfficialWebbie", "handle": "@OfficialWebbie"}, {"name": "Webbie on YouTube", "url": "https://www.youtube.com/@webbiesavagelife", "handle": "@webbiesavagelife"}, {"name": "Back At It on Apple Music", "url": "https://music.apple.com/us/album/back-at-it/6824736637", "handle": "Stream the mixtape"}], "notes": "All three versions run 2:33 and share the same start point, so they drop in on the grid at 81 BPM.", "art": "art.jpg", "artExt": "jpg", "artFilename": "Boosie Badazz & Webbie - Pull Up (Cover Art).jpg", "versions": [{"id": "clean", "tag": "CLEAN", "label": "Main mix (Clean)", "url": "audio/pull-up-clean.mp3", "filename": "Boosie Badazz & Webbie - Pull Up (Clean).mp3", "ext": "mp3", "duration": 153.76, "peaks": [0.018, 0.051, 0.054, 0.091, 0.139, 0.122, 0.171, 0.538, 0.592, 0.852, 0.364, 0.914, 0.944, 0.835, 0.981, 0.887, 0.967, 0.844, 0.845, 0.994, 0.922, 0.864, 0.596, 0.898, 0.892, 0.821, 0.975, 0.823, 0.965, 0.862, 0.85, 0.978, 0.888, 0.758, 0.588, 0.934, 0.843, 0.917, 0.961, 0.775, 0.954, 0.792, 0.717, 0.939, 0.858, 0.676, 0.681, 0.961, 0.854, 0.937, 0.927, 0.87, 0.936, 0.736, 0.891, 0.97, 0.867, 0.732, 0.922, 0.901, 0.855, 0.954, 0.994, 0.895, 0.895, 0.844, 0.988, 0.896, 0.91, 0.736, 0.586, 0.961, 0.849, 0.955, 0.919, 0.896, 0.842, 0.796, 0.955, 0.92, 0.857, 0.677, 0.648, 0.948, 0.794, 0.988, 0.909, 0.952, 0.969, 0.797, 0.967, 0.881, 0.894, 0.78, 0.902, 0.96, 0.727, 0.928, 0.961, 0.928, 0.816, 0.858, 0.897, 0.743, 0.547, 0.356, 0.93, 0.948, 0.895, 0.97, 0.876, 0.974, 0.887, 0.817, 0.967, 0.938, 0.795, 0.496, 0.957, 0.891, 0.956, 0.962, 0.857, 0.977, 0.839, 0.754, 0.988, 0.869, 0.728, 0.675, 0.957, 0.943, 0.944, 0.96, 0.911, 0.996, 0.904, 0.955, 0.98, 0.916, 0.762, 0.696, 0.958, 0.843, 0.973, 0.964, 0.958, 0.948, 0.912, 0.957, 0.977, 0.941, 0.857, 0.633, 0.951, 0.859, 0.978, 0.981, 0.912, 0.849, 0.928, 0.958, 0.872, 0.935, 0.765, 0.442, 0.896, 0.907, 0.983, 0.99, 0.981, 0.89, 0.885, 0.954, 0.887, 0.914, 0.742, 0.957, 0.977, 0.92, 0.984, 0.972, 0.96, 0.907, 0.909, 0.995, 0.939, 0.983, 0.671, 0.971, 0.949, 0.921, 0.983, 0.86, 0.983, 0.718, 0.626, 0.972, 0.931, 0.923, 0.876, 0.942, 0.827, 0.882, 0.955, 0.848, 0.916, 0.803, 0.699, 0.972, 0.889, 0.609, 0.609, 0.974, 0.927, 0.902, 1.0, 0.93, 0.995, 0.893, 0.943, 0.992, 0.9, 0.656, 0.777, 0.983, 0.907, 0.957, 0.942, 0.955, 0.967, 0.893, 0.975, 0.969, 0.853, 0.749, 0.664, 0.971, 0.847, 0.9, 0.959, 0.982, 0.968, 0.876, 0.611, 0.744, 0.882, 0.773, 0.558, 0.907, 0.879, 0.97, 0.926, 0.952, 0.911, 0.859, 0.95, 0.898, 0.887, 0.612, 0.921, 0.896, 0.782, 0.983, 0.9, 0.965, 0.858, 0.853, 0.964, 0.918, 0.782, 0.558, 0.934, 0.871, 0.748, 0.96, 0.809, 0.96, 0.762, 0.77, 0.989, 0.868, 0.785, 0.734, 0.957, 0.891, 0.937, 0.951, 0.783, 0.948, 0.851, 0.596, 0.934, 0.967, 0.702, 0.811, 0.904, 0.94, 0.992, 0.911, 0.868, 0.888, 0.835, 0.96, 0.947, 0.959, 0.755, 0.583, 0.964, 0.886, 0.925, 0.896, 0.899, 0.889, 0.819, 0.943, 0.978, 0.933, 0.672, 0.661, 0.931, 0.807, 0.974, 0.966, 0.968, 0.931, 0.865, 0.962, 0.851, 0.901, 0.765, 0.613, 0.971, 0.857, 0.94, 0.979, 0.893, 0.801, 0.848, 0.959, 0.926, 0.858, 0.845, 0.886, 0.936, 0.876, 0.972, 0.91, 0.924, 0.882, 0.812, 0.954, 0.95, 0.837, 0.809, 0.906, 0.877, 0.832, 0.98, 0.862, 0.901, 0.739, 0.625, 0.95, 0.853, 0.704, 0.761, 0.895, 0.874, 0.883, 0.953, 0.883, 0.976, 0.801, 0.681, 0.937, 0.931, 0.707, 0.762, 0.94, 0.938, 0.96, 0.964, 0.859, 0.934, 0.782, 0.878, 0.93, 0.863, 0.862, 0.881, 0.92, 0.908, 0.956, 0.964, 0.963, 0.95, 0.811, 0.913, 0.953, 0.888, 0.692, 0.602, 0.971, 0.925, 0.967, 0.909, 0.97, 0.84, 0.788, 0.948, 0.964, 0.859, 0.642, 0.612, 0.889, 0.663, 0.889, 0.884, 0.955, 0.82, 0.715, 0.947, 0.936, 0.841, 0.5, 0.976, 0.947, 0.773, 0.503, 0.478, 0.384, 0.233, 0.687, 0.526, 0.189, 0.588, 0.467, 0.969, 0.943, 0.797, 0.929, 0.745, 0.917, 0.912, 0.732, 0.938, 0.865, 0.55, 0.485, 0.925, 0.952, 0.991, 0.942, 0.641, 0.899, 0.79, 0.83, 0.99, 0.867, 0.515, 0.563, 0.907, 0.747, 0.947, 0.935, 0.902, 0.946, 0.812, 0.882, 0.937, 0.872, 0.64, 0.818, 0.953, 0.855, 0.962, 0.869, 0.933, 0.93, 0.829, 0.922, 0.97, 0.838, 0.874, 0.823, 0.923, 0.858, 0.97, 0.912, 0.95, 0.932, 0.867, 0.954, 0.881, 0.955, 0.612, 0.52, 0.93, 0.78, 0.976, 0.961, 0.959, 0.859, 0.842, 0.966, 0.922, 0.91, 0.558, 0.949, 0.927, 0.738, 0.927, 0.921, 0.972, 0.931, 0.774, 0.965, 0.901, 0.873, 0.761, 0.952, 0.909, 0.825, 0.969, 0.772, 0.965, 0.831, 0.633, 0.945, 0.909, 0.762, 0.869, 0.913, 0.927, 0.966, 0.983, 0.786, 0.905, 0.87, 0.726, 0.943, 0.917, 0.751, 0.593, 0.936, 0.954, 0.916, 0.948, 0.879, 0.9, 0.823, 0.908, 0.961, 0.911, 0.73, 0.677, 0.955, 0.82, 0.967, 0.926, 0.936, 0.958, 0.822, 0.953, 0.938, 0.862, 0.742, 0.634, 0.958, 0.877, 0.931, 0.93, 0.897, 0.812, 0.875, 0.955, 0.938, 0.852, 0.822, 0.845, 0.589, 0.384, 0.213, 0.267, 0.118, 0.055, 0.088, 0.029, 0.013, 0.017, 0.005, 0.002, 0.003, 0.001, 0.001, 0.0, 0.0, 0.0, 0.0]}, {"id": "dirty", "tag": "DIRTY", "label": "Main mix (Explicit)", "url": "audio/pull-up-explicit.mp3", "filename": "Boosie Badazz & Webbie - Pull Up (Explicit).mp3", "ext": "mp3", "duration": 153.76, "peaks": [0.017, 0.051, 0.054, 0.09, 0.139, 0.12, 0.177, 0.533, 0.595, 0.848, 0.365, 0.917, 0.93, 0.831, 0.981, 0.907, 0.958, 0.841, 0.849, 0.982, 0.921, 0.875, 0.591, 0.893, 0.888, 0.823, 0.96, 0.837, 0.954, 0.851, 0.847, 0.972, 0.884, 0.754, 0.588, 0.915, 0.835, 0.932, 0.952, 0.792, 0.927, 0.79, 0.71, 0.934, 0.854, 0.672, 0.707, 0.953, 0.856, 0.923, 0.942, 0.866, 0.935, 0.869, 0.855, 0.954, 0.856, 0.729, 0.916, 0.896, 0.86, 0.969, 0.963, 0.923, 0.948, 0.839, 0.98, 0.885, 0.906, 0.723, 0.583, 0.956, 0.845, 0.938, 0.914, 0.92, 0.921, 0.793, 0.941, 0.917, 0.863, 0.674, 0.645, 0.944, 0.794, 0.971, 0.903, 0.947, 0.965, 0.79, 0.962, 0.877, 0.889, 0.777, 0.898, 0.956, 0.723, 0.926, 0.956, 0.925, 0.933, 0.866, 0.888, 0.729, 0.543, 0.354, 0.925, 0.949, 0.891, 0.965, 0.872, 0.969, 0.882, 0.812, 0.963, 0.934, 0.792, 0.494, 0.953, 0.885, 0.952, 0.957, 0.853, 0.972, 0.837, 0.751, 0.984, 0.865, 0.727, 0.671, 0.952, 0.939, 0.94, 0.955, 0.906, 0.992, 0.9, 0.934, 0.965, 0.912, 0.762, 0.693, 0.952, 0.839, 0.97, 0.96, 0.954, 0.943, 0.907, 0.951, 0.973, 0.936, 0.853, 0.63, 0.946, 0.855, 0.964, 0.976, 0.963, 0.949, 0.92, 0.953, 0.867, 0.924, 0.76, 0.439, 0.892, 0.899, 0.978, 0.985, 0.976, 0.886, 0.881, 0.95, 0.883, 0.91, 0.738, 0.953, 0.983, 0.919, 0.979, 0.967, 0.968, 0.902, 0.907, 0.987, 0.934, 0.979, 0.668, 0.966, 0.944, 0.918, 0.978, 0.856, 0.978, 0.866, 0.747, 0.977, 0.93, 0.924, 0.873, 0.937, 0.823, 0.877, 0.951, 0.839, 0.951, 0.803, 0.696, 0.967, 0.854, 0.602, 0.608, 0.971, 0.922, 0.898, 1.0, 0.933, 0.978, 0.887, 0.937, 0.997, 0.898, 0.652, 0.775, 0.978, 0.905, 0.953, 0.944, 0.95, 0.959, 0.892, 0.97, 0.964, 0.971, 0.749, 0.673, 0.967, 0.904, 0.979, 0.973, 0.988, 0.975, 0.872, 0.608, 0.736, 0.873, 0.769, 0.555, 0.902, 0.875, 0.966, 0.984, 0.958, 0.907, 0.853, 0.949, 0.89, 0.882, 0.609, 0.915, 0.892, 0.776, 0.973, 0.932, 0.961, 0.859, 0.85, 0.96, 0.914, 0.781, 0.556, 0.929, 0.877, 0.745, 0.964, 0.928, 0.948, 0.757, 0.769, 0.97, 0.873, 0.787, 0.754, 0.929, 0.893, 0.932, 0.946, 0.767, 0.954, 0.83, 0.799, 0.925, 0.965, 0.702, 0.807, 0.909, 0.959, 0.987, 0.914, 0.889, 0.94, 0.833, 0.951, 0.944, 0.955, 0.752, 0.585, 0.961, 0.882, 0.921, 0.892, 0.911, 0.913, 0.828, 0.939, 0.974, 0.928, 0.67, 0.66, 0.935, 0.799, 0.961, 0.961, 0.97, 0.923, 0.859, 0.957, 0.847, 0.896, 0.753, 0.605, 0.968, 0.853, 0.931, 0.974, 0.945, 0.947, 0.837, 0.942, 0.922, 0.862, 0.775, 0.904, 0.955, 0.877, 0.964, 0.908, 0.917, 0.883, 0.808, 0.947, 0.949, 0.837, 0.806, 0.876, 0.957, 0.841, 0.975, 0.86, 0.992, 0.731, 0.677, 0.952, 0.859, 0.703, 0.749, 0.896, 0.875, 0.897, 0.975, 0.899, 0.973, 0.8, 0.678, 0.933, 0.926, 0.701, 0.758, 0.934, 0.937, 0.958, 0.959, 0.879, 0.929, 0.777, 0.875, 0.926, 0.896, 0.83, 0.857, 0.912, 0.891, 0.951, 0.964, 0.956, 0.947, 0.804, 0.908, 0.949, 0.884, 0.686, 0.602, 0.968, 0.917, 0.961, 0.904, 0.938, 0.843, 0.786, 0.944, 0.949, 0.854, 0.636, 0.628, 0.907, 0.745, 0.912, 0.922, 0.956, 0.813, 0.813, 0.932, 0.932, 0.934, 0.801, 0.933, 0.939, 0.768, 0.5, 0.479, 0.379, 0.238, 0.678, 0.52, 0.192, 0.592, 0.471, 0.964, 0.94, 0.797, 0.923, 0.744, 0.91, 0.913, 0.749, 0.93, 0.881, 0.768, 0.799, 0.909, 0.935, 0.993, 0.94, 0.844, 0.897, 0.784, 0.844, 0.997, 0.873, 0.736, 0.562, 0.945, 0.847, 0.925, 0.932, 0.895, 0.944, 0.805, 0.869, 0.93, 0.841, 0.701, 0.817, 0.962, 0.851, 0.957, 0.902, 0.928, 0.944, 0.803, 0.909, 0.968, 0.833, 0.87, 0.839, 0.926, 0.853, 0.975, 0.929, 0.96, 0.928, 0.865, 0.946, 0.875, 0.958, 0.608, 0.517, 0.925, 0.777, 0.971, 0.889, 0.956, 0.856, 0.843, 0.957, 0.918, 0.906, 0.559, 0.944, 0.92, 0.733, 0.97, 0.947, 0.962, 0.927, 0.771, 0.961, 0.894, 0.869, 0.757, 0.949, 0.906, 0.821, 0.965, 0.769, 0.951, 0.827, 0.866, 0.93, 0.908, 0.763, 0.861, 0.908, 0.937, 0.966, 0.969, 0.782, 0.957, 0.87, 0.722, 0.945, 0.912, 0.756, 0.602, 0.935, 0.95, 0.912, 0.941, 0.896, 0.916, 0.803, 0.907, 0.954, 0.91, 0.719, 0.674, 0.953, 0.816, 0.963, 0.917, 0.943, 0.956, 0.818, 0.948, 0.929, 0.858, 0.738, 0.632, 0.951, 0.873, 0.928, 0.926, 0.919, 0.939, 0.872, 0.955, 0.939, 0.85, 0.818, 0.841, 0.586, 0.383, 0.212, 0.265, 0.117, 0.055, 0.087, 0.029, 0.013, 0.017, 0.005, 0.002, 0.003, 0.001, 0.001, 0.0, 0.0, 0.0, 0.0]}, {"id": "inst", "tag": "INST", "label": "Instrumental", "url": "audio/pull-up-instrumental.mp3", "filename": "Boosie Badazz & Webbie - Pull Up (Instrumental).mp3", "ext": "mp3", "duration": 153.76, "peaks": [0.018, 0.051, 0.054, 0.091, 0.139, 0.122, 0.171, 0.536, 0.593, 0.853, 0.368, 0.921, 0.936, 0.706, 0.908, 0.891, 0.901, 0.79, 0.708, 0.944, 0.874, 0.87, 0.505, 0.896, 0.872, 0.646, 0.939, 0.738, 0.905, 0.743, 0.688, 0.917, 0.895, 0.586, 0.542, 0.888, 0.853, 0.901, 0.957, 0.666, 0.894, 0.729, 0.592, 0.922, 0.838, 0.565, 0.494, 0.906, 0.821, 0.906, 0.881, 0.867, 0.908, 0.734, 0.858, 0.927, 0.878, 0.785, 0.809, 0.882, 0.753, 0.91, 0.918, 0.898, 0.896, 0.726, 0.94, 0.879, 0.91, 0.522, 0.499, 0.897, 0.712, 0.891, 0.943, 0.9, 0.845, 0.727, 0.932, 0.821, 0.848, 0.556, 0.45, 0.881, 0.659, 0.898, 0.913, 0.905, 0.803, 0.711, 0.913, 0.815, 0.862, 0.511, 0.869, 0.892, 0.664, 0.899, 0.899, 0.926, 0.773, 0.723, 0.792, 0.631, 0.322, 0.227, 0.911, 0.901, 0.697, 0.92, 0.714, 0.916, 0.737, 0.628, 0.935, 0.843, 0.595, 0.491, 0.887, 0.833, 0.906, 0.928, 0.659, 0.898, 0.721, 0.593, 0.905, 0.844, 0.559, 0.563, 0.894, 0.802, 0.902, 0.897, 0.866, 0.905, 0.726, 0.872, 0.928, 0.857, 0.53, 0.497, 0.883, 0.743, 0.898, 0.997, 0.906, 0.881, 0.737, 0.914, 0.893, 0.829, 0.865, 0.52, 0.883, 0.736, 0.9, 0.935, 0.915, 0.839, 0.736, 0.913, 0.823, 0.868, 0.509, 0.437, 0.905, 0.653, 0.905, 0.903, 0.898, 0.812, 0.729, 0.929, 0.809, 0.825, 0.541, 0.863, 0.905, 0.661, 0.905, 0.991, 0.895, 0.789, 0.738, 0.932, 0.84, 0.848, 0.491, 0.873, 0.868, 0.649, 0.927, 0.739, 0.902, 0.736, 0.645, 0.926, 0.846, 0.656, 0.805, 0.893, 0.822, 0.875, 0.924, 0.645, 0.925, 0.664, 0.552, 0.911, 0.811, 0.524, 0.486, 0.907, 0.757, 0.904, 0.962, 0.871, 0.915, 0.66, 0.857, 0.942, 0.867, 0.498, 0.497, 0.909, 0.727, 0.891, 0.899, 0.901, 0.897, 0.652, 0.919, 0.881, 0.837, 0.498, 0.521, 0.889, 0.704, 0.895, 0.943, 0.921, 0.848, 0.716, 0.491, 0.425, 0.853, 0.763, 0.565, 0.904, 0.716, 0.918, 0.92, 0.925, 0.803, 0.734, 0.923, 0.831, 0.859, 0.495, 0.887, 0.889, 0.656, 0.913, 0.897, 0.904, 0.734, 0.723, 0.921, 0.849, 0.824, 0.566, 0.889, 0.876, 0.656, 0.951, 0.711, 0.895, 0.742, 0.635, 0.926, 0.857, 0.58, 0.497, 0.889, 0.823, 0.897, 0.939, 0.672, 0.907, 0.734, 0.594, 0.914, 0.857, 0.566, 0.812, 0.896, 0.788, 0.911, 0.92, 0.867, 0.896, 0.734, 0.857, 0.918, 0.838, 0.522, 0.507, 0.906, 0.752, 0.898, 0.885, 0.906, 0.897, 0.728, 0.905, 0.89, 0.864, 0.557, 0.505, 0.885, 0.73, 0.899, 1.0, 0.899, 0.823, 0.738, 0.92, 0.826, 0.861, 0.521, 0.415, 0.899, 0.657, 0.913, 0.89, 0.903, 0.802, 0.741, 0.909, 0.797, 0.836, 0.742, 0.882, 0.885, 0.697, 0.904, 0.901, 0.909, 0.73, 0.715, 0.924, 0.853, 0.759, 0.515, 0.904, 0.872, 0.762, 0.979, 0.713, 0.901, 0.731, 0.622, 0.906, 0.864, 0.581, 0.563, 0.898, 0.821, 0.895, 0.931, 0.663, 0.901, 0.731, 0.589, 0.91, 0.863, 0.56, 0.512, 0.893, 0.779, 0.895, 0.894, 0.862, 0.899, 0.739, 0.874, 0.918, 0.885, 0.818, 0.832, 0.901, 0.771, 0.92, 0.925, 0.892, 0.889, 0.731, 0.927, 0.887, 0.864, 0.53, 0.484, 0.893, 0.713, 0.903, 0.899, 0.912, 0.834, 0.72, 0.923, 0.815, 0.843, 0.563, 0.455, 0.889, 0.658, 0.89, 0.883, 0.907, 0.778, 0.715, 0.912, 0.8, 0.839, 0.517, 0.876, 0.889, 0.557, 0.422, 0.275, 0.059, 0.003, 0.0, 0.0, 0.0, 0.0, 0.0, 0.944, 0.945, 0.779, 0.936, 0.722, 0.905, 0.662, 0.587, 0.916, 0.833, 0.549, 0.496, 0.901, 0.811, 0.886, 0.909, 0.643, 0.894, 0.658, 0.558, 0.9, 0.856, 0.518, 0.504, 0.896, 0.756, 0.903, 0.951, 0.862, 0.915, 0.649, 0.899, 0.887, 0.834, 0.494, 0.502, 0.903, 0.734, 0.884, 0.899, 0.902, 0.898, 0.698, 0.917, 0.874, 0.841, 0.761, 0.829, 0.902, 0.73, 0.926, 0.91, 0.908, 0.833, 0.723, 0.928, 0.81, 0.846, 0.5, 0.43, 0.905, 0.656, 0.905, 0.982, 0.902, 0.798, 0.753, 0.908, 0.816, 0.85, 0.539, 0.857, 0.881, 0.654, 0.895, 0.923, 0.905, 0.73, 0.733, 0.909, 0.841, 0.733, 0.51, 0.903, 0.867, 0.763, 0.922, 0.728, 0.898, 0.734, 0.645, 0.921, 0.852, 0.591, 0.82, 0.885, 0.829, 0.898, 0.917, 0.68, 0.898, 0.733, 0.575, 0.916, 0.893, 0.56, 0.498, 0.895, 0.787, 0.896, 0.911, 0.88, 0.9, 0.732, 0.881, 0.929, 0.87, 0.563, 0.518, 0.888, 0.763, 0.896, 0.882, 0.913, 0.894, 0.734, 0.926, 0.893, 0.846, 0.505, 0.502, 0.895, 0.683, 0.894, 0.962, 0.902, 0.811, 0.73, 0.917, 0.823, 0.796, 0.753, 0.817, 0.241, 0.188, 0.124, 0.066, 0.044, 0.022, 0.007, 0.007, 0.006, 0.002, 0.002, 0.002, 0.001, 0.001, 0.001, 0.0, 0.0, 0.0, 0.0]}], "downloads": [{"label": "Full pack (all files)", "fmt": "ZIP", "url": "https://drive.usercontent.google.com/download?id=1b7J5YjgQZMzXan0fUh_3K78SeXYb1IwL&export=download", "all": true}, {"label": "Main mix (Clean)", "fmt": "MP3", "url": "https://drive.usercontent.google.com/download?id=1z39_Nh8Lz5aAMoPkMAGGUN4x0cHcDsDF&export=download"}, {"label": "Main mix (Explicit)", "fmt": "MP3", "url": "https://drive.usercontent.google.com/download?id=1RRIhTqudhwQqXeY-mpNPrdCQh2p-6Y1m&export=download"}, {"label": "Instrumental", "fmt": "MP3", "url": "https://drive.usercontent.google.com/download?id=1yrDwFsEHqhNt8ohxeLXvnQbRWhmMWcAK&export=download"}, {"label": "Cover art", "fmt": "JPG", "url": "https://drive.usercontent.google.com/download?id=1Ssja_ECOEmOVpxNTKxVSXQ7Ibv5Pmb8P&export=download"}, {"label": "Back At It tracklist art", "fmt": "PNG", "url": "https://drive.usercontent.google.com/download?id=1dmA8p7hM0-yFDI-HSLwi_ADA-w8dv91A&export=download"}]};
+function mountPlayer(root, pack, opts) {
+  opts = opts || {};
+  const st = opts.state || {};
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt = t => { if (!isFinite(t) || t < 0) t = 0; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ':' + String(s).padStart(2, '0'); };
+  const all = pack.versions || [];
+  const avail = all.filter(v => v.url);
+  let cur = avail.find(v => v.id === st.vid) || avail[0] || null;
+  let sync = st.sync !== false;
+  const bpm = parseFloat(pack.bpm) || 0;
+  const barDur = bpm ? 240 / bpm : 0;
+  const rel = pack.release ? new Date(pack.release + 'T12:00:00') : null;
+  const relTxt = rel && !isNaN(rel) ? rel.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'}).toUpperCase() : '';
+
+  const chips = [];
+  if (bpm) chips.push('BPM <b>' + esc(+bpm.toFixed(1)) + '</b>');
+  if (pack.keyName) chips.push('KEY <b>' + esc(pack.keyName) + (pack.camelot ? ' · ' + esc(pack.camelot) : '') + '</b>');
+  if (pack.genre) chips.push('<b>' + esc(pack.genre) + '</b>');
+  if (relTxt) chips.push('OUT <b>' + esc(relTxt) + '</b>');
+
+  const playIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+  const pauseIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4.5v16H6zM13.5 4H18v16h-4.5z"/></svg>';
+
+  root.innerHTML = `
+  <div class="djp-wrap"><div class="djp">
+    <div class="djp-top">
+      <div class="djp-sleeve">
+        <div class="djp-disc"><div class="djp-grooves"><div class="djp-lbl" style="${pack.art ? `background-image:url('${pack.art}')` : ''}"></div></div></div>
+        <div class="djp-cover">${pack.art ? `<img src="${pack.art}" alt="${esc(pack.title)} artwork">` : '<div class="djp-noart">NO ARTWORK</div>'}</div>
+      </div>
+      <div class="djp-meta">
+        <div class="djp-eyebrow">DJ Pack${pack.label ? ' · ' + esc(pack.label) : ''}</div>
+        <h1 class="djp-title">${esc(pack.title || 'Untitled')}</h1>
+        <div class="djp-artist">${esc(pack.artist || 'Artist')}</div>
+        <div class="djp-chips">${chips.map(c => `<span class="djp-chip">${c}</span>`).join('')}</div>
+      </div>
+    </div>
+    ${avail.length ? `
+    <div class="djp-pads" role="group" aria-label="Versions">
+      ${all.map((v, i) => `<button type="button" class="djp-pad" data-k="${v.id}" data-id="${v.id}" ${v.url ? '' : 'disabled'} aria-pressed="false">
+        <span class="led"></span><span class="t">${esc(v.tag)}</span><span class="l">${esc(v.label)}</span>
+        <span class="d">${v.url ? fmt(v.duration) : 'Not in pack'}</span>${opts.preview ? '' : `<kbd>${i + 1}</kbd>`}</button>`).join('')}
+    </div>
+    <div class="djp-wave" aria-label="Waveform, click to seek"><canvas></canvas></div>
+    <div class="djp-tr">
+      <button type="button" class="djp-play" aria-label="Play">${playIco}</button>
+      <div class="djp-time"><span><span class="tc">0:00</span> / <span class="td">0:00</span></span><span class="bar">${bpm ? 'BAR 01 · 1' : ''}</span></div>
+      ${bpm ? '<button type="button" class="djp-sm" data-jump="-1">−1 BAR</button><button type="button" class="djp-sm" data-jump="1">+1 BAR</button>' : ''}
+      <button type="button" class="djp-sm djp-sync" aria-pressed="${sync}" title="Keep the playhead position when switching versions">SYNC SWITCH</button>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p class="djp-sec">Downloads</p>
+      <div class="djp-dl">
+        ${pack.downloads && pack.downloads.length ? pack.downloads.map(d => `<a class="djp-dla${d.all ? ' all' : ''}" href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.label)}<span>${esc(d.fmt)} ↓</span></a>`).join('') : (() => `
+        ${avail.map(v => opts.preview
+          ? `<a class="djp-dla off" aria-disabled="true">${esc(v.label)}<span>${esc(v.ext || '').toUpperCase()}</span></a>`
+          : opts.onDownload ? `<button type="button" class="djp-dla" data-dl="${v.id}">${esc(v.label)}<span>${esc(v.ext || '').toUpperCase()} ↓</span></button>`
+          : `<a class="djp-dla" href="${v.url}" download="${esc(v.filename)}">${esc(v.label)}<span>${esc(v.ext || '').toUpperCase()} ↓</span></a>`).join('')}
+        ${pack.art ? (opts.preview
+          ? `<a class="djp-dla off" aria-disabled="true">Artwork<span>${esc(pack.artExt || 'IMG').toUpperCase()}</span></a>`
+          : opts.onDownload ? `<button type="button" class="djp-dla" data-dl="art">Artwork<span>${esc(pack.artExt || 'IMG').toUpperCase()} ↓</span></button>`
+          : `<a class="djp-dla" href="${pack.art}" download="${esc(pack.artFilename || 'artwork')}">Artwork<span>${esc(pack.artExt || 'IMG').toUpperCase()} ↓</span></a>`) : ''}
+        ${opts.onDownload && !opts.preview ? `<button type="button" class="djp-dla all" data-dl="all">Full pack<span>ZIP ↓</span></button>` : ''}
+`)()}
+      </div>
+    </div>` : '<div class="djp-empty">Upload at least one version to hear the player.</div>'}
+    ${(() => {
+      const tips = (pack.playIt || []).filter(Boolean), socs = (pack.socials || []).filter(x => x && /^https?:\/\//i.test(x.url));
+      if (!pack.bio && !tips.length && !socs.length) return '';
+      const side = (tips.length ? `<div><p class="djp-sec" style="margin-bottom:10px">Play it</p><ul class="djp-tips">${tips.map(t => `<li>${esc(t)}</li>`).join('')}</ul></div>` : '')
+        + (socs.length ? `<div><p class="djp-sec" style="margin-bottom:10px">Follow</p><div class="djp-socs">${socs.map(x => `<a class="djp-soc" href="${esc(x.url)}" target="_blank" rel="noopener noreferrer">${esc(x.name)}${x.handle ? `<span>${esc(x.handle)}</span>` : ''}</a>`).join('')}</div></div>` : '');
+      return `<div class="djp-about ${pack.bio && side ? 'two' : ''}">${pack.bio ? `<div><h2>About the record</h2><p class="djp-bio">${esc(pack.bio)}</p></div>` : ''}${side ? `<div class="djp-side">${side}</div>` : ''}</div>`;
+    })()}
+    ${pack.notes ? `<div style="display:flex;flex-direction:column;gap:6px"><p class="djp-sec">Notes for DJs</p><p class="djp-notes">${esc(pack.notes)}</p></div>` : ''}
+    <div class="djp-foot"><span>${pack.contact ? 'CONTACT · ' + esc(pack.contact) : ''}</span><span>${pack.isrc ? 'ISRC ' + esc(pack.isrc) : ''}</span></div>
+  </div></div>`;
+
+  const djp = root.querySelector('.djp');
+  if (!cur) return { getState: () => ({ sync }), destroy() {} };
+
+  const audio = new Audio();
+  audio.preload = 'auto';
+  const cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
+  const wave = root.querySelector('.djp-wave');
+  const playBtn = root.querySelector('.djp-play');
+  const tc = root.querySelector('.tc'), td = root.querySelector('.td'), barEl = root.querySelector('.djp-time .bar');
+  const css = getComputedStyle(djp);
+  const C = { cyan: css.getPropertyValue('--djp-cyan').trim(), violet: css.getPropertyValue('--djp-violet').trim(), gold: css.getPropertyValue('--djp-gold').trim(), muted: '#2B3040', grid: 'rgba(138,145,166,.16)', gridStrong: 'rgba(138,145,166,.34)', label: '#5E6579' };
+  let raf = 0, pendingSeek = null;
+
+  const dur = () => (isFinite(audio.duration) && audio.duration) || cur.duration || 0;
+
+  function draw() {
+    const w = cv.clientWidth, h = cv.clientHeight, dpr = window.devicePixelRatio || 1;
+    if (!w) return;
+    if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, w, h);
+    const D = dur(), t = audio.currentTime || 0, prog = D ? t / D : 0;
+    // bar grid
+    if (barDur && D) {
+      ctx.font = '9px "JetBrains Mono", monospace';
+      for (let b = 0; b * barDur < D; b++) {
+        const x = Math.round(b * barDur / D * w) + .5;
+        const phrase = b % 4 === 0;
+        ctx.fillStyle = phrase ? C.gridStrong : C.grid;
+        ctx.fillRect(x, phrase ? 0 : h - 10, 1, phrase ? h : 10);
+        if (phrase && w / (D / barDur) * 4 > 26) { ctx.fillStyle = C.label; ctx.fillText(String(b + 1), x + 3, 10); }
+      }
+    }
+    const peaks = cur.peaks || [];
+    const step = 3, n = Math.floor(w / step), mid = h / 2 + 4;
+    const g = ctx.createLinearGradient(0, 0, w, 0); g.addColorStop(0, C.cyan); g.addColorStop(1, C.violet);
+    for (let i = 0; i < n; i++) {
+      const p = peaks.length ? peaks[Math.min(peaks.length - 1, Math.floor(i / n * peaks.length))] : .12;
+      const bh = Math.max(2, p * (h - 20));
+      ctx.fillStyle = (i / n) <= prog ? g : C.muted;
+      ctx.fillRect(i * step, mid - bh / 2, 2, bh);
+    }
+    const px = Math.round(prog * w);
+    ctx.fillStyle = C.gold; ctx.fillRect(px - 1, 0, 2, h);
+  }
+
+  function ui() {
+    const t = audio.currentTime || 0;
+    tc.textContent = fmt(t); td.textContent = fmt(dur());
+    if (barDur && barEl) {
+      const bar = Math.floor(t / barDur) + 1, beat = Math.floor((t % barDur) / (barDur / 4)) + 1;
+      barEl.textContent = 'BAR ' + String(bar).padStart(2, '0') + ' · ' + beat;
+    }
+    const playing = !audio.paused;
+    djp.classList.toggle('playing', playing);
+    playBtn.innerHTML = playing ? pauseIco : playIco;
+    playBtn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    root.querySelectorAll('.djp-pad').forEach(p => { const on = p.dataset.id === cur.id; p.classList.toggle('on', on); p.setAttribute('aria-pressed', on); });
+    draw();
+  }
+  function loop() { ui(); if (!audio.paused) raf = requestAnimationFrame(loop); }
+
+  function load(v, t, autoplay) {
+    cur = v;
+    pendingSeek = t || 0;
+    audio.src = v.url;
+    audio.addEventListener('loadedmetadata', function once() {
+      audio.removeEventListener('loadedmetadata', once);
+      if (pendingSeek) audio.currentTime = Math.min(pendingSeek, Math.max(0, audio.duration - .05));
+      pendingSeek = null;
+      ui();
+    });
+    if (autoplay) audio.play().catch(() => {}); else audio.load();
+    ui();
+  }
+  function switchTo(id) {
+    const v = avail.find(x => x.id === id); if (!v || v === cur) return;
+    const playing = !audio.paused;
+    load(v, sync ? audio.currentTime : 0, playing);
+  }
+  function toggle() { if (audio.paused) audio.play().catch(() => {}); else audio.pause(); }
+  function seekTo(t) { const D = dur(); audio.currentTime = Math.max(0, Math.min(D ? D - .05 : 0, t)); ui(); }
+
+  audio.addEventListener('play', () => { cancelAnimationFrame(raf); loop(); });
+  audio.addEventListener('pause', ui);
+  audio.addEventListener('ended', ui);
+  audio.addEventListener('durationchange', ui);
+
+  playBtn.addEventListener('click', toggle);
+  root.querySelectorAll('.djp-pad').forEach(p => p.addEventListener('click', () => switchTo(p.dataset.id)));
+  root.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => seekTo((audio.currentTime || 0) + (+b.dataset.jump) * barDur)));
+  if (opts.onDownload && !opts.preview) root.querySelectorAll('[data-dl]').forEach(b => b.addEventListener('click', () => opts.onDownload(b.dataset.dl, b)));
+  const syncBtn = root.querySelector('.djp-sync');
+  syncBtn.addEventListener('click', () => { sync = !sync; syncBtn.setAttribute('aria-pressed', sync); });
+
+  let dragging = false;
+  const seekFromEvent = e => { const r = wave.getBoundingClientRect(); seekTo(((e.clientX - r.left) / r.width) * dur()); };
+  wave.addEventListener('pointerdown', e => { dragging = true; wave.setPointerCapture(e.pointerId); seekFromEvent(e); });
+  wave.addEventListener('pointermove', e => { if (dragging) seekFromEvent(e); });
+  wave.addEventListener('pointerup', () => { dragging = false; });
+
+  let keyHandler = null;
+  if (!opts.preview) {
+    keyHandler = e => {
+      if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+      if (e.code === 'Space') { e.preventDefault(); toggle(); }
+      else if (/^[1-9]$/.test(e.key)) { const v = all[+e.key - 1]; if (v && v.url) switchTo(v.id); }
+      else if (e.key === 'ArrowRight' && barDur) seekTo(audio.currentTime + barDur);
+      else if (e.key === 'ArrowLeft' && barDur) seekTo(audio.currentTime - barDur);
+    };
+    document.addEventListener('keydown', keyHandler);
+  }
+
+  const ro = new ResizeObserver(() => draw());
+  ro.observe(wave);
+
+  load(cur, st.t || 0, !!st.playing);
+
+  return {
+    getState: () => ({ vid: cur && cur.id, t: audio.currentTime || 0, playing: !audio.paused, sync }),
+    destroy() { cancelAnimationFrame(raf); audio.pause(); audio.removeAttribute('src'); audio.load(); ro.disconnect(); if (keyHandler) document.removeEventListener('keydown', keyHandler); }
+  };
+}
+
+const BASE="Boosie Badazz & Webbie - Pull Up";
+const msg=document.getElementById('msg');
+const say=(t,w)=>{msg.textContent=t;msg.className='msg'+(w?' warn':'');};
+async function blobOf(url){const r=await fetch(url);if(!r.ok)throw new Error('File not found');return r.blob();}
+async function onDownload(id,btn){
+  const dl=null; // downloads are served from Drive links above
+  if(!dl){say("Downloads aren't available in this view.",true);return;}
+  btn.setAttribute('aria-busy','true');
+  try{
+    let filename,data;
+    if(id==='art'){filename=PACK.artFilename;data=await blobOf(PACK.art);}
+    else{
+      const list=id==='all'?PACK.versions:PACK.versions.filter(v=>v.id===id);
+      say(id==='all'?'Packing all versions…':'Preparing '+list[0].label+'…');
+      const zip=new JSZip();
+      for(const v of list)zip.file(v.filename,await blobOf(v.url));
+      if(id==='all')zip.file(PACK.artFilename,await blobOf(PACK.art));
+      data=await zip.generateAsync({type:'blob',compression:'STORE'});
+      filename=id==='all'?BASE+' (DJ Pack).zip':list[0].filename.replace(/\.mp3$/,'.zip');
+    }
+    say('Confirm the save…');
+    await dl.save({filename,data});
+    say('Saved '+filename);
+  }catch(e){
+    const c=e&&e.code;
+    say(c==='declined'?'Save cancelled.':c==='rate_limited'?'A save prompt is already open.':'Download failed: '+(e&&e.message||'unknown error'),c!=='declined');
+  }finally{btn.removeAttribute('aria-busy');}
+}
+mountPlayer(document.getElementById('app'),PACK,{preview:false,onDownload});
+</script>
+</body>
+</html>
