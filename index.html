@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>UANDI AI DJ Packs</title>
-<meta name="description" content="DJ Packs from UANDI AI: preview every version and download the files.">
+<title>UANDI AI · Album Packs &amp; DJ Packs</title>
+<meta name="description" content="UANDI AI: Album Packs on The Virtual Disc (stream free, tip to own) and single-record DJ Packs (every version, free).">
 <meta name="theme-color" content="#07080C">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
@@ -13,7 +13,15 @@ html,body{margin:0;background:#07080C;color:#E8EBF4;color-scheme:dark}
 body{font-family:"Exo 2","Segoe UI",system-ui,sans-serif;padding:32px 16px 48px}
 main{max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
 .eye{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#00E5FF;margin:0}
-h1{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:clamp(44px,10vw,72px);line-height:.9;letter-spacing:.02em;margin:0}
+h1{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:clamp(40px,9vw,68px);line-height:.95;letter-spacing:.02em;margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 14px}
+h1 .h-alb{color:#E3B54C}h1 .h-dj{color:#00E5FF}h1 .amp{color:#5E6579;font-size:.6em}
+.lanes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:4px}
+.lane{display:grid;gap:3px;text-decoration:none;border:1px solid #232838;border-radius:12px;padding:14px;background:#0E1017;color:#E8EBF4}
+.lane b{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:26px;letter-spacing:.06em;line-height:1}
+.lane span{font-size:12px;color:#8A91A6;line-height:1.35}
+.lane.alb{border-color:rgba(227,181,76,.45)}.lane.alb b{color:#E3B54C}.lane.alb:hover{border-color:#E3B54C}
+.lane.dj{border-color:rgba(0,229,255,.4)}.lane.dj b{color:#00E5FF}.lane.dj:hover{border-color:#00E5FF}
+html{scroll-behavior:smooth}.sec{scroll-margin-top:16px}
 p.sub{margin:0;color:#8A91A6;font-size:15px}
 .list{display:flex;flex-direction:column;gap:10px;margin-top:8px}
 .sec{display:grid;gap:4px;margin-top:22px;padding-top:22px;border-top:1px solid #232838}
@@ -38,11 +46,15 @@ footer{font-family:"JetBrains Mono",monospace;font-size:11px;color:#5E6579;lette
 </head>
 <body>
 <main>
-  <p class="eye">UANDI AI · DJ Packs</p>
-  <h1>DJ PACKS</h1>
-  <p class="sub">Album projects on The Virtual Disc, and single-record DJ packs. Tap a record.</p>
-  <section class="sec album">
-    <div class="k"><b>ALBUM PROJECTS</b><i>The Virtual Disc</i></div>
+  <p class="eye">UANDI AI · Music, two ways</p>
+  <h1><span class="h-alb">ALBUM PACKS</span><span class="amp">&amp;</span><span class="h-dj">DJ PACKS</span></h1>
+  <p class="sub">Albums live on The Virtual Disc: stream free, tip to own. DJ Packs are single records, every version, free. Pick a lane.</p>
+  <nav class="lanes" aria-label="Sections">
+    <a class="lane alb" href="#albums"><b>ALBUMS</b><span>Full projects · The Virtual Disc</span></a>
+    <a class="lane dj" href="#singles"><b>SINGLES</b><span>DJ Packs · one record, every version</span></a>
+  </nav>
+  <section class="sec album" id="albums">
+    <div class="k"><b>ALBUM PACKS</b><i>Albums · The Virtual Disc</i></div>
     <p class="d">Full projects. Stream every song free, tip to own the files, share a song to earn the album, DJs request the whole pack. Built on The Virtual Disc by UANDI AI.</p>
     <div class="list">
       <a class="pack" href="repeat/"><img src="repeat/art.jpg" alt=""><span><span class="t">REPEAT</span><br><span class="a">Mr.RunItBack x Cold Boy Winter · Debut EP · 7 tracks</span></span><span class="m">LISTEN FREE · TIP TO OWN</span></a>
@@ -50,8 +62,8 @@ footer{font-family:"JetBrains Mono",monospace;font-size:11px;color:#5E6579;lette
       <a class="pack" href="futuristic/"><img src="futuristic/art.jpg" alt=""><span><span class="t">FUTURISTIC</span><br><span class="a">Trill Will · The Album · 10 tracks</span></span><span class="m">LISTEN FREE · TIP TO OWN</span></a>
     </div>
   </section>
-  <section class="sec single">
-    <div class="k"><b>SINGLE DJ PACKS</b><i>One record · every version</i></div>
+  <section class="sec single" id="singles">
+    <div class="k"><b>DJ PACKS</b><i>Singles · one record, every version</i></div>
     <p class="d">One song, DJ-ready: clean, explicit, instrumental and acapella versions with BPM and key, free to download.</p>
     <div class="list">
       <a class="pack" href="pull-up/"><img src="pull-up/art.jpg" alt=""><span><span class="t">PULL UP</span><br><span class="a">Boosie Badazz &amp; Webbie · Clean, Explicit, Instrumental</span></span><span class="m">81 BPM · 4A</span></a>
