@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Ten tracks from Big Angie, presented by Mr.RunItBack. Free to listen, tip to own. St. Louis to the throne room.">
+<meta property="og:title" content="Big Angie — Trap Queen: To God’s Grace · The Virtual Disc">
+<meta property="og:description" content="Ten tracks from Big Angie, presented by Mr.RunItBack. Free to listen, tip to own. St. Louis to the throne room.">
+<meta name="theme-color" content="#07080C">
+<title>Big Angie — Trap Queen: To God’s Grace · The Virtual Disc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{color-scheme:dark}
+html,body{background:#0B0608;color:#F1E9E0}
+body{padding-inline:16px;padding-block:24px 48px;font-family:"Exo 2","Segoe UI",system-ui,sans-serif}
+main{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.hint{font:11px "JetBrains Mono",ui-monospace,monospace;color:#6E5A4E;letter-spacing:.06em;text-align:center;margin:0}
+.msg{font-size:13px;color:#A8927F;min-height:1.4em;margin:0;text-align:center}
+.msg.warn{color:#E3B54C}
+
+.al-wrap{container-type:inline-size}
+.al{--bg:#0B0608;--panel:#140A0D;--panel2:#1C0F13;--line:#3A2228;--line2:#4A2C33;--text:#F1E9E0;--muted:#A8927F;--dim:#6E5A4E;--gold:#E3B54C;--gold2:#F4D27A;--wine:#8B1E2D;--rose:#C94B5A;
+  background:radial-gradient(120% 80% at 100% 0%,rgba(139,30,45,.35),transparent 60%),radial-gradient(90% 70% at 0% 100%,rgba(227,181,76,.10),transparent 60%),var(--bg);
+  color:var(--text);font-family:"Exo 2","Segoe UI",system-ui,sans-serif;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:22px;overflow:hidden;position:relative}
+.al *{box-sizing:border-box}
+.al-hero{position:relative;margin:-22px -22px 0;background:#0A0607}
+.al-hero .pic{position:relative;aspect-ratio:1;overflow:hidden;background:#0A0607}
+.al-hero .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.al-hero .pic::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,6,8,0) 0%,rgba(11,6,8,0) 84%,rgba(11,6,8,.9) 100%)}
+.al-hero .al-meta{position:relative;padding:14px 22px 6px;z-index:1}
+.al-meta .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.al-disc{position:relative;flex:none;width:44px;height:44px;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#0A0708 0 1.5px,#1E1416 1.5px 2.6px);box-shadow:0 6px 16px rgba(0,0,0,.6),inset 0 0 0 1px #3A2228;opacity:.0;transition:opacity .4s}
+.al.playing .al-disc{opacity:1;animation:al-spin 1.8s linear infinite}
+.al-disc::after{content:"";position:absolute;inset:34%;border-radius:50%;background:var(--gold);box-shadow:0 0 0 2px #0A0708}
+@keyframes al-spin{to{transform:rotate(360deg)}}
+.al-meta{display:flex;flex-direction:column;gap:8px;min-width:0}
+.al-eyebrow{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#FFFFFF;display:inline-flex;align-self:flex-start;padding:7px 12px;border-radius:999px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);text-shadow:0 1px 8px rgba(0,0,0,.9);white-space:nowrap;max-width:100%}
+@media(max-width:430px){.al-eyebrow{font-size:10.5px;letter-spacing:.13em;padding:6px 10px}}
+.al-title{font-family:"Cormorant Garamond","Times New Roman",serif;font-weight:600;font-size:clamp(44px,7.5cqi,72px);line-height:.9;letter-spacing:.08em;margin:0;color:var(--gold2);text-shadow:0 2px 24px rgba(0,0,0,.8),0 0 28px rgba(227,181,76,.25)}
+.al-artist{font-size:18px;font-weight:600;color:var(--text);opacity:.95;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.al-artist b{color:var(--gold)}
+.al-sub{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;color:#E6D8C8;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.al-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.al-chip{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.06em;border:1px solid var(--line);background:rgba(28,15,19,.85);border-radius:5px;padding:4px 8px;color:var(--muted);font-variant-numeric:tabular-nums}
+.al-chip b{color:var(--text);font-weight:600}
+
+.al-sec{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.al-list{display:flex;flex-direction:column;gap:6px}
+.al-tr{display:grid;grid-template-columns:34px minmax(0,1fr) auto auto auto;gap:10px;align-items:center;text-align:left;background:linear-gradient(180deg,#1B1013,#130A0D);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--text);font:inherit;position:relative;transition:border-color .15s,box-shadow .15s}
+.al-tr:hover,.al-tr:focus-visible{border-color:var(--line2);outline:none}
+.al-tr.on{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset,0 0 24px -8px var(--gold)}
+.al-tr .n{font-family:"Bebas Neue",Impact,sans-serif;font-size:24px;letter-spacing:.04em;color:var(--dim);line-height:1}
+.al-tr.on .n{color:var(--gold)}
+.al-tr .t{font-weight:600;font-size:15px;line-height:1.2;overflow-wrap:anywhere}
+.al-tr .f{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.al-tr .k{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.al-tr .k b{color:var(--text);font-weight:600}
+.al-tr .d{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.al-tr .pl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--gold);font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.al-tr .pl i{display:inline-block;width:0;height:0;border-left:6px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent;opacity:.85}
+.al-tr .pl[hidden]{display:none}
+@media(max-width:430px){.al-tr .d{display:none}}
+.al-chip.streams b{color:var(--gold2)}
+.al-tr .k2{display:none}
+@container (min-width:560px){.al-tr .k2{display:inline}}
+.al-tr .st{width:28px;height:28px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;color:var(--gold);flex:none}
+.al-tr.on .st{background:var(--gold);color:#1A0E05;border-color:var(--gold)}
+.al-tr .st svg{width:12px;height:12px}
+.al-tr .tip{flex:none;display:inline-flex;align-items:center;gap:5px;border:1px solid rgba(227,181,76,.55);background:rgba(227,181,76,.08);color:var(--gold);border-radius:999px;padding:6px 9px 6px 7px;font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.1em;cursor:pointer;line-height:1;transition:background .15s,color .15s,border-color .15s}
+.al-tr .tip svg{width:13px;height:13px}
+.al-tr .tip:hover,.al-tr .tip:focus-visible{background:var(--gold);color:#1A0E05;border-color:var(--gold);outline:none}
+@media(max-width:430px){.al-tr{padding:10px 10px;gap:8px}}
+.al-tipnow{border-color:rgba(227,181,76,.6)!important;color:var(--gold)!important;background:rgba(227,181,76,.08)!important;display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.al-tipnow svg{width:13px;height:13px}
+.al-tipnow:hover{background:var(--gold)!important;color:#1A0E05!important}
+.al-jar{border:1px solid rgba(227,181,76,.45);border-radius:12px;padding:18px 18px;background:radial-gradient(120% 140% at 0% 0%,rgba(139,30,45,.38),rgba(20,10,13,.92) 60%);display:grid;grid-template-columns:minmax(0,1fr);gap:14px;position:relative;overflow:hidden}
+.al-jar::after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;border:1px solid rgba(227,181,76,.18);box-shadow:0 0 0 24px rgba(227,181,76,.05),0 0 0 48px rgba(227,181,76,.03);pointer-events:none}
+@container (min-width:680px){.al-jar{grid-template-columns:minmax(0,1fr) auto;align-items:center}.al-jar .al-fl{grid-column:1/-1}}
+.al-dj{border:1px solid rgba(201,75,90,.45);border-radius:12px;padding:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(139,30,45,.42),rgba(20,10,13,.94) 60%);display:grid;grid-template-columns:minmax(0,1fr);gap:14px;position:relative;overflow:hidden}
+.al-dj h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-dj p{margin:0;font-size:13.5px;line-height:1.5;color:#DCCFC2;max-width:60ch}
+.al-dj .al-sec{color:var(--rose);margin-bottom:8px}
+.al-djf{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+@container (min-width:560px){.al-djf{grid-template-columns:repeat(2,minmax(0,1fr))}.al-djf .wide,.al-djf .act{grid-column:1/-1}}
+.al-djf label{display:flex;flex-direction:column;gap:5px;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.al-djf input{font:15px "Exo 2","Segoe UI",system-ui,sans-serif;color:var(--text);background:rgba(11,6,8,.8);border:1px solid var(--line2);border-radius:8px;padding:11px 12px;outline:none;min-width:0;width:100%;box-sizing:border-box}
+.al-djf input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(227,181,76,.15)}
+.al-djf input.bad{border-color:var(--rose)}
+.al-djf .act{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.al-djf .fine{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--dim);margin:0}
+.al-djf .err{font-size:13px;color:var(--rose);margin:0;font-weight:600}
+.al-dj .done{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:rgba(227,181,76,.1);border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.4}
+.al-dj .done svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-dj .done b{color:var(--gold2)}
+.al-jar .djhint{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.08em;color:var(--muted);margin:2px 0 0}
+.al-jar .djhint a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(227,181,76,.4)}
+.al-share{border:1px solid var(--line);border-radius:12px;padding:18px;background:linear-gradient(180deg,rgba(28,15,19,.9),rgba(14,8,10,.95));display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@container (min-width:640px){.al-share{grid-template-columns:minmax(0,1fr) 190px;align-items:start}}
+.al-share h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-share p{margin:0;font-size:13.5px;line-height:1.5;color:#DCCFC2;max-width:60ch}
+.al-share .al-sec{color:var(--gold);margin-bottom:8px}
+.al-shbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.al-shbtns .al-sm{text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.al-qr{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.al-qr a.img{display:block;background:#fff;border-radius:12px;padding:8px;line-height:0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.al-qr img{width:150px;height:150px;display:block}
+.al-qr small{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--muted)}
+.al-qr .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.al-shpick{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
+.al-shpick button{border:1px solid var(--line2);background:rgba(11,6,8,.6);color:var(--muted);border-radius:999px;padding:6px 10px;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.08em;cursor:pointer}
+.al-shpick button.on{border-color:var(--gold);color:var(--gold2);background:rgba(227,181,76,.12)}
+.al-shnow{font-size:13px;color:#DCCFC2;margin:0 0 10px!important}.al-shnow b{color:var(--gold2)}
+.al-ref{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+.al-ref h4{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;letter-spacing:.03em;margin:0 0 4px;color:var(--gold2)}
+.al-ref p{font-size:13px}
+.al-refbar{position:relative;height:10px;border-radius:999px;background:rgba(255,255,255,.07);margin:10px 0 6px;overflow:visible}
+.al-refbar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,var(--wine),var(--gold));transition:width .6s ease}
+.al-refbar em{position:absolute;top:-4px;width:18px;height:18px;border-radius:50%;background:#140A0D;border:2px solid var(--gold);transform:translateX(-50%);font-style:normal;font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--gold);display:grid;place-items:center}
+.al-refbar em.hit{background:var(--gold);color:#1A0E05}
+.al-refmeta{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.al-refmeta b{color:var(--gold2);font-weight:600}
+.al-refpick{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.al-arrive{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:linear-gradient(90deg,rgba(227,181,76,.16),rgba(139,30,45,.22));border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.4;color:#F1E9E0}
+.al-arrive b{color:var(--gold2)}.al-arrive svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-stats{position:fixed;inset:0;z-index:60;background:rgba(5,2,3,.9);overflow:auto;padding:24px 16px;font-family:"Exo 2","Segoe UI",system-ui,sans-serif;color:#F1E9E0}
+.al-stats .card{max-width:720px;margin:0 auto;background:#140A0D;border:1px solid rgba(227,181,76,.5);border-radius:16px;padding:22px}
+.al-stats h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:34px;margin:0 0 4px;color:#F4D27A}
+.al-stats .kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}
+.al-stats .kp div{border:1px solid #3A2228;border-radius:10px;padding:10px 12px}.al-stats .kp b{display:block;font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:34px;line-height:1;color:#F4D27A}.al-stats .kp span{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:#A8927F}
+.al-stats table{width:100%;border-collapse:collapse;font-size:13px}.al-stats th,.al-stats td{text-align:left;padding:8px 6px;border-bottom:1px solid #3A2228;font-variant-numeric:tabular-nums}.al-stats th{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:#A8927F;font-weight:400}
+.al-stats .x{float:right;border:1px solid #4A2C33;background:none;color:#A8927F;border-radius:50%;width:32px;height:32px;cursor:pointer}
+.al-stats small{font-family:"JetBrains Mono",monospace;font-size:10px;color:#6E5A4E;letter-spacing:.06em}
+.al-accs{display:flex;flex-direction:column;gap:10px}
+.al-acc{border:1px solid rgba(227,181,76,.35);border-radius:14px;background:linear-gradient(180deg,rgba(28,15,19,.85),rgba(14,8,10,.95));overflow:hidden}
+.al-acc.open{border-color:var(--gold)}
+.al-accbtn{width:100%;display:flex;align-items:center;gap:14px;padding:18px 18px;background:none;border:0;color:var(--text);cursor:pointer;text-align:left}
+.al-accbtn:hover{background:rgba(227,181,76,.06)}
+.al-accbtn .n{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;color:var(--gold);width:22px;flex:none}
+.al-accbtn .t{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.al-accbtn .t b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:27px;letter-spacing:.04em;line-height:1;color:var(--gold2)}
+.al-accbtn .t span{font-family:"Exo 2","Segoe UI",system-ui,sans-serif;font-size:13px;font-weight:400;color:#C9B9AA;line-height:1.4;letter-spacing:.01em}
+.al-accbtn .mini{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--gold);display:flex;align-items:center;gap:8px;margin-top:6px;white-space:nowrap}
+.al-accbtn .mini i{display:inline-block;width:70px;height:4px;border-radius:2px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}.al-accbtn .mini i::after{content:"";position:absolute;left:0;top:0;bottom:0;width:var(--w,0%);background:var(--gold)}
+.al-accbtn .ch{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid rgba(227,181,76,.5);display:grid;place-items:center;color:var(--gold);transition:transform .25s}
+.al-acc.open .al-accbtn .ch{transform:rotate(180deg);background:var(--gold);color:#1A0E05}
+.al-accbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.al-acc.open .al-accbody{grid-template-rows:1fr}
+.al-accbody>div{overflow:hidden}
+.al-accbody>div>*{margin:0 14px 14px!important;border-radius:12px}
+.al-accbody .al-about{border:1px solid var(--line);padding:16px}
+.al-follow{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;border-top:1px solid var(--line);padding-top:20px}
+@container (min-width:680px){.al-follow{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:start}.al-follow .al-socs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}.al-follow .al-socg{margin:0}}
+.al-follow .fh .al-sec{color:var(--gold);margin-bottom:8px}
+.al-follow h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;letter-spacing:.04em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-follow .fh p:not(.al-sec){margin:0;font-size:13.5px;line-height:1.5;color:#DCCFC2;max-width:48ch}
+.al-chip.share{border-color:var(--gold);color:var(--gold);cursor:pointer;background:rgba(227,181,76,.08)}
+.al-fl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;position:relative}
+.al-dla.got{border-color:rgba(227,181,76,.55);color:var(--gold2)}
+.al-dla.got span{color:var(--gold)}
+.al-dla.lock span{color:var(--muted)}
+.al-dla.lock:hover span{color:var(--gold)}
+.al-tr .tip.got{background:var(--gold);color:#1A0E05;border-color:var(--gold);text-decoration:none}
+.al-thanks .al-sm{margin-left:auto;flex:none;border-color:var(--gold);color:var(--gold);text-decoration:none;display:inline-flex;align-items:center}
+.al-thanks{flex-wrap:wrap}
+.al-thanks>div{flex:1 1 220px}
+.al-jar h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-jar p{margin:0;font-size:13.5px;line-height:1.5;color:#DCCFC2;max-width:60ch}
+.al-jar .al-sec{color:var(--gold);margin-bottom:8px}
+.al-jarbtns{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.al-gold{border:0;background:var(--gold);color:#1A0E05;border-radius:999px;padding:12px 16px;font-family:"JetBrains Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.1em;cursor:pointer;display:inline-flex;align-items:center;gap:7px;box-shadow:0 0 24px -6px rgba(227,181,76,.7);white-space:nowrap}
+.al-gold:hover{background:var(--gold2)}
+.al-gold svg{width:14px;height:14px}
+.al-thanks{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:linear-gradient(90deg,rgba(227,181,76,.18),rgba(139,30,45,.25));border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.4;color:#F1E9E0}
+.al-thanks b{color:var(--gold2)}
+.al-thanks svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-sheet{--gold:#E3B54C;--gold2:#F4D27A;--line2:#4A2C33;--muted:#A8927F;--dim:#6E5A4E;--text:#F1E9E0;position:fixed;inset:0;z-index:50;display:none;align-items:flex-end;justify-content:center;background:rgba(5,2,3,.74);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:0;font-family:"Exo 2","Segoe UI",system-ui,sans-serif}
+.al-sheet.open{display:flex}
+.al-sheet *{box-sizing:border-box}
+@media (min-width:600px){.al-sheet{align-items:center;padding:24px}}
+.al-sheet .card{width:100%;max-width:460px;background:linear-gradient(180deg,#1C0F13,#110809);border:1px solid rgba(227,181,76,.5);border-radius:18px 18px 0 0;padding:22px 20px calc(20px + env(safe-area-inset-bottom));color:var(--text);position:relative;box-shadow:0 -10px 60px rgba(0,0,0,.6);animation:al-up .22s ease-out}
+@keyframes al-up{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@media (min-width:600px){.al-sheet .card{border-radius:18px}}
+.al-sheet .x{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line2);background:transparent;color:var(--muted);font-size:20px;cursor:pointer;line-height:1;display:grid;place-items:center}
+.al-sheet .x:hover{color:var(--gold);border-color:var(--gold)}
+.al-sheet .eye{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 36px 8px 0}
+.al-sheet h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:36px;line-height:1;letter-spacing:.03em;margin:0 0 8px;color:var(--gold2)}
+.al-sheet .song{font-weight:600;font-size:15px;margin:0 0 8px}
+.al-sheet p.b{font-size:13.5px;line-height:1.5;color:#DCCFC2;margin:0 0 14px}
+.al-amts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.al-amt{border:1px solid var(--line2);background:rgba(28,15,19,.9);color:var(--text);border-radius:10px;padding:12px 12px;cursor:pointer;text-align:left;font:inherit;display:flex;flex-direction:column;gap:4px;transition:border-color .15s,transform .1s}
+.al-amt b{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:30px;letter-spacing:.04em;line-height:1;color:var(--gold2)}
+.al-amt span{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.06em;color:var(--muted)}
+.al-amt:hover,.al-amt:focus-visible{border-color:var(--gold);transform:translateY(-1px);outline:none}
+.al-amt.custom{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between}
+.al-amt.custom b{font-size:22px}
+.al-sheet .ca{display:none;border:1px solid rgba(0,214,54,.45);background:rgba(0,214,54,.07);border-radius:12px;padding:14px;margin-top:4px}
+.al-sheet.step2 .ca{display:block}.al-sheet.step2 .al-amts{display:none}
+.al-sheet .ca .tag{display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:"JetBrains Mono",monospace;font-size:14px;letter-spacing:.04em;color:#F1E9E0;margin:0 0 10px}
+.al-sheet .ca .tag b{color:#00D636;font-size:18px}
+.al-sheet .ca .tag button{font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.1em;color:var(--gold);background:transparent;border:1px solid var(--gold);border-radius:999px;padding:6px 10px;cursor:pointer}
+.al-sheet .ca p{font-size:13.5px;line-height:1.5;color:#DCCFC2;margin:0 0 12px}
+.al-sheet .ca .row{display:flex;flex-wrap:wrap;gap:8px}
+.al-sheet .ca .again{font:600 11px "JetBrains Mono",monospace;letter-spacing:.1em;color:var(--muted);background:transparent;border:1px solid var(--line2);border-radius:999px;padding:11px 14px;cursor:pointer}
+.al-sheet .ca .al-gold{flex:1 1 auto;justify-content:center}
+.al-sheet .fine{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--dim);margin:12px 0 0;text-align:center}
+.al-wave{position:relative;height:96px;border-radius:10px;background:#0A0607;border:1px solid var(--line);cursor:pointer;touch-action:none}
+.al-wave canvas{display:block;width:100%;height:100%}
+.al-now{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;margin:0}
+.al-tp{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.al-play{width:54px;height:54px;border-radius:50%;border:0;background:var(--gold);color:#1A0E05;display:grid;place-items:center;cursor:pointer;box-shadow:0 0 24px -4px rgba(227,181,76,.75);flex:none}
+.al-play:hover{background:var(--gold2)}
+.al-play svg{width:22px;height:22px}
+.al-sm{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;padding:7px 10px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.06em;cursor:pointer}
+.al-sm:hover{border-color:var(--gold);color:var(--gold)}
+.al-time{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;font-size:13px;display:flex;flex-direction:column;line-height:1.3;margin-right:auto}
+.al-time .bar{font-size:10.5px;color:var(--muted);letter-spacing:.08em}
+
+.al-dla{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;background:rgba(20,10,13,.85);font:inherit;cursor:pointer;text-align:left;width:100%}
+.al-dla span{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--muted);font-weight:400;white-space:nowrap}
+.al-dla:hover{border-color:var(--gold)}
+.al-dla.all{border-color:var(--gold);color:var(--gold)}
+.al-dla[aria-busy="true"]{opacity:.6;pointer-events:none}
+
+.al-about{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;border-top:1px solid var(--line);padding-top:18px}
+@container (min-width:680px){.al-about{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}}
+.al-about h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;letter-spacing:.04em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-bio{font-size:15px;line-height:1.65;color:#DCCFC2;margin:0;max-width:65ch;white-space:pre-line}
+.al-tips{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.al-tips li{font-size:13.5px;line-height:1.45;color:#DCCFC2;padding-left:16px;position:relative}
+.al-tips li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.al-tips li b{color:var(--gold2);font-weight:600}
+.al-side{display:flex;flex-direction:column;gap:16px}
+.al-socs{display:flex;flex-direction:column;gap:6px}
+.al-socg{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.al-socg h4{margin:4px 0 2px;font-family:"Exo 2","Segoe UI",sans-serif;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--gold2)}
+.al-socg h4 span{font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:400;color:var(--muted);margin-left:8px}
+.al-soc{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:12.5px;font-weight:600;color:var(--text);text-decoration:none;background:rgba(28,15,19,.85)}
+.al-soc span{font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:400;color:var(--muted)}
+.al-soc:hover{border-color:var(--gold);color:var(--gold)}
+.al-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);letter-spacing:.06em}
+.al-back{position:relative;margin:0 -22px -22px;background:#0A0607;display:flex;flex-direction:column}
+.al-back .cap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:0 22px 12px}
+.al-back .cap .al-sec{color:var(--gold)}
+.al-back .cap .al-sec+.al-sec{color:var(--muted)}
+.al-back .bimg{position:relative;aspect-ratio:1;overflow:hidden;background:#0A0607}
+.al-back .bimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.al-back .bimg::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,6,8,.55) 0%,rgba(11,6,8,0) 7%)}
+.al-back .cred{padding:16px 22px 22px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(17px,2.2cqi,21px);letter-spacing:.02em;color:var(--gold2);text-align:center;background:#0A0607}
+@media (prefers-reduced-motion:reduce){.al.playing .al-grooves{animation:none}.al-disc{transition:none}}
+</style>
+<style>html,body{margin:0}</style>
+</head>
+<body>
+<main><div id="app"></div><p class="msg" id="msg" role="status" aria-live="polite"></p><p class="hint">Tap a track to play · Space pauses · ← → skip 10 seconds · Listening is free · Tip a song to own the file</p></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const PACK={"title":"Trap Queen: To God’s Grace","artist":"Big Angie","kicker":"The Virtual Disc","slug":"gods-grace","subtitle":"Ten tracks. One St. Louis story. From the trap to the throne room.","label":"The Album","genre":"Hip-Hop","releaseText":"2026","art":"art.jpg","frontUrl":"cover-front.png","backUrl":"cover-back.png","frontFilename":"Big Angie - Trap Queen To God’s Grace (Front Cover).png","backFilename":"Big Angie - Trap Queen To God’s Grace (Back Cover).png","zipFilename":"Big Angie - Trap Queen To God’s Grace (The Virtual Disc).zip","credits":"Big Angie · Mr.RunItBack presents · Tha Nod Factor Records & Films","closing":"She already told you where it starts. Press play and find out where it ends.","footerLeft":"10 TRACKS · FULL VERSIONS · BOTH COVERS INCLUDED","footer":"UANDI AI · THE VIRTUAL DISC","labels":{"tracklist":"Tracklist · tap one, we’ll handle the rest","downloads":"Downloads · take it all, we counted","about":"About the album","playIt":"How to listen · unsolicited advice","follow":"Follow · stay close to the record","back":"Back cover · the Arch, the skyline, the fine print","backRight":"10 tracks · 25:42","zip":"Everything · ZIP","followTitle":"The woman behind it.","followCopy":"New drops, shows, the book and the behind-the-scenes land here first. Tap through and tell her you came from the Virtual Disc."},"bio":"The title is the whole arc. Trap Queen is where it starts; To God’s Grace is where it lands. Big Angie spent twenty-plus years building other people’s careers, founding Tha Nod Factor Records & Films in St. Louis in 2002, co-writing Huey’s “Pop, Lock & Drop It,” and getting named SCM Power Player of the Year. This is the first time she stepped out from behind the desk and put her own story on the mic.\n\nTen tracks, and they run in order on purpose. The Intro sets the table. Trap Queen, Streets Topic and Going To Hell are the life before: the hustle, the streets, the nights she wasn’t sure she’d come back from. Get It Right is the turn. Hype God Up, Letter To God and God Is The Plug are the testimony: same St. Louis grit, different source. We Skate We Slide pulls Mr.RunItBack, who presents the record, into the booth for the one you play in the car. Not Of God closes it with the line drawn.\n\nIt’s trap in its bones and gospel in its spirit: 808s under the Arch, and a woman who survived long enough to tell you exactly how. Every song here is the full version, exactly as mastered. Play it right here for free, as many times as you need to. Want to own the files? Tip a song what it’s worth to you and it’s yours.","playIt":["\u003cb>Start at the Intro and let it run.\u003c/b> The order is the story: trap first, grace last. Shuffling it is like reading the last chapter first.","\u003cb>Trap Queen\u003c/b> is the one that started it all: the single that put her name on a record instead of just the credits.","\u003cb>Get It Right\u003c/b> is the turn. Everything before it is the fall; everything after it is the climb. Listen for the moment the tone changes.","\u003cb>Letter To God\u003c/b> is the one you sit still for. Headphones, no multitasking.","\u003cb>We Skate We Slide\u003c/b> with Mr.RunItBack is the car record. Windows down, Arch in the mirror.","\u003cb>Listening is free. Owning is a tip away.\u003c/b> Name your price on any song and the file is yours; tip the album and take everything, covers included."],"socials":[{"group":"Big Angie","links":[{"name":"Instagram","handle":"@bigangie59","url":"https://www.instagram.com/bigangie59/"},{"name":"TikTok","handle":"@angelarichardson351","url":"https://www.tiktok.com/@angelarichardson351"},{"name":"Facebook","handle":"Angela Richardson","url":"https://www.facebook.com/angela.richardson.73345"},{"name":"Apple Music","handle":"Trap Queen: To God’s Grace","url":"https://music.apple.com/us/album/trap-queen-to-gods-grace/6793347891"}]},{"group":"Mr.RunItBack","links":[{"name":"TikTok","handle":"@mr.runitbackmusic","url":"https://www.tiktok.com/@mr.runitbackmusic"},{"name":"Facebook","handle":"@MrRunItBack","url":"https://www.facebook.com/MrRunItBack"}]}],"tracks":[{"id":"01-intro","title":"Intro","feat":"","bpm":"152","keyName":"D# MIN","camelot":"2A","duration":69.6,"peaks":[0.497,0.135,0.675,0.298,0.223,0.276,0.131,0.843,0.287,0.323,0.669,0.392,0.493,0.481,0.512,0.556,0.28,0.365,0.485,0.532,0.17,0.964,0.169,0.209,0.324,0.203,0.289,0.132,0.341,0.238,0.099,0.264,0.215,0.394,0.859,0.54,0.238,0.243,0.377,0.646,0.368,0.436,0.252,0.574,0.293,0.278,0.348,0.184,1.0,0.243,0.668,0.626,0.591,0.308,0.586,0.69,0.567,0.294,0.702,0.653,0.216,0.424,0.925,0.379,0.722,0.353,0.327,0.16,0.684,0.21,0.452,0.414,0.36,0.464,0.277,0.651,0.707,0.257,0.221,0.586,0.19,0.192,0.624,0.223,0.316,0.23,0.721,0.293,0.486,0.376,0.423,0.302,0.307,0.169,0.199,0.507,0.506,0.163,0.2,0.319,0.61,0.304,0.235,0.338,0.443,0.548,0.471,0.646,0.286,0.293,0.787,0.663,0.516,0.483,0.368,0.727,0.844,0.662,0.286,0.242,0.793,0.448,0.548,0.388,0.506,0.301,0.228,0.21,0.524,0.33,0.784,0.373,0.265,0.367,0.523,0.539,0.245,0.212,0.199,0.262,0.689,0.604,0.427,0.452,0.324,0.222,0.218,0.299,0.602,0.452,0.551,0.392,0.217,0.258,0.503,0.468,0.5,0.321,0.394,0.256,0.257,0.448,0.455,0.384,0.787,0.754,0.517,0.418,0.411,0.703,0.732,0.826,0.656,0.552,0.327,0.806,0.755,0.738,0.49,0.389,0.291,0.41,0.601,0.473,0.425,0.965,0.253,0.287,0.329,0.278,0.78,0.689,0.742,0.35,0.218,0.525,0.441,0.753,0.517,0.761,0.42,0.26,0.785,0.638,0.297,0.212,0.202,0.218,0.325,0.631,0.559,0.426,0.315,0.344,0.296,0.242,0.693,0.427,0.298,0.771,0.764,0.589,0.686,0.612,0.711,0.713,0.759,0.482,0.5,0.685,0.744,0.843,0.735,0.392,0.367,0.483,0.797,0.769,0.519,0.328,0.833,0.335,0.193,0.609,0.41,0.495,0.719,0.79,0.543,0.518,0.703,0.317,0.252,0.785,0.555,0.623,0.203,0.375,0.404,0.311,0.529,0.383,0.374,0.761,0.733,0.627,0.563,0.695,0.368,0.8,0.43,0.386,0.555,0.486,0.814,0.599,0.395,0.555,0.605,0.713,0.393,0.762,0.464,0.312,0.746,0.368,0.757,0.277,0.234,0.601,0.373,0.565,0.552,0.334,0.863,0.668,0.323,0.449,0.562,0.714,0.711,0.753,0.613,0.484,0.464,0.397,0.379,0.205,0.813,0.456,0.349,0.724,0.704,0.743,0.377,0.42,0.704,0.612,0.804,0.698,0.504,0.424,0.726,0.596,0.541,0.591,0.577,0.561,0.769,0.726,0.499,0.406,0.66,0.75,0.765,0.798,0.528,0.49,0.295,0.73,0.543,0.34,0.642,0.432,0.493,0.576,0.566,0.457,0.394,0.773,0.417,0.607,0.654,0.469,0.534,0.299,0.606,0.361,0.223,0.39,0.577,0.37,0.751,0.558,0.453,0.199,0.555,0.563,0.602,0.276,0.541,0.48,0.419,0.758,0.512,0.442,0.764,0.402,0.646,0.453,0.52,0.572,0.328,0.667,0.451,0.526,0.449,0.326,0.596,0.542,0.719,0.327,0.331,0.559,0.439,0.389,0.363,0.28,0.265,0.244,0.272,0.494,0.598,0.759,0.385,0.43,0.275,0.31,0.53,0.456,0.18,0.348,0.453,0.359,0.244,0.126,0.199,0.646,0.352,0.258,0.328,0.315,0.275,0.703,0.585,0.51,0.222,0.64,0.19,0.546,0.682,0.674,0.616,0.104,0.641,0.604,0.428,0.736,0.771,0.711,0.582,0.56,0.723,0.715,0.75,0.606,0.57,0.699,0.68,0.673,0.654,0.652,0.571,0.439,0.552,0.45,0.525,0.785,0.742,0.262,0.211,0.745,0.677,0.708,0.737,0.717,0.59,0.516,0.639,0.702,0.701,0.721,0.625,0.522,0.685,0.668,0.644,0.633,0.614,0.663,0.678,0.713,0.697,0.668,0.569,0.711,0.683,0.705,0.618,0.572,0.707,0.701,0.721,0.595,0.526,0.569,0.65,0.692,0.783,0.69,0.576,0.53,0.7,0.649,0.547,0.598,0.514,0.482,0.531,0.514,0.614,0.145,0.735,0.226,0.192,0.697,0.584,0.739,0.73,0.734,0.65,0.61,0.632,0.61,0.732,0.803,0.628,0.624,0.517,0.713,0.603,0.611,0.676,0.503,0.738,0.704,0.699,0.703,0.621,0.775,0.59,0.704,0.687,0.633,0.73,0.599,0.704,0.572,0.556,0.548,0.558,0.482,0.732,0.549,0.399,0.377,0.671,0.638,0.615,0.649,0.511,0.531,0.405,0.643,0.6,0.588,0.581,0.616,0.615,0.517,0.439,0.549,0.399,0.496,0.485,0.26,0.259,0.194,0.22,0.083,0.208,0.189,0.114,0.147,0.168,0.147,0.081,0.284,0.327,0.105,0.16,0.187,0.116,0.082,0.155,0.2,0.034,0.044,0.057,0.037],"url":"audio/01-intro.mp3","filename":"Big Angie - 01 Intro.mp3"},{"id":"02-trap-queen","title":"Trap Queen","feat":"","bpm":"95","keyName":"G# MIN","camelot":"1A","duration":178.6,"peaks":[0.535,0.37,0.589,0.607,0.614,0.386,0.064,0.605,0.658,0.491,0.235,0.49,0.676,0.877,0.192,0.317,0.289,0.688,0.488,0.38,0.523,0.609,0.685,0.434,0.774,0.384,0.388,0.651,0.502,0.769,0.879,0.568,0.679,0.686,0.873,0.617,0.6,0.611,0.805,0.651,0.772,0.607,0.721,0.623,0.551,0.698,0.854,0.852,0.865,0.76,0.828,0.796,0.471,0.625,0.528,0.935,0.745,0.787,0.746,0.307,0.775,0.559,0.845,0.849,0.595,0.664,0.54,0.889,0.572,0.706,0.864,0.831,0.816,0.631,0.522,0.729,0.884,0.547,0.667,0.717,0.866,0.7,0.567,0.336,0.866,0.715,0.653,0.397,0.841,0.918,0.749,0.88,0.586,0.613,0.418,0.672,0.841,0.869,0.454,0.828,0.809,0.76,0.696,0.709,0.722,0.488,0.743,0.721,0.79,0.706,0.816,0.548,0.603,0.453,0.625,0.808,0.832,0.673,0.803,0.692,0.445,0.707,0.805,0.548,0.917,0.86,0.409,0.542,0.215,0.848,0.784,0.79,0.764,0.593,0.792,0.746,0.762,0.676,0.717,0.841,0.825,0.874,0.664,0.383,0.753,1.0,0.897,0.785,0.788,0.786,0.704,0.794,0.82,0.712,0.644,0.704,0.893,0.864,0.893,0.676,0.825,0.587,0.683,0.705,0.793,0.798,0.781,0.691,0.722,0.783,0.827,0.421,0.795,0.859,0.543,0.717,0.823,0.824,0.557,0.668,0.783,0.709,0.679,0.749,0.799,0.763,0.813,0.733,0.821,0.744,0.779,0.662,0.744,0.712,0.659,0.627,0.599,0.731,0.806,0.793,0.792,0.809,0.848,0.578,0.749,0.69,0.764,0.6,0.698,0.889,0.759,0.871,0.627,0.429,0.853,0.787,0.741,0.805,0.785,0.768,0.756,0.708,0.705,0.848,0.598,0.691,0.517,0.726,0.804,0.792,0.407,0.832,0.792,0.816,0.757,0.816,0.854,0.669,0.593,0.708,0.886,0.781,0.688,0.751,0.465,0.662,0.712,0.746,0.801,0.819,0.738,0.662,0.784,0.821,0.616,0.685,0.683,0.909,0.786,0.71,0.792,0.794,0.769,0.693,0.727,0.437,0.688,0.966,0.321,0.638,0.83,0.651,0.587,0.823,0.733,0.444,0.579,0.676,0.521,0.614,0.493,0.711,0.719,0.805,0.748,0.788,0.417,0.772,0.773,0.63,0.828,0.812,0.509,0.607,0.592,0.761,0.592,0.662,0.426,0.612,0.583,0.774,0.574,0.711,0.794,0.575,0.591,0.497,0.885,0.576,0.856,0.692,0.642,0.595,0.63,0.5,0.917,0.603,0.395,0.847,0.722,0.743,0.508,0.524,0.366,0.982,0.688,0.695,0.853,0.651,0.739,0.571,0.729,0.836,0.656,0.671,0.685,0.729,0.608,0.753,0.761,0.777,0.809,0.551,0.403,0.805,0.751,0.73,0.457,0.729,0.834,0.579,0.665,0.315,0.848,0.76,0.715,0.526,0.797,0.525,0.769,0.747,0.604,0.655,0.67,0.642,0.734,0.728,0.689,0.73,0.754,0.72,0.706,0.674,0.781,0.777,0.773,0.756,0.74,0.748,0.776,0.726,0.773,0.734,0.781,0.749,0.73,0.722,0.745,0.717,0.836,0.728,0.934,0.623,0.695,0.707,0.627,0.686,0.692,0.534,0.704,0.812,0.788,0.661,0.792,0.777,0.817,0.73,0.767,0.903,0.573,0.741,0.807,0.482,0.756,0.604,0.779,0.808,0.795,0.807,0.755,0.773,0.77,0.805,0.679,0.676,0.801,0.79,0.74,0.667,0.872,0.723,0.641,0.736,0.836,0.74,0.786,0.559,0.787,0.803,0.718,0.722,0.792,0.763,0.803,0.645,0.41,0.664,0.578,0.763,0.719,0.792,0.625,0.784,0.719,0.766,0.758,0.725,0.659,0.729,0.82,0.783,0.705,0.681,0.764,0.657,0.712,0.503,0.411,0.528,0.71,0.484,0.795,0.811,0.536,0.7,0.764,0.793,0.754,0.643,0.545,0.787,0.543,0.518,0.765,0.811,0.628,0.831,0.792,0.776,0.653,0.742,0.693,0.775,0.867,0.643,0.684,0.712,0.556,0.461,0.573,0.744,0.849,0.529,0.821,0.831,0.751,0.714,0.687,0.69,0.696,0.806,0.5,0.554,0.524,0.757,0.83,0.654,0.743,0.757,0.725,0.754,0.744,0.777,0.734,0.794,0.691,0.677,0.884,0.689,0.478,0.431,0.678,0.558,0.216,0.783,0.803,0.684,0.823,0.772,0.706,0.758,0.616,0.52,0.432,0.32,0.296,0.319,0.395,0.314,0.066,0.046,0.748,0.663,0.522,0.474,0.278,0.784,0.669,0.69,0.521,0.788,0.804,0.65,0.355,0.695,0.722,0.708,0.624,0.728,0.787,0.605,0.802,0.753,0.816,0.708,0.764,0.731,0.78,0.75,0.678,0.48,0.742,0.597,0.74,0.75,0.727,0.776,0.563,0.805,0.775,0.818,0.608,0.151,0.089,0.017,0.02,0.009,0.004,0.002],"url":"audio/02-trap-queen.mp3","filename":"Big Angie - 02 Trap Queen.mp3"},{"id":"03-streets-topic","title":"Streets Topic","feat":"","bpm":"99","keyName":"F MIN","camelot":"4A","duration":133.32,"peaks":[0.851,0.361,0.637,0.911,0.644,0.87,0.831,0.494,0.847,0.786,0.372,0.938,0.531,0.701,0.833,0.743,0.395,0.786,0.885,0.306,0.791,0.809,0.495,0.814,0.749,0.833,0.754,0.5,0.332,0.819,0.505,0.265,0.895,0.838,0.752,0.758,0.652,0.803,0.787,0.56,0.956,0.404,0.654,0.691,1.0,0.936,0.934,0.973,0.873,0.846,0.718,0.707,0.722,0.697,0.855,0.515,0.404,0.412,0.909,0.779,0.505,0.845,0.808,0.585,0.808,0.859,0.815,0.779,0.486,0.864,0.378,0.408,0.742,0.772,0.562,0.844,0.779,0.673,0.853,0.839,0.433,0.793,0.821,0.557,0.75,0.821,0.493,0.831,0.733,0.5,0.846,0.8,0.614,0.809,0.775,0.507,0.844,0.832,0.82,0.478,0.576,0.595,0.781,0.561,0.436,0.809,0.802,0.832,0.833,0.593,0.804,0.83,0.668,0.798,0.712,0.747,0.755,0.798,0.654,0.847,0.842,0.696,0.807,0.825,0.677,0.75,0.81,0.861,0.599,0.609,0.571,0.794,0.509,0.529,0.789,0.885,0.865,0.482,0.814,0.795,0.827,0.459,0.836,0.634,0.783,0.766,0.805,0.433,0.83,0.822,0.695,0.782,0.77,0.687,0.786,0.788,0.554,0.863,0.794,0.51,0.778,0.619,0.785,0.764,0.928,0.59,0.791,0.811,0.811,0.794,0.654,0.804,0.826,0.647,0.547,0.832,0.548,0.688,0.813,0.778,0.82,0.83,0.769,0.767,0.802,0.515,0.9,0.657,0.594,0.795,0.776,0.47,0.762,0.861,0.586,0.774,0.809,0.614,0.793,0.801,0.82,0.82,0.637,0.616,0.847,0.514,0.567,0.799,0.881,0.796,0.822,0.636,0.82,0.814,0.605,0.831,0.502,0.7,0.497,0.811,0.584,0.817,0.861,0.627,0.814,0.819,0.738,0.885,0.834,0.836,0.831,0.77,0.694,0.79,0.609,0.793,0.771,0.706,0.313,0.795,0.784,0.776,0.783,0.495,0.804,0.674,0.642,0.453,0.819,0.548,0.809,0.863,0.61,0.87,0.778,0.488,0.828,0.788,0.369,0.983,0.803,0.629,0.835,0.583,0.626,0.819,0.934,0.422,0.87,0.778,0.812,0.819,0.737,0.978,0.572,0.743,0.444,0.85,0.824,0.502,0.941,0.563,0.861,0.808,0.703,0.786,0.83,0.407,0.952,0.823,0.466,0.838,0.865,0.513,0.831,0.879,0.575,0.812,0.865,0.397,0.829,0.885,0.866,0.424,0.465,0.666,0.806,0.424,0.615,0.845,0.838,0.818,0.813,0.607,0.79,0.849,0.66,0.812,0.859,0.684,0.76,0.835,0.614,0.801,0.816,0.74,0.78,0.792,0.495,0.801,0.779,0.858,0.646,0.848,0.484,0.751,0.887,0.833,0.795,0.908,0.694,0.812,0.837,0.957,0.832,0.595,0.953,0.35,0.665,0.271,0.925,0.504,0.845,0.909,0.601,0.797,0.833,0.562,0.832,0.762,0.794,0.91,0.592,0.634,0.883,0.597,0.566,0.785,0.882,0.596,0.83,0.807,0.807,0.941,0.642,0.881,0.78,0.612,0.567,0.861,0.718,0.773,0.841,0.569,0.802,0.824,0.388,0.82,0.866,0.654,0.885,0.672,0.701,0.95,0.643,0.62,0.77,0.845,0.563,0.804,0.809,0.815,0.801,0.736,0.827,0.737,0.652,0.593,0.852,0.729,0.662,0.946,0.849,0.886,0.755,0.808,0.73,0.824,0.661,0.926,0.377,0.638,0.812,0.74,0.756,0.792,0.914,0.455,0.945,0.192,0.833,0.808,0.811,0.818,0.663,0.836,0.815,0.862,0.491,0.778,0.79,0.893,0.75,0.795,0.479,0.796,0.788,0.737,0.847,0.768,0.86,0.903,0.805,0.765,0.746,0.804,0.687,0.78,0.803,0.659,0.821,0.79,0.876,0.816,0.68,0.597,0.738,0.83,0.599,0.589,0.775,0.618,0.746,0.647,0.605,0.596,0.536,0.459,0.47,0.825,0.774,0.789,0.755,0.655,0.706,0.747,0.8,0.606,0.713,0.661,0.684,0.676,0.707,0.707,0.565,0.931,0.582,0.823,0.812,0.904,0.805,0.775,0.661,0.778,0.787,0.621,0.852,0.334,0.742,0.705,0.819,0.728,0.775,0.866,0.711,0.867,0.777,0.773,0.837,0.822,0.81,0.841,0.619,0.76,0.784,0.691,0.699,0.78,0.87,0.745,0.786,0.78,0.784,0.797,0.384,0.902,0.232,0.484,0.751,0.82,0.75,0.775,0.821,0.64,0.796,0.778,0.66,0.813,0.76,0.776,0.893,0.746,0.609,0.81,0.665,0.677,0.758,0.855,0.61,0.805,0.867,0.882,0.833,0.471,0.876,0.563,0.535,0.724,0.824,0.737,0.816,0.825,0.751,0.849,0.814,0.702,0.837,0.83,0.611,0.921,0.768,0.914,0.846,0.678,0.624,0.565,0.559,0.553,0.469,0.362,0.272,0.238,0.19,0.143,0.106,0.022,0.0,0.0,0.0,0.0],"url":"audio/03-streets-topic.mp3","filename":"Big Angie - 03 Streets Topic.mp3"},{"id":"04-going-to-hell","title":"Going To Hell","feat":"","bpm":"123","keyName":"C MIN","camelot":"5A","duration":125.8,"peaks":[0.44,0.032,0.803,0.706,0.682,0.632,0.743,0.681,0.624,0.724,0.568,0.558,0.682,0.47,0.278,0.407,0.86,0.545,0.494,0.576,0.322,0.647,0.715,0.603,0.405,0.792,0.517,0.538,0.381,0.405,0.691,0.356,0.566,0.446,0.84,0.622,0.466,0.317,0.479,0.761,0.523,0.585,0.538,0.645,0.816,0.698,0.815,0.631,0.501,0.683,0.522,0.695,0.604,0.802,0.663,0.43,0.571,0.285,0.744,0.683,0.623,0.682,0.827,0.411,0.442,0.419,0.563,0.611,0.5,0.623,0.491,0.37,0.867,0.745,0.736,0.563,0.787,0.685,0.648,0.676,0.804,0.724,0.546,0.798,0.575,0.621,0.676,0.259,0.235,0.638,0.568,0.452,0.267,0.521,0.509,0.757,0.291,0.39,0.564,0.307,0.549,0.326,0.294,0.578,0.727,0.533,0.547,0.471,0.521,0.439,0.331,0.323,0.501,0.574,0.679,0.795,0.788,0.798,0.827,0.733,0.431,0.363,0.453,0.813,0.619,0.692,0.665,0.766,0.674,0.349,0.901,0.783,0.653,0.589,0.61,0.586,0.337,0.653,0.179,0.966,0.633,0.82,0.776,0.6,0.714,0.749,0.855,0.305,0.339,0.327,0.76,0.78,0.511,0.711,0.707,0.796,0.581,0.542,0.595,0.478,0.814,0.489,0.495,0.598,0.489,0.395,0.596,0.584,0.501,0.682,0.367,0.25,0.56,0.568,0.409,0.394,0.322,0.212,0.884,0.864,0.678,0.7,0.599,0.835,0.504,0.695,0.302,0.713,0.768,0.523,0.698,0.615,0.817,0.744,0.684,0.764,0.725,0.76,0.626,0.734,0.507,0.703,0.901,0.518,0.266,0.849,0.389,0.761,0.665,0.429,0.584,0.801,0.638,0.591,0.522,0.507,0.806,0.384,0.576,0.535,0.469,0.212,0.562,0.54,0.431,0.699,0.459,0.358,0.315,0.416,0.375,0.344,0.509,0.496,0.844,0.862,0.714,0.492,0.401,0.851,0.766,0.826,0.584,0.491,0.792,0.457,0.659,0.618,0.751,0.65,0.353,0.664,0.384,0.862,0.701,0.744,0.672,0.845,0.59,0.408,0.68,0.576,0.652,0.395,0.432,0.634,0.777,0.734,0.604,0.597,0.379,0.847,0.792,0.656,0.696,0.826,0.838,0.674,0.872,0.702,0.53,0.691,0.407,0.466,0.708,0.253,0.475,0.475,0.52,0.427,0.814,0.603,0.739,0.649,0.782,0.889,0.348,0.288,0.635,0.479,0.631,0.412,0.439,0.54,0.509,0.638,0.552,0.568,0.816,0.818,0.686,0.711,0.786,0.821,0.602,0.786,0.779,0.625,0.776,0.495,0.471,0.507,0.547,0.485,0.405,0.363,0.627,0.527,0.547,0.284,0.576,0.302,0.593,0.458,0.369,0.594,0.579,0.452,0.515,0.554,0.514,0.291,0.402,0.324,0.303,0.563,0.837,0.818,0.72,0.787,0.8,0.784,0.769,0.401,0.456,0.809,0.754,0.604,0.71,0.653,0.801,0.469,0.593,0.443,0.413,0.464,0.337,0.313,0.455,0.539,0.477,0.397,0.387,0.872,0.79,0.482,0.559,0.794,0.779,0.513,0.717,0.668,0.498,0.833,0.357,0.788,0.592,0.686,0.762,0.759,0.652,0.793,0.815,0.775,0.743,0.641,0.466,0.918,0.39,0.829,0.706,0.6,0.765,0.699,0.589,0.554,0.717,0.694,0.503,0.814,0.407,0.837,0.656,0.736,0.557,0.877,0.51,0.316,0.652,0.567,0.652,0.362,0.581,0.462,0.45,0.568,0.441,0.718,0.669,0.739,0.687,0.639,0.685,0.785,0.793,0.603,0.747,0.701,0.523,0.438,0.467,0.521,0.621,0.437,0.6,0.496,0.65,0.48,0.75,0.662,0.639,0.68,0.782,0.746,0.487,0.295,0.61,0.512,0.704,0.589,0.468,0.554,0.453,0.508,0.472,0.444,0.801,0.798,0.583,0.635,0.737,0.79,0.484,0.709,0.688,0.548,0.566,0.441,0.582,0.686,0.487,0.326,0.418,0.404,0.56,0.639,0.464,0.43,0.689,0.291,0.608,0.357,0.326,0.581,0.657,0.435,0.547,0.603,0.539,0.353,0.391,0.328,0.268,0.426,0.722,0.762,0.685,0.697,0.784,0.679,0.399,0.766,0.731,0.783,0.51,0.343,0.794,0.808,0.729,0.619,0.751,0.721,0.459,0.675,0.541,0.166,0.381,0.914,0.218,0.649,0.542,0.807,0.54,0.372,0.342,0.529,1.0,0.21,0.73,0.261,0.603,0.523,0.679,0.492,0.753,0.767,0.737,0.706,0.735,0.751,0.739,0.565,0.628,0.718,0.728,0.709,0.753,0.816,0.603,0.653,0.461,0.628,0.698,0.641,0.861,0.169,0.495,0.27,0.35,0.643,0.409,0.496,0.43,0.827,0.219,0.21,0.398,0.257,0.581,0.354,0.676,0.599,0.709,0.688,0.673,0.653,0.644,0.686,0.706,0.685,0.667,0.613,0.688,0.59,0.612,0.091,0.068,0.063,0.044,0.03],"url":"audio/04-going-to-hell.mp3","filename":"Big Angie - 04 Going To Hell.mp3"},{"id":"05-get-it-right","title":"Get It Right","feat":"","bpm":"152","keyName":"D# MIN","camelot":"2A","duration":217.6,"peaks":[0.395,0.221,0.269,0.184,0.165,0.686,0.758,0.61,0.102,0.053,0.051,0.603,0.671,0.298,0.269,0.201,0.307,0.406,0.709,0.654,0.65,0.731,0.724,0.554,0.164,0.06,0.642,0.579,0.542,0.49,0.541,0.186,0.293,0.362,0.531,0.322,0.657,0.586,0.615,0.654,0.198,0.243,0.168,0.177,0.422,0.602,0.62,0.614,0.275,0.353,0.343,0.599,0.607,0.593,0.45,0.326,0.395,0.589,0.591,0.579,0.803,0.711,0.771,0.692,0.719,0.795,0.729,0.845,0.802,0.735,0.782,0.767,0.697,0.735,0.725,0.81,0.625,0.641,0.671,0.7,0.701,0.609,0.604,0.848,0.82,0.632,0.749,0.54,0.847,0.77,0.653,0.642,0.841,0.555,0.584,0.617,0.611,0.804,0.504,0.582,0.833,0.891,0.766,0.791,0.711,0.862,0.826,0.757,0.63,0.697,0.799,0.637,0.663,0.678,0.836,0.576,0.628,0.924,0.77,0.756,0.81,0.783,0.779,0.779,0.721,0.685,0.467,0.854,0.601,0.776,0.842,0.778,0.744,0.795,0.837,0.839,0.802,0.872,0.831,0.755,0.716,0.807,0.691,0.749,0.889,0.626,0.397,0.695,0.935,0.504,0.834,0.831,0.846,0.816,0.564,0.807,0.74,0.769,0.77,0.751,0.722,0.969,0.717,0.676,0.783,0.877,0.688,0.729,0.782,0.804,0.946,0.84,0.877,0.829,0.884,0.81,0.609,0.812,0.948,0.469,0.496,0.79,0.795,0.806,0.583,0.47,0.867,0.939,0.629,0.818,0.801,0.879,0.861,0.578,0.789,0.873,0.644,0.565,0.734,0.669,0.955,0.477,0.442,0.852,0.864,0.844,0.849,0.532,0.931,0.857,0.777,0.474,0.972,0.766,0.835,0.811,0.714,0.862,0.578,0.866,0.86,0.852,0.857,0.907,0.77,0.823,0.86,0.75,0.623,0.929,0.614,0.772,0.628,0.779,0.829,0.632,0.692,0.829,0.798,0.811,0.824,0.575,0.807,0.84,0.839,0.728,0.789,0.957,0.582,0.772,0.731,0.888,0.446,0.755,0.899,0.908,0.84,0.848,0.9,0.889,0.869,0.906,0.821,0.814,0.865,0.661,0.807,0.903,0.843,0.616,0.901,0.922,0.808,0.841,0.796,0.812,0.83,0.823,0.856,0.682,0.824,0.887,0.822,0.862,0.869,0.847,0.884,0.831,0.84,0.887,0.751,0.847,0.884,0.819,0.945,0.823,0.719,0.843,0.937,0.593,0.786,0.58,1.0,0.81,0.806,0.875,0.913,0.823,0.761,0.813,0.905,0.826,0.819,0.763,0.573,0.899,0.662,0.695,0.62,0.878,0.839,0.836,0.958,0.869,0.843,0.723,0.841,0.805,0.963,0.84,0.651,0.592,0.923,0.835,0.419,0.844,0.915,0.813,0.738,0.822,0.824,0.798,0.702,0.797,0.774,0.859,0.84,0.692,0.813,0.926,0.696,0.599,0.533,0.923,0.588,0.71,0.768,0.852,0.94,0.798,0.85,0.734,0.926,0.822,0.864,0.673,0.844,0.738,0.856,0.581,0.839,0.88,0.833,0.778,0.763,0.876,0.814,0.881,0.756,0.663,0.598,0.397,0.662,0.518,0.683,0.578,0.283,0.249,0.152,0.27,0.234,0.622,0.715,0.684,0.868,0.797,0.541,0.473,0.429,0.84,0.767,0.525,0.453,0.676,0.548,0.752,0.749,0.916,0.853,0.768,0.765,0.756,0.716,0.727,0.846,0.824,0.701,0.705,0.727,0.705,0.738,0.781,0.717,0.707,0.696,0.312,0.648,0.708,0.701,0.741,0.629,0.576,0.633,0.609,0.55,0.47,0.543,0.822,0.774,0.744,0.814,0.594,0.854,0.91,0.788,0.837,0.773,0.767,0.81,0.792,0.726,0.68,0.811,0.507,0.6,0.658,0.736,0.8,0.584,0.603,0.707,0.772,0.756,0.685,0.622,0.794,0.724,0.701,0.704,0.828,0.705,0.646,0.726,0.773,0.755,0.589,0.734,0.783,0.799,0.77,0.748,0.8,0.758,0.819,0.724,0.645,0.694,0.774,0.554,0.616,0.702,0.768,0.64,0.686,0.772,0.721,0.664,0.687,0.667,0.721,0.715,0.722,0.754,0.684,0.804,0.716,0.755,0.699,0.73,0.664,0.704,0.717,0.687,0.764,0.701,0.638,0.644,0.602,0.653,0.673,0.738,0.683,0.555,0.428,0.567,0.777,0.624,0.519,0.694,0.662,0.702,0.697,0.63,0.673,0.687,0.676,0.667,0.603,0.803,0.721,0.714,0.752,0.74,0.699,0.734,0.727,0.709,0.678,0.695,0.671,0.633,0.787,0.69,0.702,0.628,0.722,0.261,0.451,0.473,0.802,0.393,0.199,0.644,0.677,0.627,0.5,0.629,0.65,0.713,0.607,0.667,0.739,0.804,0.111,0.726,0.632,0.72,0.638,0.705,0.726,0.681,0.669,0.688,0.594,0.607,0.569,0.565,0.43,0.401,0.332,0.241,0.143,0.049,0.049,0.055,0.049,0.027,0.015,0.01,0.011],"url":"audio/05-get-it-right.mp3","filename":"Big Angie - 05 Get It Right.mp3"},{"id":"06-hype-god-up","title":"Hype God Up","feat":"","bpm":"103","keyName":"D# MIN","camelot":"2A","duration":131.88,"peaks":[0.784,0.358,0.765,0.557,0.312,0.715,0.763,0.284,0.273,0.849,0.735,0.322,0.469,0.383,0.606,0.497,0.298,0.212,0.489,0.604,0.511,0.278,0.205,0.517,1.0,0.415,0.547,0.551,0.526,0.643,0.27,0.275,0.531,0.498,0.456,0.282,0.438,0.374,0.451,0.525,0.422,0.223,0.64,0.519,0.531,0.331,0.38,0.574,0.562,0.37,0.486,0.513,0.251,0.633,0.323,0.462,0.597,0.584,0.58,0.628,0.609,0.586,0.584,0.53,0.516,0.627,0.578,0.657,0.588,0.44,0.599,0.579,0.52,0.611,0.586,0.41,0.624,0.55,0.532,0.603,0.472,0.641,0.632,0.485,0.598,0.635,0.632,0.608,0.637,0.496,0.571,0.559,0.552,0.63,0.499,0.625,0.57,0.58,0.636,0.59,0.573,0.587,0.654,0.336,0.58,0.606,0.656,0.679,0.491,0.705,0.435,0.488,0.358,0.639,0.4,0.616,0.656,0.403,0.593,0.571,0.371,0.592,0.645,0.66,0.599,0.518,0.467,0.582,0.36,0.589,0.65,0.458,0.594,0.65,0.494,0.63,0.698,0.67,0.649,0.556,0.482,0.654,0.606,0.667,0.651,0.476,0.653,0.622,0.451,0.353,0.666,0.672,0.676,0.631,0.499,0.649,0.4,0.641,0.638,0.389,0.656,0.646,0.348,0.657,0.659,0.73,0.568,0.408,0.392,0.663,0.462,0.541,0.674,0.462,0.665,0.619,0.517,0.477,0.678,0.661,0.63,0.533,0.436,0.679,0.414,0.463,0.656,0.578,0.634,0.615,0.525,0.479,0.711,0.437,0.671,0.564,0.48,0.665,0.405,0.435,0.682,0.632,0.641,0.632,0.376,0.345,0.787,0.436,0.722,0.617,0.477,0.659,0.487,0.507,0.651,0.666,0.65,0.616,0.459,0.606,0.666,0.5,0.699,0.333,0.353,0.647,0.365,0.577,0.634,0.648,0.614,0.678,0.512,0.33,0.743,0.615,0.698,0.658,0.414,0.65,0.458,0.385,0.623,0.641,0.35,0.646,0.634,0.367,0.541,0.367,0.56,0.277,0.418,0.336,0.35,0.377,0.395,0.538,0.373,0.567,0.647,0.636,0.524,0.648,0.647,0.425,0.615,0.638,0.436,0.676,0.452,0.606,0.574,0.477,0.617,0.567,0.547,0.622,0.628,0.421,0.625,0.59,0.64,0.661,0.515,0.613,0.666,0.585,0.478,0.62,0.635,0.589,0.587,0.424,0.642,0.583,0.491,0.659,0.57,0.627,0.593,0.49,0.382,0.599,0.613,0.576,0.69,0.382,0.62,0.637,0.41,0.647,0.556,0.697,0.416,0.853,0.363,0.62,0.463,0.575,0.685,0.322,0.626,0.573,0.349,0.682,0.623,0.595,0.616,0.512,0.45,0.608,0.366,0.624,0.643,0.504,0.625,0.626,0.354,0.353,0.648,0.674,0.666,0.47,0.545,0.62,0.343,0.659,0.636,0.472,0.643,0.573,0.389,0.336,0.667,0.66,0.581,0.5,0.479,0.608,0.479,0.509,0.629,0.604,0.514,0.644,0.644,0.397,0.636,0.632,0.673,0.711,0.623,0.682,0.54,0.569,0.666,0.572,0.62,0.597,0.454,0.541,0.662,0.452,0.724,0.561,0.461,0.615,0.537,0.482,0.612,0.614,0.633,0.604,0.452,0.636,0.707,0.455,0.676,0.614,0.576,0.639,0.519,0.416,0.639,0.714,0.744,0.653,0.476,0.554,0.722,0.469,0.701,0.618,0.618,0.641,0.547,0.643,0.441,0.645,0.66,0.598,0.674,0.637,0.624,0.628,0.415,0.395,0.61,0.718,0.664,0.553,0.676,0.631,0.526,0.69,0.501,0.531,0.679,0.58,0.74,0.698,0.341,0.68,0.497,0.538,0.736,0.665,0.334,0.699,0.483,0.529,0.766,0.428,0.737,0.74,0.412,0.644,0.607,0.664,0.664,0.77,0.405,0.662,0.674,0.494,0.747,0.544,0.744,0.671,0.55,0.688,0.657,0.516,0.627,0.645,0.414,0.679,0.697,0.33,0.344,0.622,0.5,0.324,0.475,0.659,0.633,0.416,0.704,0.656,0.343,0.692,0.679,0.604,0.663,0.542,0.715,0.682,0.623,0.405,0.659,0.419,0.7,0.752,0.4,0.676,0.629,0.348,0.698,0.707,0.723,0.612,0.502,0.483,0.669,0.483,0.651,0.636,0.626,0.642,0.624,0.401,0.672,0.642,0.708,0.666,0.583,0.68,0.745,0.641,0.661,0.693,0.43,0.688,0.672,0.732,0.703,0.748,0.755,0.754,0.699,0.678,0.655,0.47,0.755,0.784,0.441,0.677,0.68,0.682,0.603,0.691,0.698,0.732,0.552,0.454,0.657,0.605,0.691,0.668,0.568,0.647,0.695,0.391,0.542,0.689,0.701,0.665,0.561,0.491,0.7,0.467,0.718,0.715,0.552,0.707,0.676,0.382,0.477,0.693,0.681,0.625,0.681,0.57,0.721,0.672,0.683,0.659,0.663,0.668,0.713,0.71,0.568,0.49,0.414,0.344,0.313,0.282,0.169,0.115],"url":"audio/06-hype-god-up.mp3","filename":"Big Angie - 06 Hype God Up.mp3"},{"id":"07-letter-to-god","title":"Letter To God","feat":"","bpm":"99","keyName":"F MIN","camelot":"4A","duration":222.24,"peaks":[0.275,0.185,0.134,0.325,0.363,0.685,0.686,0.427,0.137,0.212,0.227,0.338,0.291,0.305,0.291,0.322,0.423,0.61,0.377,0.145,0.81,0.308,0.135,0.339,0.212,0.685,0.275,0.274,0.222,0.404,0.798,0.597,0.701,1.0,0.746,0.643,0.506,0.631,0.598,0.46,0.647,0.341,0.08,0.615,0.654,0.349,0.549,0.671,0.525,0.386,0.237,0.127,0.202,0.861,0.727,0.611,0.254,0.34,0.271,0.329,0.353,0.315,0.401,0.846,0.625,0.456,0.688,0.355,0.325,0.649,0.862,0.62,0.798,0.881,0.804,0.816,0.823,0.568,0.788,0.311,0.669,0.791,0.785,0.504,0.342,0.877,0.342,0.709,0.864,0.381,0.137,0.898,0.785,0.581,0.386,0.856,0.412,0.683,0.865,0.812,0.844,0.809,0.899,0.477,0.688,0.877,0.5,0.526,0.885,0.397,0.81,0.712,0.563,0.656,0.355,0.314,0.275,0.327,0.304,0.625,0.657,0.692,0.732,0.635,0.557,0.653,0.791,0.843,0.826,0.815,0.717,0.779,0.823,0.581,0.654,0.923,0.561,0.753,0.861,0.489,0.766,0.81,0.784,0.494,0.455,0.445,0.612,0.524,0.692,0.36,0.314,0.695,0.631,0.828,0.866,0.778,0.796,0.728,0.833,0.547,0.664,0.482,0.385,0.709,0.412,0.393,0.799,0.734,0.808,0.782,0.74,0.777,0.7,0.751,0.74,0.805,0.889,0.832,0.82,0.751,0.775,0.757,0.789,0.595,0.798,0.799,0.526,0.588,0.76,0.568,0.774,0.659,0.555,0.783,0.73,0.763,0.472,0.409,0.761,0.381,0.478,0.86,0.775,0.679,0.793,0.664,0.79,0.753,0.854,0.796,0.687,0.777,0.524,0.853,0.84,0.682,0.582,0.587,0.835,0.757,0.742,0.753,0.818,0.528,0.777,0.71,0.853,0.709,0.926,0.524,0.595,0.815,0.58,0.721,0.611,0.753,0.611,0.6,0.525,0.578,0.504,0.416,0.677,0.592,0.618,0.724,0.783,0.723,0.9,0.659,0.674,0.773,0.815,0.825,0.819,0.754,0.65,0.599,0.755,0.681,0.575,0.847,0.772,0.607,0.764,0.451,0.815,0.695,0.821,0.746,0.438,0.829,0.653,0.469,0.787,0.715,0.619,0.839,0.759,0.727,0.717,0.835,0.704,0.82,0.816,0.53,0.51,0.842,0.788,0.79,0.666,0.319,0.72,0.737,0.758,0.729,0.677,0.697,0.689,0.717,0.568,0.734,0.731,0.692,0.741,0.675,0.748,0.722,0.733,0.736,0.77,0.739,0.681,0.658,0.845,0.621,0.68,0.762,0.514,0.691,0.671,0.712,0.753,0.733,0.649,0.655,0.553,0.672,0.503,0.406,0.555,0.627,0.749,0.784,0.807,0.781,0.668,0.775,0.72,0.604,0.453,0.522,0.771,0.524,0.473,0.512,0.674,0.7,0.689,0.746,0.694,0.77,0.686,0.681,0.69,0.747,0.712,0.746,0.716,0.637,0.43,0.238,0.828,0.668,0.565,0.773,0.572,0.589,0.683,0.712,0.681,0.67,0.675,0.369,0.26,0.598,0.808,0.593,0.817,0.348,0.709,0.591,0.784,0.811,0.75,0.708,0.73,0.671,0.664,0.653,0.686,0.652,0.768,0.687,0.643,0.673,0.802,0.796,0.692,0.736,0.697,0.687,0.758,0.657,0.754,0.763,0.673,0.659,0.74,0.738,0.737,0.666,0.539,0.324,0.202,0.51,0.548,0.669,0.57,0.711,0.534,0.91,0.672,0.865,0.442,0.802,0.803,0.767,0.792,0.776,0.717,0.72,0.73,0.652,0.73,0.658,0.663,0.8,0.575,0.772,0.732,0.731,0.674,0.614,0.694,0.497,0.669,0.743,0.651,0.721,0.726,0.718,0.787,0.731,0.788,0.776,0.744,0.802,0.655,0.806,0.799,0.622,0.697,0.649,0.533,0.722,0.767,0.788,0.795,0.764,0.755,0.72,0.826,0.625,0.703,0.787,0.772,0.792,0.725,0.826,0.861,0.759,0.725,0.778,0.761,0.609,0.675,0.789,0.634,0.794,0.871,0.564,0.703,0.758,0.786,0.72,0.47,0.686,0.54,0.673,0.656,0.533,0.682,0.723,0.693,0.852,0.847,0.834,0.803,0.709,0.74,0.682,0.67,0.414,0.496,0.726,0.498,0.408,0.685,0.735,0.718,0.719,0.728,0.72,0.704,0.72,0.781,0.738,0.74,0.816,0.404,0.474,0.76,0.75,0.687,0.661,0.707,0.758,0.554,0.342,0.861,0.64,0.494,0.922,0.461,0.723,0.695,0.749,0.694,0.53,0.791,0.753,0.811,0.821,0.742,0.731,0.731,0.79,0.759,0.735,0.826,0.75,0.734,0.776,0.462,0.172,0.11,0.816,0.095,0.08,0.082,0.074,0.299,0.529,0.561,0.616,0.501,0.829,0.816,0.806,0.79,0.695,0.399,0.365,0.207,0.264,0.104,0.127,0.629,0.622,0.787,0.679,0.78,0.533,0.329,0.202,0.122,0.073,0.034,0.023],"url":"audio/07-letter-to-god.mp3","filename":"Big Angie - 07 Letter To God.mp3"},{"id":"08-we-skate-we-slide","title":"We Skate We Slide","feat":"Mr.RunItBack","bpm":"99","keyName":"D MIN","camelot":"7A","duration":168.04,"peaks":[0.592,0.643,0.652,0.456,0.408,0.646,0.68,0.557,0.692,0.605,0.683,0.803,0.386,0.578,0.588,0.683,0.764,0.756,0.791,0.529,0.569,0.684,0.56,0.596,0.657,0.685,0.621,0.584,0.779,0.546,0.587,0.674,0.704,0.712,0.765,0.467,0.591,0.617,0.643,0.603,0.614,0.681,0.686,0.65,0.652,0.699,0.569,0.712,0.606,0.665,0.641,0.804,0.631,0.669,0.556,0.444,0.686,0.734,0.454,0.667,0.66,0.649,0.694,0.495,0.699,0.726,0.745,0.653,0.357,0.723,0.609,0.518,0.525,0.706,0.678,0.615,0.624,0.658,0.664,0.664,0.617,0.675,0.637,0.565,0.76,0.645,0.744,0.574,0.653,0.64,0.652,0.72,0.588,0.639,0.64,0.703,0.693,0.638,0.652,0.694,0.664,0.631,0.33,0.799,0.558,0.656,0.501,0.758,0.749,0.617,0.734,0.71,0.685,0.594,0.832,0.702,0.779,0.791,0.448,0.613,0.799,0.576,0.694,0.603,0.716,0.777,0.551,0.665,0.686,0.771,0.533,0.81,0.647,0.774,0.791,0.466,0.724,0.782,0.669,0.744,0.67,0.799,0.787,0.769,0.672,0.765,0.729,0.656,0.894,0.628,0.765,0.844,0.713,0.595,0.922,0.506,0.687,0.751,0.834,0.616,0.647,0.436,0.791,0.773,0.551,0.706,0.594,0.799,0.838,0.646,0.677,0.811,0.755,0.743,0.719,0.641,0.838,0.786,0.791,0.808,0.765,0.791,0.842,0.642,0.756,0.795,0.729,0.593,1.0,0.661,0.639,0.742,0.576,0.849,0.397,0.574,0.787,0.741,0.782,0.807,0.504,0.763,0.699,0.644,0.716,0.518,0.784,0.693,0.586,0.502,0.792,0.461,0.541,0.735,0.746,0.715,0.769,0.701,0.717,0.744,0.714,0.73,0.685,0.876,0.66,0.736,0.667,0.761,0.797,0.644,0.723,0.723,0.668,0.749,0.658,0.71,0.744,0.721,0.769,0.359,0.843,0.553,0.704,0.487,0.721,0.687,0.733,0.761,0.765,0.815,0.661,0.799,0.691,0.691,0.715,0.687,0.573,0.828,0.654,0.706,0.559,0.75,0.731,0.638,0.638,0.69,0.735,0.53,0.772,0.726,0.824,0.73,0.678,0.659,0.922,0.67,0.639,0.684,0.748,0.655,0.699,0.679,0.715,0.689,0.731,0.711,0.633,0.785,0.783,0.657,0.69,0.727,0.587,0.75,0.621,0.703,0.82,0.509,0.758,0.728,0.779,0.697,0.738,0.621,0.692,0.736,0.65,0.707,0.761,0.75,0.685,0.771,0.736,0.719,0.766,0.725,0.725,0.778,0.765,0.616,0.611,0.612,0.467,0.531,0.469,0.426,0.587,0.591,0.547,0.653,0.588,0.481,0.507,0.394,0.574,0.586,0.738,0.726,0.736,0.464,0.506,0.489,0.461,0.448,0.561,0.678,0.526,0.747,0.6,0.699,0.668,0.67,0.8,0.772,0.645,0.523,0.779,0.707,0.695,0.84,0.837,0.76,0.746,0.575,0.766,0.43,0.7,0.724,0.754,0.694,0.635,0.772,0.608,0.718,0.677,0.641,0.806,0.864,0.584,0.64,0.485,0.787,0.607,0.62,0.765,0.701,0.768,0.627,0.8,0.68,0.804,0.705,0.737,0.521,0.746,0.704,0.759,0.483,0.751,0.716,0.593,0.553,0.684,0.725,0.735,0.777,0.722,0.788,0.727,0.78,0.749,0.923,0.574,0.72,0.578,0.685,0.74,0.706,0.706,0.72,0.723,0.642,0.725,0.629,0.771,0.739,0.624,0.588,0.753,0.721,0.727,0.717,0.695,0.718,0.675,0.619,0.719,0.758,0.668,0.685,0.691,0.749,0.689,0.53,0.613,0.69,0.706,0.673,0.76,0.723,0.707,0.719,0.722,0.654,0.752,0.7,0.715,0.485,0.667,0.591,0.487,0.448,0.656,0.628,0.641,0.703,0.722,0.839,0.704,0.796,0.721,0.729,0.558,0.744,0.621,0.551,0.609,0.62,0.666,0.586,0.476,0.432,0.79,0.545,0.721,0.734,0.538,0.784,0.731,0.644,0.671,0.698,0.702,0.774,0.732,0.688,0.451,0.896,0.812,0.738,0.45,0.799,0.798,0.583,0.777,0.752,0.648,0.73,0.683,0.73,0.723,0.725,0.677,0.607,0.85,0.802,0.793,0.499,0.728,0.785,0.714,0.687,0.706,0.764,0.721,0.764,0.715,0.659,0.78,0.763,0.702,0.851,0.765,0.816,0.593,0.812,0.879,0.814,0.71,0.815,0.783,0.788,0.76,0.724,0.755,0.767,0.759,0.808,0.87,0.732,0.749,0.765,0.566,0.849,0.439,0.81,0.791,0.729,0.765,0.772,0.638,0.805,0.768,0.639,0.628,0.904,0.901,0.67,0.823,0.786,0.85,0.767,0.571,0.798,0.806,0.755,0.777,0.57,0.738,0.759,0.729,0.587,0.672,0.957,0.675,0.815,0.758,0.795,0.794,0.827,0.817,0.829,0.756,0.75,0.624,0.133,0.051,0.035,0.022,0.013],"url":"audio/08-we-skate-we-slide.mp3","filename":"Big Angie - 08 We Skate We Slide (ft. Mr.RunItBack).mp3"},{"id":"09-god-is-the-plug","title":"God Is The Plug","feat":"","bpm":"123","keyName":"D# MAJ","camelot":"5B","duration":132.96,"peaks":[0.841,0.547,0.671,0.728,0.726,0.603,0.691,0.685,0.718,0.735,0.507,0.719,0.503,1.0,0.243,0.148,0.758,0.484,0.25,0.591,0.389,0.992,0.624,0.447,0.419,0.689,0.649,0.687,0.746,0.462,0.806,0.512,0.782,0.552,0.38,0.767,0.526,0.4,0.709,0.781,0.323,0.293,0.303,0.091,0.022,0.354,0.612,0.418,0.888,0.436,0.355,0.255,0.744,0.666,0.676,0.651,0.752,0.344,0.308,0.37,0.175,0.376,0.834,0.423,0.638,0.434,0.334,0.729,0.599,0.714,0.75,0.529,0.611,0.746,0.784,0.621,0.703,0.516,0.616,0.46,0.794,0.568,0.877,0.625,0.688,0.42,0.74,0.669,0.632,0.642,0.656,0.806,0.251,0.724,0.559,0.37,0.467,0.519,0.289,0.236,0.725,0.678,0.654,0.438,0.748,0.595,0.682,0.697,0.725,0.682,0.631,0.716,0.645,0.747,0.698,0.785,0.532,0.819,0.401,0.28,0.608,0.589,0.729,0.67,0.578,0.728,0.864,0.374,0.708,0.702,0.506,0.315,0.509,0.583,0.355,0.354,0.363,0.682,0.433,0.723,0.551,0.654,0.736,0.816,0.612,0.724,0.637,0.49,0.674,0.376,0.644,0.348,0.733,0.543,0.781,0.462,0.685,0.681,0.776,0.729,0.673,0.75,0.367,0.718,0.708,0.637,0.734,0.754,0.636,0.738,0.703,0.676,0.616,0.72,0.704,0.638,0.557,0.716,0.727,0.602,0.689,0.574,0.773,0.717,0.285,0.403,0.274,0.825,0.244,0.661,0.63,0.654,0.621,0.695,0.488,0.699,0.521,0.439,0.689,0.346,0.657,0.362,0.798,0.417,0.763,0.639,0.751,0.529,0.744,0.765,0.455,0.661,0.697,0.705,0.369,0.755,0.643,0.574,0.341,0.692,0.357,0.761,0.785,0.289,0.844,0.431,0.717,0.572,0.572,0.702,0.772,0.451,0.718,0.758,0.71,0.625,0.634,0.6,0.575,0.619,0.535,0.616,0.6,0.725,0.701,0.648,0.709,0.844,0.737,0.607,0.7,0.593,0.566,0.652,0.75,0.395,0.874,0.615,0.709,0.674,0.759,0.762,0.697,0.64,0.771,0.802,0.509,0.762,0.776,0.451,0.671,0.801,0.697,0.781,0.832,0.582,0.752,0.476,0.769,0.644,0.76,0.724,0.797,0.708,0.747,0.649,0.695,0.507,0.459,0.575,0.743,0.851,0.353,0.505,0.502,0.757,0.597,0.591,0.743,0.75,0.613,0.484,0.723,0.74,0.712,0.59,0.751,0.539,0.802,0.752,0.637,0.634,0.789,0.747,0.538,0.766,0.742,0.834,0.629,0.778,0.727,0.519,0.663,0.643,0.506,0.825,0.595,0.249,0.583,0.638,0.773,0.547,0.603,0.73,0.874,0.523,0.696,0.803,0.645,0.516,0.742,0.771,0.679,0.776,0.682,0.62,0.681,0.761,0.728,0.672,0.702,0.718,0.509,0.715,0.779,0.525,0.478,0.475,0.602,0.377,0.446,0.312,0.541,0.736,0.74,0.723,0.64,0.709,0.772,0.399,0.353,0.414,0.38,0.289,0.322,0.61,0.484,0.727,0.74,0.659,0.576,0.704,0.717,0.671,0.63,0.615,0.601,0.599,0.564,0.433,0.694,0.611,0.597,0.564,0.664,0.461,0.419,0.498,0.371,0.546,0.419,0.395,0.391,0.813,0.474,0.417,0.462,0.495,0.419,0.413,0.59,0.51,0.685,0.475,0.463,0.593,0.698,0.628,0.574,0.664,0.644,0.535,0.246,0.528,0.426,0.598,0.418,0.569,0.289,0.691,0.667,0.655,0.648,0.665,0.601,0.596,0.655,0.723,0.664,0.345,0.676,0.6,0.324,0.554,0.382,0.365,0.805,0.548,0.579,0.637,0.685,0.78,0.529,0.52,0.718,0.774,0.654,0.637,0.573,0.491,0.594,0.581,0.617,0.754,0.382,0.61,0.51,0.488,0.667,0.518,0.508,0.371,0.707,0.558,0.475,0.519,0.649,0.648,0.675,0.672,0.435,0.754,0.688,0.709,0.654,0.701,0.638,0.634,0.69,0.683,0.568,0.644,0.501,0.533,0.427,0.521,0.511,0.434,0.706,0.426,0.46,0.56,0.673,0.502,0.605,0.663,0.701,0.504,0.565,0.642,0.7,0.464,0.504,0.412,0.399,0.381,0.368,0.686,0.619,0.657,0.647,0.665,0.698,0.678,0.733,0.554,0.733,0.544,0.583,0.374,0.549,0.599,0.864,0.482,0.694,0.758,0.626,0.657,0.712,0.714,0.656,0.765,0.487,0.666,0.677,0.537,0.752,0.665,0.717,0.718,0.73,0.651,0.632,0.691,0.679,0.699,0.527,0.635,0.737,0.579,0.614,0.63,0.498,0.607,0.569,0.682,0.622,0.861,0.34,0.043,0.57,0.61,0.518,0.607,0.599,0.757,0.429,0.704,0.621,0.648,0.53,0.446,0.679,0.525,0.647,0.682,0.626,0.66,0.642,0.012,0.003,0.002,0.001,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"url":"audio/09-god-is-the-plug.mp3","filename":"Big Angie - 09 God Is The Plug.mp3"},{"id":"10-not-of-god","title":"Not Of God","feat":"","bpm":"112","keyName":"D MIN","camelot":"7A","duration":161.64,"peaks":[0.264,0.309,0.16,0.28,0.629,0.615,0.204,0.229,0.657,0.755,0.474,0.648,0.234,0.206,0.578,0.585,0.668,0.789,0.658,0.485,0.852,0.538,0.222,0.489,0.72,0.321,0.307,0.319,0.348,0.058,0.294,0.342,0.815,0.652,0.73,0.605,0.822,0.463,0.749,0.602,0.709,0.634,0.824,0.547,0.627,0.649,0.614,0.643,0.732,0.58,0.675,0.72,0.752,0.529,0.756,0.462,0.903,0.146,1.0,0.312,0.643,0.736,0.865,0.875,0.658,0.38,0.721,0.753,0.734,0.666,0.718,0.82,0.528,0.639,0.499,0.489,0.489,0.627,0.183,0.896,0.472,0.731,0.632,0.73,0.558,0.652,0.281,0.893,0.348,0.411,0.755,0.815,0.323,0.622,0.556,0.824,0.382,0.791,0.675,0.773,0.513,0.687,0.287,0.792,0.552,0.481,0.427,0.447,0.411,0.087,0.666,0.689,0.471,0.537,0.678,0.715,0.494,0.608,0.635,0.573,0.613,0.65,0.688,0.498,0.679,0.474,0.674,0.592,0.633,0.552,0.709,0.547,0.613,0.598,0.641,0.564,0.617,0.523,0.604,0.638,0.68,0.568,0.663,0.605,0.691,0.649,0.672,0.519,0.379,0.53,0.415,0.51,0.458,0.389,0.737,0.674,0.618,0.354,0.681,0.593,0.606,0.61,0.627,0.509,0.628,0.669,0.633,0.515,0.418,0.591,0.506,0.518,0.392,0.651,0.525,0.517,0.486,0.634,0.583,0.695,0.656,0.638,0.506,0.674,0.714,0.701,0.636,0.587,0.628,0.698,0.421,0.46,0.534,0.659,0.533,0.628,0.686,0.659,0.481,0.66,0.466,0.627,0.629,0.62,0.675,0.679,0.531,0.567,0.572,0.716,0.605,0.559,0.627,0.669,0.656,0.622,0.442,0.718,0.428,0.443,0.83,0.435,0.584,0.483,0.723,0.594,0.606,0.539,0.719,0.396,0.685,0.622,0.564,0.431,0.732,0.401,0.784,0.64,0.65,0.476,0.774,0.615,0.544,0.515,0.812,0.471,0.711,0.616,0.55,0.56,0.735,0.355,0.766,0.448,0.805,0.422,0.71,0.583,0.624,0.652,0.613,0.71,0.64,0.638,0.508,0.567,0.613,0.617,0.591,0.629,0.591,0.755,0.666,0.708,0.5,0.763,0.421,0.872,0.66,0.802,0.518,0.715,0.545,0.843,0.501,0.722,0.699,0.734,0.615,0.637,0.749,0.739,0.468,0.665,0.612,0.499,0.6,0.575,0.15,0.792,0.683,0.602,0.581,0.759,0.561,0.721,0.764,0.705,0.57,0.544,0.797,0.745,0.704,0.715,0.725,0.511,0.486,0.358,0.794,0.722,0.656,0.412,0.741,0.627,0.594,0.507,0.736,0.635,0.724,0.6,0.744,0.701,0.725,0.734,0.738,0.639,0.723,0.73,0.783,0.696,0.753,0.628,0.697,0.71,0.672,0.507,0.865,0.739,0.816,0.595,0.774,0.667,0.637,0.761,0.665,0.707,0.752,0.598,0.666,0.719,0.728,0.783,0.759,0.766,0.75,0.744,0.697,0.686,0.723,0.807,0.756,0.793,0.494,0.819,0.754,0.748,0.715,0.775,0.776,0.707,0.735,0.736,0.642,0.666,0.759,0.734,0.641,0.594,0.408,0.585,0.45,0.437,0.388,0.73,0.718,0.781,0.726,0.791,0.612,0.707,0.718,0.755,0.677,0.495,0.798,0.774,0.752,0.736,0.742,0.625,0.607,0.395,0.76,0.798,0.528,0.413,0.814,0.648,0.678,0.426,0.775,0.669,0.741,0.586,0.748,0.752,0.766,0.727,0.742,0.67,0.75,0.763,0.727,0.702,0.755,0.653,0.612,0.558,0.827,0.594,0.821,0.589,0.873,0.579,0.742,0.678,0.697,0.701,0.726,0.622,0.721,0.685,0.73,0.625,0.726,0.824,0.78,0.734,0.718,0.736,0.737,0.814,0.445,0.835,0.305,0.704,0.529,0.599,0.421,0.792,0.563,0.879,0.659,0.761,0.403,0.712,0.653,0.668,0.55,0.874,0.244,0.739,0.29,0.774,0.499,0.729,0.582,0.912,0.507,0.707,0.477,0.714,0.602,0.629,0.501,0.789,0.446,0.805,0.406,0.575,0.794,0.755,0.553,0.885,0.476,0.656,0.642,0.777,0.56,0.511,0.828,0.616,0.626,0.674,0.554,0.622,0.568,0.618,0.59,0.51,0.675,0.607,0.765,0.795,0.747,0.709,0.721,0.543,0.723,0.601,0.646,0.584,0.739,0.393,0.815,0.446,0.759,0.521,0.733,0.639,0.694,0.701,0.748,0.442,0.717,0.547,0.754,0.764,0.702,0.675,0.721,0.27,0.647,0.698,0.712,0.683,0.787,0.754,0.712,0.668,0.684,0.684,0.654,0.716,0.408,0.774,0.821,0.6,0.644,0.841,0.705,0.743,0.763,0.665,0.353,0.901,0.245,0.717,0.727,0.683,0.732,0.728,0.445,0.536,0.401,0.708,0.5,0.47,0.446,0.518,0.471,0.486,0.451,0.424,0.468,0.464,0.223,0.06,0.019,0.011],"url":"audio/10-not-of-god.mp3","filename":"Big Angie - 10 Not Of God.mp3"}],"donate":{"provider":"cashapp","cashtag":"$BigAngie59","sectionLabel":"Own it · tip to unlock the files","sectionTitle":"Listening is free. Owning it costs whatever you say.","sectionCopy":"Stream every song right here as many times as you like, no catch. Want the files? Tip a song, any amount, straight to Big Angie’s Cash App ($BigAngie59), and the full-quality MP3 unlocks on this page. Tip the whole album and all ten songs plus both covers are yours. Every dollar lands in her hands: no label, no middleman, no cut.","title":"Name your price.","blurb":"Pick an amount and Cash App opens with $BigAngie59 ready to pay. Send it, come back, tap “I sent it,” and the download unlocks on this device.","presets":[{"amount":2,"label":"Coffee money"},{"amount":5,"label":"Fair"},{"amount":10,"label":"Generous"},{"amount":25,"label":"Executive producer energy"}],"customLabel":"Name your number","fine":"Paid straight to Big Angie on Cash App · $BigAngie59 · no account on this page","refPrefix":"gods-grace","sentButton":"I SENT IT · UNLOCK","againButton":"OPEN CASH APP AGAIN","sentCopy":"Cash App just opened{amt}. Put “{song}” in the note so she knows what you bought. Sent it? Tap below and the download unlocks here.","thanks":"Your tip on {song} went straight to Big Angie. She owes you one.","albumButton":"GET THE WHOLE ALBUM","songButton":"GET THIS SONG","albumRow":"Everything · 10 songs + both covers","unlockLabel":"TIP TO UNLOCK","coversLabel":"FREE WITH ANY TIP","blurbAlbum":"One tip, all ten songs and both covers. Pay what the whole story is worth to you, straight to her Cash App, then come back and unlock everything.","thanksUnlock":"Thank you. Your tip on {song} went straight to Big Angie, and the files are yours. Download below; they stay unlocked on this device."},"dj":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSenCPkrc6x6B0yUktfaWXSX6hLOn8uBWPNQMyancg7CIMOvnQ/formResponse","fields":{"name":"entry.1219474688","phone":"entry.1724030610","email":"entry.1291497609","where":"entry.669065555"},"wherePrefix":"[Trap Queen: To God’s Grace] ","deliver":"instant","sectionLabel":"DJs · request the pack","sectionTitle":"Spinning this out? Say the word.","sectionCopy":"Working DJs get the full pack, all ten songs plus both covers, no tip required. Drop your name, number and email so we know who’s playing it, and the files unlock right here.","hint":"Spinning this out?","hintLink":"DJs get the pack free →","nameLabel":"DJ name","namePh":"DJ Whoever","phoneLabel":"Phone","phonePh":"(314) 555-0199","emailLabel":"Email","emailPh":"you@yourcrew.com","whereLabel":"Where do you spin? (optional)","wherePh":"City · club · radio · online","button":"SEND ME THE PACK","sending":"SENDING…","fine":"We text and email DJs about new records and nothing else. No spam, nobody gets your info.","doneTitle":"Pack unlocked.","doneCopy":"Welcome aboard, {name}. Everything is open above, and it stays unlocked on this device.","doneLink":"Go to the files →","toast":"Pack unlocked for {name}. Downloads are open.","errName":"Give us a name to put on the list.","errPhone":"That phone number is a little short.","errEmail":"That email doesn’t look right.","errSend":"Couldn’t send that. Check your signal and try again."},"share":{"url":"https://uandiai.github.io/Dj-Packs/trap-queen-to-gods-grace/","qr":"qr.png","qrFilename":"Big Angie - Trap Queen To God’s Grace (QR).png","text":"Trap Queen: To God’s Grace — the debut album from Big Angie, presented by Mr.RunItBack. Ten tracks, St. Louis to the throne room, free to listen. Press play:","sectionLabel":"Share it · spread the record","sectionTitle":"Good records travel. Help this one.","sectionCopy":"Pick the album or one song, then one tap opens your phone’s share sheet: text, Instagram, TikTok, Facebook, X, WhatsApp, email. Every link you send carries your code, so friends who press play count toward your free download. Or send the QR; a camera pointed at it lands right here.","button":"SHARE THIS","qrCaption":"Scan or tap · opens this page","igHint":"Link copied. Paste it in your story, bio or caption.","songText":"“{song}” by {artist}, from {album}. Free to listen, press play:"},"streams":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSeclXLXeRW5at7UT8lF4s-pPobrc_-WLzLo8HxGUxcdahzTug/formResponse","field":"entry.1899505910","sheetId":"1DSudnrjv7ZLBMdzdsqM3bu6otGNQj0-80ok06vWPWPI","sheet":"Form Responses 1","threshold":30},"referral":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSd6fUWMsay3LuJEngrM162IfNq5PL8bMKHdiiW2AHnnAbOpFQ/formResponse","field":"entry.543866783","sheetId":"1LxPi8W4ytdf4fTijsF0zl4GOwr8peCe81p5f9B723vY","sheet":"Form Responses 1","tier1":3,"tier2":10,"tease":"Send a song, earn a free download. Ten friends, the whole album.","title":"Share it forward, earn it back.","intro":"Share any song with your link. When 3 friends open it and press play, you pick a free download. At 10, the whole album is yours. Ten songs, ten friends.","progress":"{n} of {t1} friends have pressed play. {left} more and you pick a free song.","pickTitle":"Three friends listened. Pick your free song:","picked":"{song} is yours.","keepGoing":"Keep going: {left} more and the whole album, covers included, is yours.","doneAlbum":"Ten for ten. The whole album is unlocked for you. Covers too.","fine":"counts once per friend, after 30 s of play","arriveTitle":"Special delivery.","arrive":"A friend sent you {song}. Press play; once it runs 30 seconds it counts toward their free download.","credited":"That play just counted for the friend who sent you here."},"visits":null};
+function mountAlbum(root, pack) {
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt = t => { if (!isFinite(t) || t < 0) t = 0; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ':' + String(s).padStart(2, '0'); };
+  const tracks = pack.tracks;
+  let cur = tracks[0];
+  const total = tracks.reduce((a, t) => a + (t.duration || 0), 0);
+  const playIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+  const pauseIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4.5v16H6zM13.5 4H18v16h-4.5z"/></svg>';
+  const okUrl = u => /^https?:\/\//i.test(u || '');
+  const socs = (pack.socials || []).map(x => x && x.links ? { ...x, links: x.links.filter(l => okUrl(l.url)) } : x).filter(x => x && (x.links ? x.links.length : okUrl(x.url)));
+  const socLink = (name, handle, url) => `<a class="al-soc" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(name)}<span>${esc(handle || '')}</span></a>`;
+  const DN = pack.donate || null;
+  const DJ = pack.dj && pack.dj.action ? pack.dj : null;
+  const RF = pack.referral && pack.referral.action ? pack.referral : null;
+  const LSK = k => 'djpack.' + k + '.' + (pack.slug || 'repeat');
+  const lsGet = k => { try { return localStorage.getItem(LSK(k)); } catch (e) { return null; } };
+  const lsSet = (k, v) => { try { localStorage.setItem(LSK(k), v); } catch (e) {} };
+  let myRef = lsGet('ref') || '';
+  const mintRef = () => { if (!myRef) { myRef = Math.random().toString(36).slice(2, 8); lsSet('ref', myRef); } return myRef; };
+  let arriveTrack = null, arriveMsg = '';
+  try {
+    const q0 = new URLSearchParams(location.search);
+    const tq = q0.get('t'), rq = q0.get('ref');
+    if (tq || rq) {
+      if (tq) arriveTrack = tracks.find(x => x.id === tq) || null;
+      if (rq && /^[a-z0-9]{4,12}$/i.test(rq) && rq !== myRef && !lsGet('refby')) lsSet('refby', JSON.stringify({ ref: rq, at: Date.now() }));
+      if (arriveTrack && RF) arriveMsg = (RF.arrive || 'A friend sent you {song}. Press play; it counts for them.').replace('{song}', arriveTrack.title);
+      if (!q0.get('tip')) try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    }
+  } catch (e) {}
+  const SH = Object.assign({ url: location.href.split('?')[0], qr: 'qr.png' }, pack.share || {});
+  const coinIco = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.6 9.4c-.4-.9-1.4-1.5-2.6-1.5-1.6 0-2.6.8-2.6 1.8 0 2.6 5.3 1.1 5.3 3.9 0 1.2-1.1 2-2.7 2-1.4 0-2.5-.7-2.9-1.7M12 6.3v1.6M12 16.1v1.6"/></svg>';
+  const heartIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.3C1.2 8.3 3.3 5 6.8 5c2 0 3.5 1.1 5.2 3 1.7-1.9 3.2-3 5.2-3 3.5 0 5.6 3.3 4.3 6.7C19.5 16.4 12 21 12 21z"/></svg>';
+  // ---- unlock state: which files this device has paid for
+  const LS_UNLOCK = 'djpack.unlocked.' + (pack.slug || 'repeat');
+  const unlocked = new Set();
+  try { JSON.parse(localStorage.getItem(LS_UNLOCK) || '[]').forEach(x => unlocked.add(x)); } catch (e) {}
+  const saveUnlocked = () => { try { localStorage.setItem(LS_UNLOCK, JSON.stringify([...unlocked])); } catch (e) {} };
+  const isUnlocked = t => unlocked.has('album') || (t && unlocked.has(t.id));
+  const anyUnlocked = () => unlocked.size > 0;
+  const nn = t => String(tracks.indexOf(t) + 1).padStart(2, '0');
+  let thanksMsg = '', justUnlocked = null;
+  if (DN) try {
+    const q = new URLSearchParams(location.search);
+    if (q.get('tip') === 'thanks') {
+      const cs = q.get('cs') || '';
+      const paid = /^cs_(live|test)_[A-Za-z0-9]{8,}$/.test(cs);
+      let pending = null;
+      try { pending = JSON.parse(localStorage.getItem('djpack.tip') || 'null'); localStorage.removeItem('djpack.tip'); } catch (e) {}
+      const id = pending && pending.id ? pending.id : 'album';
+      const t = tracks.find(x => x.id === id);
+      const song = t ? nn(t) + ' ' + t.title : 'the whole album';
+      if (paid) { unlocked.add(id); saveUnlocked(); justUnlocked = id; }
+      thanksMsg = ((paid ? DN.thanksUnlock : DN.thanks) || 'Your tip just went into the push.').replace('{song}', song);
+      try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    }
+  } catch (e) {}
+
+  root.innerHTML = `
+  <div class="al-wrap"><div class="al">
+    <div class="al-hero">
+      <div class="pic"><img src="${pack.frontUrl}" alt="${esc(pack.title)} front cover: ${esc(pack.artist)}, a velvet booth, and the record on the turntable"></div>
+      <div class="al-meta">
+        <div class="row"><div class="al-eyebrow">${esc(pack.kicker || 'The Virtual Disc')} · ${esc(pack.label)}</div><div class="al-disc" aria-hidden="true"></div></div>
+        <h1 class="al-title">${esc(pack.title)}</h1>
+        <div class="al-artist"><b>${esc(pack.artist)}</b></div>
+        <div class="al-sub">${esc(pack.subtitle)}</div>
+        <div class="al-chips">
+          <span class="al-chip"><b>${tracks.length}</b> TRACKS</span>
+          <span class="al-chip"><b>${fmt(total)}</b> RUNTIME</span>
+          <span class="al-chip"><b>${esc(pack.genre)}</b></span>
+          <span class="al-chip">OUT <b>${esc(pack.releaseText)}</b></span>
+          <span class="al-chip streams" id="al-streams" hidden><b>0</b> STREAMS</span>
+          <span class="al-chip streams" id="al-visitors" hidden><b>0</b> VISITORS</span>
+        </div>
+        <div class="al-chips"><button type="button" class="al-chip share" data-share>SHARE ↗</button></div>
+      </div>
+    </div>
+    ${arriveMsg ? `<div class="al-arrive" role="status">${heartIco}<div><b>${esc(RF && RF.arriveTitle || 'Special delivery.')}</b> ${esc(arriveMsg)}</div></div>` : ''}
+    ${thanksMsg ? `<div class="al-thanks" role="status">${heartIco}<div><b>Thank you.</b> ${esc(thanksMsg)}</div>${justUnlocked ? (justUnlocked === 'album' ? `<button type="button" class="al-sm" data-zip="all">DOWNLOAD EVERYTHING ↓</button>` : (() => { const t = tracks.find(x => x.id === justUnlocked); return t ? `<a class="al-sm" href="${t.url}" download="${esc(t.filename)}">DOWNLOAD MP3 ↓</a>` : ''; })()) : ''}</div>` : ''}
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-sec">${esc(pack.labels.tracklist)}</p>
+      <div class="al-list">
+        ${tracks.map((t, i) => `<div class="al-tr" data-i="${i}" role="button" tabindex="0" aria-pressed="false">
+          <span class="n">${String(i + 1).padStart(2, '0')}</span>
+          <span class="t">${esc(t.title)}${t.feat ? `<span class="f">feat. ${esc(t.feat)}</span>` : ''}</span>
+          <span class="pl" data-pl="${esc(t.id)}" hidden title="Streams"></span>
+          <span class="d">${fmt(t.duration)}</span>
+          ${DN ? `<span class="tipslot" data-slot="${i}"></span>` : ''}
+        </div>`).join('')}
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-now" id="al-now"></p>
+      <div class="al-wave" aria-label="Waveform, click to seek"><canvas></canvas></div>
+      <div class="al-tp">
+        <button type="button" class="al-play" aria-label="Play">${playIco}</button>
+        <div class="al-time"><span><span class="tc">0:00</span> / <span class="td">0:00</span></span></div>
+        <button type="button" class="al-sm" data-jump="-10">−10 SEC</button>
+        <button type="button" class="al-sm" data-jump="10">+10 SEC</button>
+        <button type="button" class="al-sm" data-step="-1" aria-label="Previous track">◀ PREV</button>
+        <button type="button" class="al-sm" data-step="1" aria-label="Next track">NEXT ▶</button>
+        ${DN ? `<button type="button" class="al-sm al-tipnow" data-tipnow>${coinIco}GET THIS SONG</button>` : ''}
+        <button type="button" class="al-sm" data-sharesong>SHARE SONG ↗</button>
+      </div>
+    </div>
+
+    <div class="al-share" id="al-share">
+      <div>
+        <p class="al-sec">${esc(SH.sectionLabel)}</p><h3>${esc(SH.sectionTitle)}</h3><p>${esc(SH.sectionCopy)}</p>
+        <div class="al-shpick" id="al-shpick"><button type="button" data-shpick="album">ALBUM</button>${tracks.map((t, i) => `<button type="button" data-shpick="${esc(t.id)}" title="${esc(t.title)}">${String(i + 1).padStart(2, '0')}</button>`).join('')}</div>
+        <p class="al-shnow" id="al-shnow"></p>
+        <div class="al-shbtns">
+          <button type="button" class="al-gold" data-share>${esc(SH.button)}</button>
+          <button type="button" class="al-sm" data-copy>COPY LINK</button>
+          <a class="al-sm" data-sh="sms" href="#">TEXT IT</a>
+          <a class="al-sm" data-sh="wa" href="#" target="_blank" rel="noopener">WHATSAPP</a>
+          <a class="al-sm" data-sh="fb" href="#" target="_blank" rel="noopener">FACEBOOK</a>
+          <a class="al-sm" data-sh="x" href="#" target="_blank" rel="noopener">X</a>
+          <a class="al-sm" data-sh="mail" href="#">EMAIL</a>
+          <button type="button" class="al-sm" data-copy data-hint="ig">INSTAGRAM / TIKTOK</button>
+        </div>
+      </div>
+      <div class="al-qr">
+        <a class="img" href="${esc(SH.url)}" target="_blank" rel="noopener"><img src="${esc(SH.qr)}" alt="QR code that opens ${esc(pack.title)}"></a>
+        <small>${esc(SH.qrCaption)}</small>
+        <div class="row"><button type="button" class="al-sm" data-shareqr>SHARE QR</button><a class="al-sm" href="${esc(SH.qr)}" download="${esc(SH.qrFilename)}">SAVE QR</a></div>
+      </div>
+      ${RF ? `<div class="al-ref" id="al-ref" style="grid-column:1/-1"></div>` : ''}
+    </div>
+
+    ${DN ? `<div class="al-jar" id="al-own">
+      <div><p class="al-sec">${esc(DN.sectionLabel)}</p><h3>${esc(DN.sectionTitle)}</h3><p>${esc(DN.sectionCopy)}</p></div>
+      <div class="al-jarbtns"><button type="button" class="al-gold" data-tipalbum>${coinIco}${esc(DN.albumButton || 'GET THE WHOLE ALBUM')}</button><button type="button" class="al-sm" data-tipnow>${esc(DN.songButton || 'GET THIS SONG')}</button>${DJ ? `<p class="djhint">${esc(DJ.hint || 'Spinning this out?')} <a href="#al-dj" data-djgo>${esc(DJ.hintLink || 'DJs get the pack free →')}</a></p>` : ''}</div>
+      <div class="al-fl" id="al-files"></div>
+    </div>
+    ${DJ ? `<div class="al-dj" id="al-dj">
+      <div><p class="al-sec">${esc(DJ.sectionLabel)}</p><h3>${esc(DJ.sectionTitle)}</h3><p>${esc(DJ.sectionCopy)}</p></div>
+      <div id="al-djbody"></div>
+    </div>` : ''}` : `<div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-sec">${esc(pack.labels.downloads)}</p>
+      <div class="al-fl">
+        <button type="button" class="al-dla all" data-zip="all">${esc(pack.labels.zip)}<span>ZIP ↓</span></button>
+        ${tracks.map((t, i) => `<a class="al-dla" href="${t.url}" download="${esc(t.filename)}">${String(i + 1).padStart(2, '0')} · ${esc(t.title)}<span>MP3 ↓</span></a>`).join('')}
+      </div>
+    </div>`}
+
+    <div class="al-about">
+      <div>
+        <h2>${esc(pack.labels.about)}</h2>
+        <p class="al-bio">${esc(pack.bio)}</p>
+      </div>
+      <div class="al-side">
+        <div><p class="al-sec" style="margin-bottom:10px">${esc(pack.labels.playIt)}</p><ul class="al-tips">${pack.playIt.map(t => `<li>${t}</li>`).join('')}</ul></div>
+      </div>
+    </div>
+
+    ${socs.length ? `<div class="al-follow"><div class="fh"><p class="al-sec">${esc(pack.labels.follow)}</p><h2>${esc(pack.labels.followTitle || 'Stay close to the record.')}</h2><p>${esc(pack.labels.followCopy || '')}</p></div><div class="al-socs">${socs.map(x => x.links ? `<div class="al-socg"><h4>${esc(x.group)}${x.handle ? `<span>${esc(x.handle)}</span>` : ''}</h4>${x.links.map(l => socLink(l.name, l.handle || x.handle, l.url)).join('')}</div>` : socLink(x.name, x.handle, x.url)).join('')}</div></div>` : ''}
+
+    <div class="al-foot"><span>${esc(pack.footerLeft)}</span><span>${esc(pack.footer)}</span></div>
+
+    <div class="al-back">
+      <div class="cap"><p class="al-sec">${esc(pack.labels.back)}</p><p class="al-sec">${esc(pack.labels.backRight)}</p></div>
+      <div class="bimg"><img src="${pack.backUrl}" alt="REPEAT back cover: the bed, the petals, the tracklist, written and produced by ${esc(pack.credits)}"></div>
+      <div class="cred">${esc(pack.closing)}</div>
+    </div>
+  </div></div>`;
+
+  const al = root.querySelector('.al');
+  const audio = new Audio(); audio.preload = 'auto';
+  const cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
+  const wave = root.querySelector('.al-wave');
+  const playBtn = root.querySelector('.al-play');
+  const tc = root.querySelector('.tc'), td = root.querySelector('.td'), nowEl = root.querySelector('#al-now');
+  const css = getComputedStyle(al);
+  const C = { gold: css.getPropertyValue('--gold').trim(), rose: css.getPropertyValue('--rose').trim(), muted: '#3A2228', grid: 'rgba(168,146,127,.16)', gridStrong: 'rgba(168,146,127,.34)', label: '#6E5A4E' };
+  let raf = 0, pendingSeek = null;
+  const dur = () => (isFinite(audio.duration) && audio.duration) || cur.duration || 0;
+
+  function draw() {
+    const w = cv.clientWidth, h = cv.clientHeight, dpr = window.devicePixelRatio || 1;
+    if (!w) return;
+    if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
+    const D = dur(), t = audio.currentTime || 0, prog = D ? t / D : 0;
+    for (let q = 1; q < 4; q++) { const x = Math.round(q * w / 4) + .5; ctx.fillStyle = C.grid; ctx.fillRect(x, h - 8, 1, 8); }
+    const peaks = cur.peaks || [], step = 3, n = Math.floor(w / step), mid = h / 2 + 4;
+    const g = ctx.createLinearGradient(0, 0, w, 0); g.addColorStop(0, C.gold); g.addColorStop(1, C.rose);
+    for (let i = 0; i < n; i++) {
+      const p = peaks.length ? peaks[Math.min(peaks.length - 1, Math.floor(i / n * peaks.length))] : .12, bh = Math.max(2, p * (h - 20));
+      ctx.fillStyle = (i / n) <= prog ? g : C.muted; ctx.fillRect(i * step, mid - bh / 2, 2, bh);
+    }
+    ctx.fillStyle = '#F4D27A'; ctx.fillRect(Math.round(prog * w) - 1, 0, 2, h);
+  }
+  function ui() {
+    const t = audio.currentTime || 0;
+    tc.textContent = fmt(t); td.textContent = fmt(dur());
+    const playing = !audio.paused;
+    al.classList.toggle('playing', playing);
+    playBtn.innerHTML = playing ? pauseIco : playIco; playBtn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    nowEl.textContent = 'Now playing · ' + String(tracks.indexOf(cur) + 1).padStart(2, '0') + ' ' + cur.title + (cur.feat ? ' feat. ' + cur.feat : '') + ' · ' + fmt(cur.duration);
+    root.querySelectorAll('.al-tr').forEach(r => { const on = tracks[+r.dataset.i] === cur; r.classList.toggle('on', on); r.setAttribute('aria-pressed', on); });
+    draw();
+  }
+  function loop() { ui(); if (!audio.paused) raf = requestAnimationFrame(loop); }
+  function load(t, at, autoplay) {
+    cur = t; pendingSeek = at || 0; audio.src = t.url;
+    audio.addEventListener('loadedmetadata', function once() { audio.removeEventListener('loadedmetadata', once); if (pendingSeek) audio.currentTime = Math.min(pendingSeek, Math.max(0, audio.duration - .05)); pendingSeek = null; ui(); });
+    if (autoplay) audio.play().catch(() => {}); else audio.load();
+    ui();
+  }
+  function pick(i, autoplay) { const t = tracks[i]; if (!t) return; if (t === cur) { if (autoplay) toggle(); return; } load(t, 0, autoplay); }
+  function toggle() { if (audio.paused) audio.play().catch(() => {}); else audio.pause(); }
+  function seekTo(t) { const D = dur(); audio.currentTime = Math.max(0, Math.min(D ? D - .05 : 0, t)); ui(); }
+
+  audio.addEventListener('play', () => { cancelAnimationFrame(raf); loop(); });
+  audio.addEventListener('pause', ui);
+
+  // ---- stream counter: a play counts once it has run 30s (or finished); totals live in a Google Sheet
+  const ST = pack.streams && pack.streams.action ? pack.streams : null;
+  const counts = {}; let countsLoaded = false;
+  const fmtN = n => n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M' : n >= 1e4 ? (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  function renderCounts() {
+    if (!countsLoaded) return;
+    let total = 0;
+    tracks.forEach(t => { const n = counts[t.id] || 0; total += n; const el = root.querySelector('[data-pl="' + t.id + '"]'); if (el) { el.hidden = false; el.innerHTML = '<i></i>' + fmtN(n); } });
+    const chip = root.querySelector('#al-streams'); if (chip) { chip.hidden = false; chip.querySelector('b').textContent = fmtN(total); }
+  }
+  function loadCounts() {
+    if (!ST) return;
+    const cb = '__djst' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { (res.table.rows || []).forEach(r => { const id = r.c[0] && r.c[0].v, n = r.c[1] && r.c[1].v; if (id != null) counts[id] = Number(n) || 0; }); countsLoaded = true; renderCounts(); } catch (e) {} delete window[cb]; sc.remove(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + ST.sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(ST.sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent('select B, count(A) group by B') + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); };
+    document.head.appendChild(sc);
+  }
+  const played = {}; let lastT = null, lastId = null;
+  function streamTick() {
+    if (!ST || !cur) return;
+    const t = audio.currentTime || 0;
+    if (lastId === cur.id && lastT != null) { const d = t - lastT; if (d > 0 && d < 2) played[cur.id] = (played[cur.id] || 0) + d; }
+    lastT = t; lastId = cur.id;
+    const need = Math.min(ST.threshold || 30, Math.max(5, (cur.duration || 60) * 0.5));
+    if ((played[cur.id] || 0) >= need) countStream(cur);
+  }
+  function countStream(t) {
+    const key = 'djpack.streamed.' + (pack.slug || 'repeat') + '.' + t.id;
+    try { if (sessionStorage.getItem(key)) return; sessionStorage.setItem(key, '1'); } catch (e) { if (played[t.id] === -1) return; }
+    played[t.id] = -1e9;
+    counts[t.id] = (counts[t.id] || 0) + 1; renderCounts();
+    try { creditReferrer(t); } catch (e) {}
+    try { vlog('play', t.id); } catch (e) {}
+    try { const fd = new URLSearchParams(); fd.append(ST.field, t.id); fetch(ST.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {}
+  }
+  audio.addEventListener('timeupdate', streamTick);
+  audio.addEventListener('ended', () => { if (ST && cur && (played[cur.id] || 0) >= 0) countStream(cur); });
+  loadCounts();
+
+  // ---- visitors: one row per new visitor, one per return visit, one per counted play (anon id)
+  const VS = pack.visits && pack.visits.action ? pack.visits : null;
+  const vidGet = () => { let v = lsGet('vid'); if (!v) { v = 'v' + Math.random().toString(36).slice(2, 10); lsSet('vid', v); } return v; };
+  const vlog = (ev, track) => { if (!VS) return; try { const fd = new URLSearchParams(); fd.append(VS.field, vidGet() + '|' + ev + '|' + (track || '-')); fetch(VS.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {} };
+  const isStats = /[?&]stats=1/.test(location.search);
+  if (VS && !isStats) {
+    if (!lsGet('visited')) { lsSet('visited', String(Date.now())); try { sessionStorage.setItem(LSK('sess'), '1'); } catch (e) {} vlog('visit'); }
+    else { try { if (!sessionStorage.getItem(LSK('sess'))) { sessionStorage.setItem(LSK('sess'), '1'); vlog('return'); } } catch (e) {} }
+  }
+  function gviz(sheetId, sheet, tq, done) {
+    const cb = '__djq' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { done(res.table.rows || []); } catch (e) {} delete window[cb]; sc.remove(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent(tq) + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); };
+    document.head.appendChild(sc);
+  }
+  const setVisitors = n => { const chip = root.querySelector('#al-visitors'); if (chip) { chip.hidden = false; chip.querySelector('b').textContent = fmtN(n); } };
+  if (VS) { setVisitors(VS.baseline || 0); gviz(VS.sheetId, VS.sheet, "select count(A) where B ends with '|visit|-'", rows => { const n = rows[0] && rows[0].c[0] ? Number(rows[0].c[0].v) || 0 : 0; setVisitors((VS.baseline || 0) + n); }); }
+  if (VS && isStats) gviz(VS.sheetId, VS.sheet, 'select A, B', rows => {
+    const ev = rows.map(r => ({ t: r.c[0] && r.c[0].f, v: String(r.c[1] && r.c[1].v || '') })).map(x => { const p = x.v.split('|'); return { ts: x.t, vid: p[0], ev: p[1], tr: p[2] }; }).filter(x => x.vid && !/test/.test(x.vid));
+    const visitors = new Set(ev.filter(x => x.ev === 'visit').map(x => x.vid)); const sessions = ev.filter(x => x.ev === 'visit' || x.ev === 'return').length;
+    const plays = ev.filter(x => x.ev === 'play'); const listeners = new Set(plays.map(x => x.vid));
+    const per = tracks.map((t, i) => { const p = plays.filter(x => x.tr === t.id); const l = new Set(p.map(x => x.vid)); const rep = {}; p.forEach(x => rep[x.vid] = (rep[x.vid] || 0) + 1); const repeaters = Object.values(rep).filter(n => n > 1).length; return { n: String(i + 1).padStart(2, '0'), title: t.title, plays: p.length, listeners: l.size, per: l.size ? (p.length / l.size).toFixed(2) : '—', repeaters }; });
+    const el = document.createElement('div'); el.className = 'al-stats';
+    el.innerHTML = `<div class="card"><button type="button" class="x" aria-label="Close">×</button><h2>${esc(pack.title)} · stats</h2><small>FROM THE VISITS SHEET · ${ev.length} EVENTS · PLAY = 30 S OR MORE</small>
+      <div class="kp"><div><b>${fmtN(visitors.size + (VS.baseline || 0))}</b><span>UNIQUE VISITORS${VS.baseline ? ' (INCL. ' + VS.baseline + ' PRE-TRACKING)' : ''}</span></div><div><b>${fmtN(sessions)}</b><span>VISITS (SESSIONS)</span></div><div><b>${fmtN(plays.length)}</b><span>PLAYS</span></div><div><b>${fmtN(listeners.size)}</b><span>LISTENERS</span></div><div><b>${listeners.size ? (plays.length / listeners.size).toFixed(2) : '—'}</b><span>PLAYS PER LISTENER</span></div><div><b>${visitors.size ? Math.round(listeners.size / visitors.size * 100) + '%' : '—'}</b><span>VISITORS WHO PLAYED</span></div></div>
+      <table><thead><tr><th>#</th><th>SONG</th><th>PLAYS</th><th>LISTENERS</th><th>PLAYS / LISTENER</th><th>REPEATED BY</th></tr></thead><tbody>${per.map(r => `<tr><td>${r.n}</td><td>${esc(r.title)}</td><td>${r.plays}</td><td>${r.listeners}</td><td>${r.per}</td><td>${r.repeaters}</td></tr>`).join('')}</tbody></table>
+      <p><small>Visitors are counted by an anonymous id stored on the device, so one person on two phones is two visitors. This view is not linked anywhere; only people with ?stats=1 see it.</small></p></div>`;
+    document.body.appendChild(el); el.querySelector('.x').addEventListener('click', () => el.remove());
+  });
+  audio.addEventListener('durationchange', ui);
+  audio.addEventListener('ended', () => { const i = tracks.indexOf(cur); if (i + 1 < tracks.length) pick(i + 1, true); else ui(); });
+  playBtn.addEventListener('click', toggle);
+  root.querySelectorAll('.al-tr').forEach(r => {
+    r.addEventListener('click', () => pick(+r.dataset.i, true));
+    r.addEventListener('keydown', e => { if (e.key === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); pick(+r.dataset.i, true); } });
+  });
+  root.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => seekTo((audio.currentTime || 0) + (+b.dataset.jump))));
+  root.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => { const i = tracks.indexOf(cur) + (+b.dataset.step); if (i >= 0 && i < tracks.length) pick(i, !audio.paused); }));
+  let dragging = false;
+  const seekFromEvent = e => { const r = wave.getBoundingClientRect(); seekTo(((e.clientX - r.left) / r.width) * dur()); };
+  wave.addEventListener('pointerdown', e => { dragging = true; wave.setPointerCapture(e.pointerId); seekFromEvent(e); });
+  wave.addEventListener('pointermove', e => { if (dragging) seekFromEvent(e); });
+  wave.addEventListener('pointerup', () => { dragging = false; });
+  document.addEventListener('keydown', e => {
+    if (sheet && sheet.classList.contains('open')) { if (e.key === 'Escape') closeSheet(); return; }
+    if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+    if (e.code === 'Space') { e.preventDefault(); toggle(); }
+    else if (/^[1-9]$/.test(e.key)) pick(+e.key - 1, true);
+    else if (e.key === 'ArrowRight') seekTo(audio.currentTime + 10);
+    else if (e.key === 'ArrowLeft') seekTo(audio.currentTime - 10);
+  });
+  new ResizeObserver(() => draw()).observe(wave);
+
+  const msg = document.getElementById('msg');
+  const say = (t, w) => { msg.textContent = t; msg.className = 'msg' + (w ? ' warn' : ''); };
+  async function buildZip(zipBtn) {
+    if (typeof JSZip === 'undefined') { say('ZIP isn\'t available here; use the single-track links.', true); return; }
+    if (zipBtn) zipBtn.setAttribute('aria-busy', 'true');
+    try {
+      const zip = new JSZip(); let n = 0;
+      for (const t of tracks) { say('Packing ' + (++n) + ' of ' + tracks.length + '…'); const r = await fetch(t.url); if (!r.ok) throw new Error(t.title + ' is missing'); zip.file(t.filename, await r.blob()); }
+      for (const [u, f] of [[pack.frontUrl, pack.frontFilename], [pack.backUrl, pack.backFilename]]) { const r = await fetch(u); if (r.ok) zip.file(f, await r.blob()); }
+      const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = pack.zipFilename; document.body.appendChild(a); a.click(); a.remove();
+      say('Full album downloading.');
+    } catch (e) { say('Download failed: ' + (e && e.message || 'unknown error'), true); }
+    finally { if (zipBtn) zipBtn.removeAttribute('aria-busy'); }
+  }
+
+  // ---- lock/unlock rendering
+  const dlIco = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:13px;height:13px"><path d="M12 4v11m0 0 4-4m-4 4-4-4M4 19h16"/></svg>';
+  function refreshLocks() {
+    if (!DN) return;
+    root.querySelectorAll('.tipslot').forEach(sl => {
+      const t = tracks[+sl.dataset.slot];
+      sl.innerHTML = isUnlocked(t)
+        ? `<a class="tip got" href="${t.url}" download="${esc(t.filename)}" aria-label="Download ${esc(t.title)}">${dlIco}MP3</a>`
+        : `<button type="button" class="tip" data-tip="${tracks.indexOf(t)}" aria-label="Tip to unlock ${esc(t.title)}">${coinIco}GET</button>`;
+    });
+    const fl = root.querySelector('#al-files');
+    if (fl) {
+      const rows = [];
+      rows.push(unlocked.has('album')
+        ? `<button type="button" class="al-dla all got" data-zip="all">${esc(DN.albumRow || 'Everything · ' + tracks.length + ' songs + both covers')}<span>ZIP ↓</span></button>`
+        : `<button type="button" class="al-dla all lock" data-tipalbum>${esc(DN.albumRow || 'Everything · ' + tracks.length + ' songs + both covers')}<span>${esc(DN.unlockLabel || 'TIP TO UNLOCK')} →</span></button>`);
+      tracks.forEach((t, i) => rows.push(isUnlocked(t)
+        ? `<a class="al-dla got" href="${t.url}" download="${esc(t.filename)}">${nn(t)} · ${esc(t.title)}<span>MP3 ↓</span></a>`
+        : `<button type="button" class="al-dla lock" data-tip="${i}">${nn(t)} · ${esc(t.title)}<span>${esc(DN.unlockLabel || 'TIP TO UNLOCK')} →</span></button>`));
+      if (anyUnlocked()) {
+        rows.push(`<a class="al-dla got" href="${pack.frontUrl}" download="${esc(pack.frontFilename)}">Front cover<span>PNG ↓</span></a>`);
+        rows.push(`<a class="al-dla got" href="${pack.backUrl}" download="${esc(pack.backFilename)}">Back cover<span>PNG ↓</span></a>`);
+      } else {
+        rows.push(`<button type="button" class="al-dla lock" data-tipalbum>Front + back cover<span>${esc(DN.coversLabel || 'FREE WITH ANY TIP')}</span></button>`);
+      }
+      fl.innerHTML = rows.join('');
+    }
+    refreshNowBtn();
+  }
+  function refreshNowBtn() {
+    const b = root.querySelector('[data-tipnow].al-tipnow'); if (!b) return;
+    b.innerHTML = isUnlocked(cur) ? dlIco + ' DOWNLOAD MP3' : coinIco + (DN.songButton || 'GET THIS SONG');
+  }
+  audio.addEventListener('loadstart', refreshNowBtn);
+
+  // ---- Tip jar: per-song tips through Stripe Payment Links (no server needed)
+  var sheet = null; let tipTarget = null;
+  const tipRef = t => ((DN && DN.refPrefix) || 'tip') + '-' + (t ? t.id : 'album');
+  const tipUrl = (base, ref) => base + (base.includes('?') ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(ref.replace(/[^A-Za-z0-9_-]/g, '-').slice(0, 200));
+  const CA = DN && DN.provider === 'cashapp' && DN.cashtag ? DN.cashtag.replace(/^\$/, '') : null;
+  const caUrl = amt => 'https://cash.app/$' + CA + (amt ? '/' + amt : '');
+  const caOpen = amt => { const a = document.createElement('a'); a.href = caUrl(amt); a.target = '_blank'; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove(); };
+  const wired = () => !!(DN && (CA || DN.customUrl || (DN.presets || []).some(p => p.url)));
+  function buildSheet() {
+    sheet = document.createElement('div'); sheet.className = 'al-sheet'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true'); sheet.setAttribute('aria-label', 'Tip jar');
+    const demo = !wired();
+    const presets = (DN.presets || []).map((p, i) => ({ ...p, i })).filter(p => demo || CA || p.url);
+    sheet.innerHTML = `<div class="card"><button type="button" class="x" aria-label="Close">×</button><p class="eye"></p><h3>${esc(DN.title)}</h3><p class="song"></p><p class="b"></p>
+      <div class="al-amts">${presets.map(p => `<button type="button" class="al-amt" data-p="${p.i}"><b>$${esc(p.amount)}</b><span>${esc(p.label)}</span></button>`).join('')}
+      ${(demo || CA || DN.customUrl) ? `<button type="button" class="al-amt custom" data-p="custom"><b>${esc(DN.customLabel || 'Name your number')}</b><span>ANY AMOUNT →</span></button>` : ''}</div>
+      ${CA ? `<div class="ca"><div class="tag"><span>Cash App <b>$${esc(CA)}</b></span><button type="button" data-cacopy>COPY</button></div><p class="ca-copy"></p><div class="row"><button type="button" class="al-gold" data-casent>${heartIco}${esc(DN.sentButton || 'I SENT IT · UNLOCK')}</button><button type="button" class="again" data-caagain>${esc(DN.againButton || 'OPEN CASH APP AGAIN')}</button></div></div>` : ''}
+      <p class="fine">${esc(DN.fine || '')}</p></div>`;
+    document.body.appendChild(sheet);
+    sheet.addEventListener('click', e => { if (e.target === sheet) closeSheet(); });
+    sheet.querySelector('.x').addEventListener('click', closeSheet);
+    sheet.querySelectorAll('.al-amt').forEach(b => b.addEventListener('click', () => goTip(b.dataset.p)));
+    if (CA) {
+      sheet.querySelector('[data-cacopy]').addEventListener('click', async () => { try { await navigator.clipboard.writeText('$' + CA); say('$' + CA + ' copied.'); } catch (e) { say('Cashtag: $' + CA); } });
+      sheet.querySelector('[data-caagain]').addEventListener('click', () => caOpen(sheet.dataset.amt || ''));
+      sheet.querySelector('[data-casent]').addEventListener('click', () => {
+        const id = tipTarget ? tipTarget.id : 'album'; const t = tipTarget;
+        unlocked.add(id); saveUnlocked(); refreshLocks(); refreshNowBtn(); closeSheet();
+        say((DN.thanksUnlock || 'Thank you. The files are yours.').replace('{song}', t ? nn(t) + ' ' + t.title : 'the whole album'));
+        const fl = root.querySelector('#al-files'); if (fl) { try { openAcc('own', true, false); } catch (e) {} fl.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      });
+    }
+  }
+  function openSheet(t) {
+    if (!DN) return; if (!sheet) buildSheet(); tipTarget = t;
+    sheet.querySelector('.eye').textContent = t ? 'Unlock · ' + nn(t) + ' ' + t.title : 'Unlock · the whole album';
+    sheet.querySelector('.song').textContent = (t ? t.title + (t.feat ? ' feat. ' + t.feat : '') : pack.title + ' · all ' + tracks.length + ' songs + both covers') + ' · ' + pack.artist;
+    sheet.querySelector('.b').textContent = t ? (DN.blurb || '') : (DN.blurbAlbum || DN.blurb || '');
+    sheet.classList.remove('step2'); sheet.classList.add('open'); document.body.style.overflow = 'hidden';
+    const f = sheet.querySelector('.al-amt'); if (f) f.focus();
+  }
+  function closeSheet() { if (!sheet) return; sheet.classList.remove('open'); document.body.style.overflow = ''; }
+  function goTip(p) {
+    const preset = p === 'custom' ? null : (DN.presets || [])[+p];
+    const base = (preset && preset.url) || DN.customUrl || '';
+    const ref = tipRef(tipTarget);
+    if (CA) {
+      const amt = preset ? preset.amount : ''; sheet.dataset.amt = amt;
+      const song = tipTarget ? nn(tipTarget) + ' ' + tipTarget.title : pack.title + ' (whole album)';
+      sheet.querySelector('.ca-copy').textContent = (DN.sentCopy || 'Cash App just opened{amt}. Put “{song}” in the note so she knows what you bought. Sent it? Tap below and the download unlocks here.').replace('{amt}', amt ? ' for $' + amt : '').replace('{song}', song);
+      sheet.classList.add('step2');
+      if (audio && !audio.paused) audio.pause();
+      caOpen(amt);
+      return;
+    }
+    closeSheet();
+    if (!base) { say('The tip jar isn\'t wired to Stripe yet. Soon.', true); return; }
+    try { localStorage.setItem('djpack.tip', JSON.stringify({ ref, id: tipTarget ? tipTarget.id : 'album', amount: preset ? preset.amount : null, at: Date.now() })); } catch (e) {}
+    const u = tipUrl(base, ref);
+    say('Taking you to Stripe for ' + (tipTarget ? tipTarget.title : 'the whole album') + '. You\'ll land right back here.');
+    if (audio && !audio.paused) audio.pause();
+    location.href = u;
+  }
+  // one delegated handler: GET buttons, file rows, album button, zip
+  root.addEventListener('click', e => {
+    const tip = e.target.closest('[data-tip]'); if (tip) { e.stopPropagation(); openSheet(tracks[+tip.dataset.tip]); return; }
+    const got = e.target.closest('.tip.got'); if (got) { e.stopPropagation(); return; }
+    const now = e.target.closest('[data-tipnow]'); if (now) { if (isUnlocked(cur)) { const a = document.createElement('a'); a.href = cur.url; a.download = cur.filename; document.body.appendChild(a); a.click(); a.remove(); say('Downloading ' + cur.title + '.'); } else openSheet(cur); return; }
+    const alb = e.target.closest('[data-tipalbum]'); if (alb) { openSheet(null); return; }
+    const zip = e.target.closest('[data-zip]'); if (zip) { if (DN && !unlocked.has('album')) { openSheet(null); return; } buildZip(zip); return; }
+  });
+  refreshLocks();
+
+  // ---- DJ pack request: posts into a Google Form (lands in a Sheet), then unlocks the pack
+  const LS_DJ = 'djpack.dj.' + (pack.slug || 'repeat');
+  function djRender() {
+    const body = root.querySelector('#al-djbody'); if (!body || !DJ) return;
+    let saved = null; try { saved = JSON.parse(localStorage.getItem(LS_DJ) || 'null'); } catch (e) {}
+    if (saved && saved.name) {
+      body.innerHTML = `<div class="done">${heartIco}<div><b>${esc(DJ.doneTitle || 'Pack unlocked.')}</b> ${esc((DJ.doneCopy || 'Welcome aboard, {name}. Your downloads are open above.').replace('{name}', saved.name))} <a href="#al-files" data-djfiles style="color:var(--gold)">${esc(DJ.doneLink || 'Go to the files →')}</a></div></div>`;
+      return;
+    }
+    body.innerHTML = `<form class="al-djf" novalidate>
+      <label>${esc(DJ.nameLabel || 'DJ name')}<input name="name" autocomplete="name" placeholder="${esc(DJ.namePh || 'DJ Whoever')}" required></label>
+      <label>${esc(DJ.phoneLabel || 'Phone')}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="${esc(DJ.phonePh || '(314) 555-0199')}" required></label>
+      <label class="wide">${esc(DJ.emailLabel || 'Email')}<input name="email" type="email" autocomplete="email" inputmode="email" placeholder="${esc(DJ.emailPh || 'you@yourcrew.com')}" required></label>
+      <label class="wide">${esc(DJ.whereLabel || 'Where do you spin? (optional)')}<input name="where" placeholder="${esc(DJ.wherePh || 'City · club · radio · online')}"></label>
+      <div class="act"><button type="submit" class="al-gold">${coinIco.replace('<svg', '<svg style="display:none"')}${esc(DJ.button || 'SEND ME THE PACK')}</button><p class="err" aria-live="polite"></p></div>
+      <p class="fine wide">${esc(DJ.fine || '')}</p>
+    </form>`;
+    const f = body.querySelector('form');
+    f.addEventListener('submit', async e => {
+      e.preventDefault();
+      const v = k => (f.elements[k].value || '').trim();
+      const name = v('name'), phone = v('phone'), email = v('email'), where = v('where');
+      const err = f.querySelector('.err'); let bad = null;
+      f.querySelectorAll('input').forEach(i => i.classList.remove('bad'));
+      if (name.length < 2) bad = ['name', DJ.errName || 'Give us a name to put on the list.'];
+      else if (phone.replace(/\D/g, '').length < 7) bad = ['phone', DJ.errPhone || 'That phone number is a little short.'];
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) bad = ['email', DJ.errEmail || 'That email doesn\u2019t look right.'];
+      if (bad) { f.elements[bad[0]].classList.add('bad'); f.elements[bad[0]].focus(); err.textContent = bad[1]; return; }
+      err.textContent = '';
+      const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = DJ.sending || 'SENDING…';
+      const fd = new URLSearchParams();
+      fd.append(DJ.fields.name, name); fd.append(DJ.fields.phone, phone); fd.append(DJ.fields.email, email);
+      if (DJ.fields.where) fd.append(DJ.fields.where, (DJ.wherePrefix || '') + (where || ''));
+      try {
+        await fetch(DJ.action, { method: 'POST', mode: 'no-cors', body: fd });
+        try { localStorage.setItem(LS_DJ, JSON.stringify({ name, at: Date.now() })); } catch (e) {}
+        if ((DJ.deliver || 'instant') === 'instant') { unlocked.add('album'); saveUnlocked(); refreshLocks(); }
+        djRender();
+        say((DJ.toast || 'Pack unlocked for {name}. Downloads are open.').replace('{name}', name));
+        try { openAcc('own', true, false); } catch (e) {} const fl = root.querySelector('#al-files'); if (fl) setTimeout(() => fl.scrollIntoView({ behavior: 'smooth', block: 'center' }), 350);
+      } catch (ex) {
+        btn.disabled = false; btn.textContent = DJ.button || 'SEND ME THE PACK';
+        err.textContent = DJ.errSend || 'Couldn\u2019t send that. Check your signal and try again.';
+      }
+    });
+  }
+  djRender();
+
+  // ---- share kit
+  let shTarget = 'album';
+  const shTrack = () => shTarget === 'album' ? null : tracks.find(x => x.id === shTarget);
+  const shUrl = () => { const r = RF ? mintRef() : ''; const t = shTrack(); const p = []; if (t) p.push('t=' + t.id); if (r) p.push('ref=' + r); return SH.url + (p.length ? '?' + p.join('&') : ''); };
+  const shText = () => { const t = shTrack(); return t ? (SH.songText || '\u201c{song}\u201d by {artist}, from {album}. Free to listen, press play:').replace('{song}', t.title + (t.feat ? ' feat. ' + t.feat : '')).replace('{artist}', pack.artist).replace('{album}', pack.title) : (SH.text || (pack.title + ' by ' + pack.artist)); };
+  const shTitle = () => { const t = shTrack(); return t ? t.title + ' · ' + pack.artist : pack.title + ' · ' + pack.artist; };
+  function renderShPick() {
+    root.querySelectorAll('[data-shpick]').forEach(b => b.classList.toggle('on', b.dataset.shpick === shTarget));
+    const now = root.querySelector('#al-shnow'); const t = shTrack();
+    if (now) now.innerHTML = t ? 'Sharing <b>' + String(tracks.indexOf(t) + 1).padStart(2, '0') + ' ' + esc(t.title) + '</b> · the link opens the page with this song cued' : 'Sharing <b>the whole album</b> · tap a number to share one song instead';
+  }
+  const copyLink = async hint => { const u = shUrl(); try { await navigator.clipboard.writeText(u); say(hint === 'ig' ? (SH.igHint || 'Link copied. Paste it in your bio, story or caption.') : 'Link copied.'); } catch (e) { prompt('Copy this link', u); } };
+  async function nativeShare() {
+    const u = shUrl();
+    if (navigator.share) { try { await navigator.share({ title: shTitle(), text: shText(), url: u }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+    const el = root.querySelector('#al-share'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); copyLink();
+  }
+  async function shareQr() {
+    try {
+      const r = await fetch(SH.qr); const blob = await r.blob(); const file = new File([blob], SH.qrFilename || 'qr.png', { type: blob.type || 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: pack.title, text: shText() + ' ' + SH.url }); return; }
+    } catch (e) { if (e && e.name === 'AbortError') return; }
+    const a = document.createElement('a'); a.href = SH.qr; a.download = SH.qrFilename || 'qr.png'; document.body.appendChild(a); a.click(); a.remove(); say('QR saved. Send it anywhere; a phone camera opens the page.');
+  }
+  const enc = encodeURIComponent;
+  function setShLinks() {
+    const t = shText(), u = shUrl();
+    root.querySelectorAll('[data-sh]').forEach(a => {
+      a.href = { sms: 'sms:?&body=' + enc(t + ' ' + u), wa: 'https://wa.me/?text=' + enc(t + ' ' + u), fb: 'https://www.facebook.com/sharer/sharer.php?u=' + enc(u), x: 'https://twitter.com/intent/tweet?text=' + enc(t) + '&url=' + enc(u), mail: 'mailto:?subject=' + enc(shTitle()) + '&body=' + enc(t + '\n\n' + u) }[a.dataset.sh] || u;
+    });
+  }
+  setShLinks(); renderShPick();
+  root.addEventListener('click', e => {
+    const pk = e.target.closest('[data-shpick]'); if (pk) { shTarget = pk.dataset.shpick; renderShPick(); setShLinks(); return; }
+    if (e.target.closest('[data-sharesong]')) { if (cur) { shTarget = cur.id; renderShPick(); setShLinks(); } nativeShare(); return; }
+    if (e.target.closest('[data-sh]')) { if (RF) mintRef(); setShLinks(); return; }
+    if (e.target.closest('[data-share]')) nativeShare();
+    else if (e.target.closest('[data-shareqr]')) shareQr();
+    else { const c = e.target.closest('[data-copy]'); if (c) copyLink(c.dataset.hint); }
+  });
+
+  // ---- referral rewards: friends who arrive through your link and listen 30 s count for you
+  const refRows = () => { try { return JSON.parse(lsGet('refrows') || 'null'); } catch (e) { return null; } };
+  function refN(rows) { const v = new Set(); (rows || []).forEach(r => { const p = String(r).split('|'); if (p.length >= 3) v.add(p[2]); else v.add(r); }); return v.size; }
+  function applyRefRewards(n) {
+    if (!RF) return;
+    const t1 = RF.tier1 || 3, t2 = RF.tier2 || 7;
+    if (n >= t2 && !unlocked.has('album')) { unlocked.add('album'); saveUnlocked(); refreshLocks(); }
+    const pick = lsGet('refpick'); if (n >= t1 && pick && !unlocked.has(pick)) { unlocked.add(pick); saveUnlocked(); refreshLocks(); }
+  }
+  function renderRef() {
+    const box = root.querySelector('#al-ref'); if (!box || !RF) return;
+    const t1 = RF.tier1 || 3, t2 = RF.tier2 || 7, n = refN(refRows()), pick = lsGet('refpick');
+    const pct = Math.min(100, n / t2 * 100);
+    const marks = [t1, t2].map(m => `<em class="${n >= m ? 'hit' : ''}" style="left:${m / t2 * 100}%">${m}</em>`).join('');
+    let status;
+    if (!myRef) status = `<p>${esc(RF.intro || 'Share any song. When 3 friends press play, you pick a free download. At 7, the whole album is yours.')}</p>`;
+    else if (n >= t2) status = `<p><b>${esc(RF.doneAlbum || 'Seven for seven. The whole album is unlocked for you.')}</b></p>`;
+    else if (n >= t1 && !pick) status = `<p><b>${esc(RF.pickTitle || 'Three friends listened. Pick your free song:')}</b></p><div class="al-refpick">${tracks.map((t, i) => `<button type="button" class="al-sm" data-refpick="${esc(t.id)}">${String(i + 1).padStart(2, '0')} ${esc(t.title)}</button>`).join('')}</div><p style="margin-top:8px">${esc(RF.keepGoing || 'Keep sharing: {left} more and the whole album is yours.').replace('{left}', t2 - n)}</p>`;
+    else if (n >= t1) { const pt = tracks.find(x => x.id === pick); status = `<p><b>${esc((RF.picked || '{song} is yours.').replace('{song}', pt ? pt.title : 'Your song'))}</b> ${esc((RF.keepGoing || 'Keep sharing: {left} more and the whole album is yours.').replace('{left}', t2 - n))}</p>`; }
+    else status = `<p>${esc((RF.progress || '{n} of {t1} friends have pressed play. {left} more and you pick a free song.').replace('{n}', n).replace('{t1}', t1).replace('{left}', t1 - n))}</p>`;
+    box.innerHTML = `<h4>${esc(RF.title || 'Share it forward, earn it back.')}</h4>${status}<div class="al-refbar"><i style="width:${pct}%"></i>${marks}</div><div class="al-refmeta"><span><b>${n}</b> OF ${t2} FRIENDS LISTENED</span><span>${t1} = A SONG · ${t2} = THE ALBUM</span></div>${myRef ? `<p class="al-refmeta" style="margin-top:6px"><span>YOUR CODE · ${esc(myRef)}</span><span>${esc(RF.fine || 'counts once per friend, after 30 s of play')}</span></p>` : ''}`;
+    applyRefRewards(n);
+    try { refMini(); } catch (e) {}
+  }
+  function loadRef() {
+    if (!RF || !myRef) { renderRef(); return; }
+    const cb = '__djrf' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { const rows = (res.table.rows || []).map(r => r.c[0] && r.c[0].v).filter(Boolean); lsSet('refrows', JSON.stringify(rows)); } catch (e) {} delete window[cb]; sc.remove(); renderRef(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + RF.sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(RF.sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent("select B where B starts with '" + myRef + "|'") + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); renderRef(); };
+    document.head.appendChild(sc);
+  }
+  function creditReferrer(t) {
+    if (!RF) return; let by = null; try { by = JSON.parse(lsGet('refby') || 'null'); } catch (e) {}
+    if (!by || !by.ref || lsGet('refcredited')) return;
+    let vid = lsGet('vid'); if (!vid) { vid = 'v' + Math.random().toString(36).slice(2, 10); lsSet('vid', vid); }
+    lsSet('refcredited', '1');
+    try { const fd = new URLSearchParams(); fd.append(RF.field, by.ref + '|' + t.id + '|' + vid); fetch(RF.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {}
+    say(RF.credited || 'That play just counted for the friend who sent you here.');
+  }
+  root.addEventListener('click', e => { const b = e.target.closest('[data-refpick]'); if (!b) return; lsSet('refpick', b.dataset.refpick); renderRef(); say('Unlocked. Your free song is in the files below.'); });
+  if (RF) { renderRef(); loadRef(); if (arriveTrack) { pick(tracks.indexOf(arriveTrack), false); } }
+  root.addEventListener('click', e => {
+    const go = e.target.closest('[data-djgo],[data-djfiles]'); if (!go) return;
+    e.preventDefault(); const el = root.querySelector(go.getAttribute('href')); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ---- accordion: fold the four sections into tabs so the music comes first
+  const ACC = [
+    { id: 'share', sel: '#al-share', label: 'Share It', tease: (RF && RF.tease) || 'Send a song, earn a free download. Seven friends, the whole album.' },
+    { id: 'own', sel: '#al-own', label: 'Own It', tease: 'Listening is free. Name your price for the files.' },
+    { id: 'dj', sel: '#al-dj', label: 'DJ Request It', tease: 'Working DJs: the full pack, free, in exchange for a hello.' },
+    { id: 'about', sel: '.al-about', label: 'About The Album', tease: 'The story behind the record and how to listen to it.' },
+  ];
+  (function buildAcc() {
+    const first = root.querySelector(ACC[0].sel); if (!first) return;
+    const wrap = document.createElement('div'); wrap.className = 'al-accs'; first.parentNode.insertBefore(wrap, first);
+    ACC.forEach((a, i) => {
+      const el = root.querySelector(a.sel); if (!el) return;
+      const sec = document.createElement('section'); sec.className = 'al-acc'; sec.dataset.acc = a.id;
+      sec.innerHTML = `<button type="button" class="al-accbtn" aria-expanded="false"><span class="n">0${i + 1}</span><span class="t"><b>${esc(a.label)}</b><span>${esc(a.tease)}</span><span class="mini" hidden></span></span><span class="ch"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button><div class="al-accbody"><div></div></div>`;
+      sec.querySelector('.al-accbody > div').appendChild(el); wrap.appendChild(sec);
+    });
+    // the old "al-about" heading grid loses its outer spacing inside a panel
+    wrap.addEventListener('click', e => { const b = e.target.closest('.al-accbtn'); if (!b) return; const sec = b.parentNode; openAcc(sec.dataset.acc, !sec.classList.contains('open')); });
+  })();
+  function openAcc(id, open = true, scroll = true) {
+    root.querySelectorAll('.al-acc').forEach(sec => { const on = sec.dataset.acc === id && open; sec.classList.toggle('open', on); sec.querySelector('.al-accbtn').setAttribute('aria-expanded', on ? 'true' : 'false'); });
+    if (open && scroll) { const sec = root.querySelector('.al-acc[data-acc="' + id + '"]'); if (sec) setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60); }
+  }
+  function refMini() {
+    const m = root.querySelector('.al-acc[data-acc="share"] .mini'); if (!m || !RF || !myRef) return;
+    const n = refN(refRows()), t2 = RF.tier2 || 7; m.hidden = false; m.innerHTML = `<i style="--w:${Math.min(100, n / t2 * 100)}%"></i>${n} OF ${t2} FRIENDS LISTENED`;
+  }
+  refMini();
+  // open the tab the visit is about; otherwise everything stays folded
+  if (arriveMsg) openAcc('share', true, false);
+  else if (thanksMsg) openAcc('own', true, false);
+  // anchors inside the page open their panel first
+  root.addEventListener('click', e => { const a = e.target.closest('[data-djgo],[data-djfiles]'); if (!a) return; const h = a.getAttribute('href'); openAcc(h === '#al-dj' ? 'dj' : 'own', true, false); }, true);
+  const _openSheetFiles = root.querySelector('#al-files');
+  load(cur, 0, false);
+}
+mountAlbum(document.getElementById('app'), PACK);
+</script>
+</body>
+</html>
