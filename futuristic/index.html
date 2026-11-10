@@ -1,0 +1,875 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Ten tracks from Trill Will of GFM Empire. Free to listen, tip to own. God 1st, Family 2nd, Money 3rd.">
+<meta property="og:title" content="Trill Will — Futuristic · The Virtual Disc">
+<meta property="og:description" content="Ten tracks from Trill Will of GFM Empire. Free to listen, tip to own. God 1st, Family 2nd, Money 3rd.">
+<meta name="theme-color" content="#07080C">
+<title>Trill Will — Futuristic · The Virtual Disc</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{color-scheme:dark}
+html,body{background:#07050F;color:#F2EEFF}
+body{padding-inline:16px;padding-block:24px 48px;font-family:"Exo 2","Segoe UI",system-ui,sans-serif}
+main{max-width:960px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.hint{font:11px "JetBrains Mono",ui-monospace,monospace;color:#6D5F8E;letter-spacing:.06em;text-align:center;margin:0}
+.msg{font-size:13px;color:#A99BC9;min-height:1.4em;margin:0;text-align:center}
+.msg.warn{color:#FF4FB8}
+
+.al-wrap{container-type:inline-size}
+.al{--bg:#07050F;--panel:#0F0A1E;--panel2:#160F2B;--line:#2B1F4A;--line2:#3A2A60;--text:#F2EEFF;--muted:#A99BC9;--dim:#6D5F8E;--gold:#FF4FB8;--gold2:#FFA6DC;--wine:#5A1FC8;--rose:#35E6FF;
+  background:radial-gradient(120% 80% at 100% 0%,rgba(90,31,200,.35),transparent 60%),radial-gradient(90% 70% at 0% 100%,rgba(255,79,184,.10),transparent 60%),var(--bg);
+  color:var(--text);font-family:"Exo 2","Segoe UI",system-ui,sans-serif;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:22px;overflow:hidden;position:relative}
+.al *{box-sizing:border-box}
+.al-hero{position:relative;margin:-22px -22px 0;background:#07050F}
+.al-hero .pic{position:relative;aspect-ratio:var(--art-ar,1);overflow:hidden;background:#07050F}
+.al-hero .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.al-hero .pic::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(11,6,8,0) 0%,rgba(11,6,8,0) 84%,rgba(11,6,8,.9) 100%)}
+.al-hero .al-meta{position:relative;padding:14px 22px 6px;z-index:1}
+.al-meta .row{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.al-disc{position:relative;flex:none;width:44px;height:44px;border-radius:50%;background:repeating-radial-gradient(circle at 50% 50%,#0A0708 0 1.5px,#1A1230 1.5px 2.6px);box-shadow:0 6px 16px rgba(0,0,0,.6),inset 0 0 0 1px #2B1F4A;opacity:.0;transition:opacity .4s}
+.al.playing .al-disc{opacity:1;animation:al-spin 1.8s linear infinite}
+.al-disc::after{content:"";position:absolute;inset:34%;border-radius:50%;background:var(--gold);box-shadow:0 0 0 2px #0A0708}
+@keyframes al-spin{to{transform:rotate(360deg)}}
+.al-meta{display:flex;flex-direction:column;gap:8px;min-width:0}
+.al-eyebrow{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#FFFFFF;display:inline-flex;align-self:flex-start;padding:7px 12px;border-radius:999px;background:rgba(0,0,0,.62);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);text-shadow:0 1px 8px rgba(0,0,0,.9);white-space:nowrap;max-width:100%}
+@media(max-width:430px){.al-eyebrow{font-size:10.5px;letter-spacing:.13em;padding:6px 10px}}
+.al-title{font-family:"Cormorant Garamond","Times New Roman",serif;font-weight:600;font-size:clamp(44px,7.5cqi,72px);line-height:.9;letter-spacing:.08em;margin:0;color:var(--gold2);text-shadow:0 2px 24px rgba(0,0,0,.8),0 0 28px rgba(255,79,184,.25)}
+.al-artist{font-size:18px;font-weight:600;color:var(--text);opacity:.95;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.al-artist b{color:var(--gold)}
+.al-sub{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:19px;color:#E6D8C8;text-shadow:0 1px 12px rgba(0,0,0,.8)}
+.al-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.al-chip{font-family:"JetBrains Mono",ui-monospace,monospace;font-size:11px;letter-spacing:.06em;border:1px solid var(--line);background:rgba(28,15,19,.85);border-radius:5px;padding:4px 8px;color:var(--muted);font-variant-numeric:tabular-nums}
+.al-chip b{color:var(--text);font-weight:600}
+
+.al-sec{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
+.al-list{display:flex;flex-direction:column;gap:6px}
+.al-tr{display:grid;grid-template-columns:34px minmax(0,1fr) auto auto auto;gap:10px;align-items:center;text-align:left;background:linear-gradient(180deg,#1B1013,#130A0D);border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer;color:var(--text);font:inherit;position:relative;transition:border-color .15s,box-shadow .15s}
+.al-tr:hover,.al-tr:focus-visible{border-color:var(--line2);outline:none}
+.al-tr.on{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold) inset,0 0 24px -8px var(--gold)}
+.al-tr .n{font-family:"Bebas Neue",Impact,sans-serif;font-size:24px;letter-spacing:.04em;color:var(--dim);line-height:1}
+.al-tr.on .n{color:var(--gold)}
+.al-tr .t{font-weight:600;font-size:15px;line-height:1.2;overflow-wrap:anywhere}
+.al-tr .f{display:block;font-size:12px;color:var(--muted);font-weight:500}
+.al-tr .k{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.04em;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.al-tr .k b{color:var(--text);font-weight:600}
+.al-tr .d{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.al-tr .pl{font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--gold);font-variant-numeric:tabular-nums;display:inline-flex;align-items:center;gap:4px;white-space:nowrap}
+.al-tr .pl i{display:inline-block;width:0;height:0;border-left:6px solid currentColor;border-top:4px solid transparent;border-bottom:4px solid transparent;opacity:.85}
+.al-tr .pl[hidden]{display:none}
+@media(max-width:430px){.al-tr .d{display:none}}
+.al-chip.streams b{color:var(--gold2)}
+.al-tr .k2{display:none}
+@container (min-width:560px){.al-tr .k2{display:inline}}
+.al-tr .st{width:28px;height:28px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;color:var(--gold);flex:none}
+.al-tr.on .st{background:var(--gold);color:#1A0E05;border-color:var(--gold)}
+.al-tr .st svg{width:12px;height:12px}
+.al-tr .tip{flex:none;display:inline-flex;align-items:center;gap:5px;border:1px solid rgba(255,79,184,.55);background:rgba(255,79,184,.08);color:var(--gold);border-radius:999px;padding:6px 9px 6px 7px;font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:600;letter-spacing:.1em;cursor:pointer;line-height:1;transition:background .15s,color .15s,border-color .15s}
+.al-tr .tip svg{width:13px;height:13px}
+.al-tr .tip:hover,.al-tr .tip:focus-visible{background:var(--gold);color:#1A0E05;border-color:var(--gold);outline:none}
+@media(max-width:430px){.al-tr{padding:10px 10px;gap:8px}}
+.al-tipnow{border-color:rgba(255,79,184,.6)!important;color:var(--gold)!important;background:rgba(255,79,184,.08)!important;display:inline-flex;align-items:center;gap:6px;font-weight:600}
+.al-tipnow svg{width:13px;height:13px}
+.al-tipnow:hover{background:var(--gold)!important;color:#1A0E05!important}
+.al-jar{border:1px solid rgba(255,79,184,.45);border-radius:12px;padding:18px 18px;background:radial-gradient(120% 140% at 0% 0%,rgba(90,31,200,.38),rgba(20,10,13,.92) 60%);display:grid;grid-template-columns:minmax(0,1fr);gap:14px;position:relative;overflow:hidden}
+.al-jar::after{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;border:1px solid rgba(255,79,184,.18);box-shadow:0 0 0 24px rgba(255,79,184,.05),0 0 0 48px rgba(255,79,184,.03);pointer-events:none}
+@container (min-width:680px){.al-jar{grid-template-columns:minmax(0,1fr) auto;align-items:center}.al-jar .al-fl{grid-column:1/-1}}
+.al-dj{border:1px solid rgba(53,230,255,.45);border-radius:12px;padding:18px;background:radial-gradient(120% 140% at 100% 0%,rgba(90,31,200,.42),rgba(20,10,13,.94) 60%);display:grid;grid-template-columns:minmax(0,1fr);gap:14px;position:relative;overflow:hidden}
+.al-dj h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-dj p{margin:0;font-size:13.5px;line-height:1.5;color:#D9D2F0;max-width:60ch}
+.al-dj .al-sec{color:var(--rose);margin-bottom:8px}
+.al-djf{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+@container (min-width:560px){.al-djf{grid-template-columns:repeat(2,minmax(0,1fr))}.al-djf .wide,.al-djf .act{grid-column:1/-1}}
+.al-djf label{display:flex;flex-direction:column;gap:5px;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.al-djf input{font:15px "Exo 2","Segoe UI",system-ui,sans-serif;color:var(--text);background:rgba(11,6,8,.8);border:1px solid var(--line2);border-radius:8px;padding:11px 12px;outline:none;min-width:0;width:100%;box-sizing:border-box}
+.al-djf input:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,79,184,.15)}
+.al-djf input.bad{border-color:var(--rose)}
+.al-djf .act{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.al-djf .fine{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--dim);margin:0}
+.al-djf .err{font-size:13px;color:var(--rose);margin:0;font-weight:600}
+.al-dj .done{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:rgba(255,79,184,.1);border-radius:10px;padding:12px 14px;font-size:14px;line-height:1.4}
+.al-dj .done svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-dj .done b{color:var(--gold2)}
+.al-jar .djhint{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.08em;color:var(--muted);margin:2px 0 0}
+.al-jar .djhint a{color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(255,79,184,.4)}
+.al-share{border:1px solid var(--line);border-radius:12px;padding:18px;background:linear-gradient(180deg,rgba(28,15,19,.9),rgba(14,8,10,.95));display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@container (min-width:640px){.al-share{grid-template-columns:minmax(0,1fr) 190px;align-items:start}}
+.al-share h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-share p{margin:0;font-size:13.5px;line-height:1.5;color:#D9D2F0;max-width:60ch}
+.al-share .al-sec{color:var(--gold);margin-bottom:8px}
+.al-shbtns{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.al-shbtns .al-sm{text-decoration:none;display:inline-flex;align-items:center;gap:6px}
+.al-qr{display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center}
+.al-qr a.img{display:block;background:#fff;border-radius:12px;padding:8px;line-height:0;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.al-qr img{width:150px;height:150px;display:block}
+.al-qr small{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--muted)}
+.al-qr .row{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.al-shpick{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 2px}
+.al-shpick button{border:1px solid var(--line2);background:rgba(11,6,8,.6);color:var(--muted);border-radius:999px;padding:6px 10px;font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.08em;cursor:pointer}
+.al-shpick button.on{border-color:var(--gold);color:var(--gold2);background:rgba(255,79,184,.12)}
+.al-shnow{font-size:13px;color:#D9D2F0;margin:0 0 10px!important}.al-shnow b{color:var(--gold2)}
+.al-ref{border-top:1px solid var(--line);margin-top:14px;padding-top:14px}
+.al-ref h4{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:22px;letter-spacing:.03em;margin:0 0 4px;color:var(--gold2)}
+.al-ref p{font-size:13px}
+.al-refbar{position:relative;height:10px;border-radius:999px;background:rgba(255,255,255,.07);margin:10px 0 6px;overflow:visible}
+.al-refbar i{position:absolute;left:0;top:0;bottom:0;border-radius:999px;background:linear-gradient(90deg,var(--wine),var(--gold));transition:width .6s ease}
+.al-refbar em{position:absolute;top:-4px;width:18px;height:18px;border-radius:50%;background:#0F0A1E;border:2px solid var(--gold);transform:translateX(-50%);font-style:normal;font-family:"JetBrains Mono",monospace;font-size:9px;color:var(--gold);display:grid;place-items:center}
+.al-refbar em.hit{background:var(--gold);color:#1A0E05}
+.al-refmeta{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.al-refmeta b{color:var(--gold2);font-weight:600}
+.al-refpick{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.al-arrive{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:linear-gradient(90deg,rgba(255,79,184,.16),rgba(90,31,200,.22));border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.4;color:#F2EEFF}
+.al-arrive b{color:var(--gold2)}.al-arrive svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-stats{position:fixed;inset:0;z-index:60;background:rgba(5,2,3,.9);overflow:auto;padding:24px 16px;font-family:"Exo 2","Segoe UI",system-ui,sans-serif;color:#F2EEFF}
+.al-stats .card{max-width:720px;margin:0 auto;background:#0F0A1E;border:1px solid rgba(255,79,184,.5);border-radius:16px;padding:22px}
+.al-stats h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:34px;margin:0 0 4px;color:#FFA6DC}
+.al-stats .kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:16px 0}
+.al-stats .kp div{border:1px solid #2B1F4A;border-radius:10px;padding:10px 12px}.al-stats .kp b{display:block;font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:34px;line-height:1;color:#FFA6DC}.al-stats .kp span{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:#A99BC9}
+.al-stats table{width:100%;border-collapse:collapse;font-size:13px}.al-stats th,.al-stats td{text-align:left;padding:8px 6px;border-bottom:1px solid #2B1F4A;font-variant-numeric:tabular-nums}.al-stats th{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:#A99BC9;font-weight:400}
+.al-stats .x{float:right;border:1px solid #3A2A60;background:none;color:#A99BC9;border-radius:50%;width:32px;height:32px;cursor:pointer}
+.al-stats small{font-family:"JetBrains Mono",monospace;font-size:10px;color:#6D5F8E;letter-spacing:.06em}
+.al-accs{display:flex;flex-direction:column;gap:10px}
+.al-acc{border:1px solid rgba(255,79,184,.35);border-radius:14px;background:linear-gradient(180deg,rgba(28,15,19,.85),rgba(14,8,10,.95));overflow:hidden}
+.al-acc.open{border-color:var(--gold)}
+.al-accbtn{width:100%;display:flex;align-items:center;gap:14px;padding:18px 18px;background:none;border:0;color:var(--text);cursor:pointer;text-align:left}
+.al-accbtn:hover{background:rgba(255,79,184,.06)}
+.al-accbtn .n{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;color:var(--gold);width:22px;flex:none}
+.al-accbtn .t{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
+.al-accbtn .t b{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:27px;letter-spacing:.04em;line-height:1;color:var(--gold2)}
+.al-accbtn .t span{font-family:"Exo 2","Segoe UI",system-ui,sans-serif;font-size:13px;font-weight:400;color:#C9B9AA;line-height:1.4;letter-spacing:.01em}
+.al-accbtn .mini{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.08em;color:var(--gold);display:flex;align-items:center;gap:8px;margin-top:6px;white-space:nowrap}
+.al-accbtn .mini i{display:inline-block;width:70px;height:4px;border-radius:2px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}.al-accbtn .mini i::after{content:"";position:absolute;left:0;top:0;bottom:0;width:var(--w,0%);background:var(--gold)}
+.al-accbtn .ch{flex:none;width:28px;height:28px;border-radius:50%;border:1px solid rgba(255,79,184,.5);display:grid;place-items:center;color:var(--gold);transition:transform .25s}
+.al-acc.open .al-accbtn .ch{transform:rotate(180deg);background:var(--gold);color:#1A0E05}
+.al-accbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease}
+.al-acc.open .al-accbody{grid-template-rows:1fr}
+.al-accbody>div{overflow:hidden}
+.al-accbody>div>*{margin:0 14px 14px!important;border-radius:12px}
+.al-accbody .al-about{border:1px solid var(--line);padding:16px}
+.al-follow{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;border-top:1px solid var(--line);padding-top:20px}
+@container (min-width:680px){.al-follow{grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:28px;align-items:start}.al-follow .al-socs{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}.al-follow .al-socg{margin:0}}
+.al-follow .fh .al-sec{color:var(--gold);margin-bottom:8px}
+.al-follow h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;letter-spacing:.04em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-follow .fh p:not(.al-sec){margin:0;font-size:13.5px;line-height:1.5;color:#D9D2F0;max-width:48ch}
+.al-chip.share{border-color:var(--gold);color:var(--gold);cursor:pointer;background:rgba(255,79,184,.08)}
+.al-fl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;position:relative}
+.al-dla.got{border-color:rgba(255,79,184,.55);color:var(--gold2)}
+.al-dla.got span{color:var(--gold)}
+.al-dla.lock span{color:var(--muted)}
+.al-dla.lock:hover span{color:var(--gold)}
+.al-tr .tip.got{background:var(--gold);color:#1A0E05;border-color:var(--gold);text-decoration:none}
+.al-thanks .al-sm{margin-left:auto;flex:none;border-color:var(--gold);color:var(--gold);text-decoration:none;display:inline-flex;align-items:center}
+.al-thanks{flex-wrap:wrap}
+.al-thanks>div{flex:1 1 220px}
+.al-jar h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:28px;letter-spacing:.03em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-jar p{margin:0;font-size:13.5px;line-height:1.5;color:#D9D2F0;max-width:60ch}
+.al-jar .al-sec{color:var(--gold);margin-bottom:8px}
+.al-jarbtns{display:flex;flex-wrap:wrap;gap:8px;position:relative}
+.al-gold{border:0;background:var(--gold);color:#1A0E05;border-radius:999px;padding:12px 16px;font-family:"JetBrains Mono",monospace;font-size:11.5px;font-weight:600;letter-spacing:.1em;cursor:pointer;display:inline-flex;align-items:center;gap:7px;box-shadow:0 0 24px -6px rgba(255,79,184,.7);white-space:nowrap}
+.al-gold:hover{background:var(--gold2)}
+.al-gold svg{width:14px;height:14px}
+.al-thanks{display:flex;gap:12px;align-items:center;border:1px solid var(--gold);background:linear-gradient(90deg,rgba(255,79,184,.18),rgba(90,31,200,.25));border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.4;color:#F2EEFF}
+.al-thanks b{color:var(--gold2)}
+.al-thanks svg{width:22px;height:22px;color:var(--gold);flex:none}
+.al-sheet{--gold:#FF4FB8;--gold2:#FFA6DC;--line2:#3A2A60;--muted:#A99BC9;--dim:#6D5F8E;--text:#F2EEFF;position:fixed;inset:0;z-index:50;display:none;align-items:flex-end;justify-content:center;background:rgba(5,2,3,.74);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);padding:0;font-family:"Exo 2","Segoe UI",system-ui,sans-serif}
+.al-sheet.open{display:flex}
+.al-sheet *{box-sizing:border-box}
+@media (min-width:600px){.al-sheet{align-items:center;padding:24px}}
+.al-sheet .card{width:100%;max-width:460px;background:linear-gradient(180deg,#160F2B,#0C0818);border:1px solid rgba(255,79,184,.5);border-radius:18px 18px 0 0;padding:22px 20px calc(20px + env(safe-area-inset-bottom));color:var(--text);position:relative;box-shadow:0 -10px 60px rgba(0,0,0,.6);animation:al-up .22s ease-out}
+@keyframes al-up{from{transform:translateY(24px);opacity:0}to{transform:none;opacity:1}}
+@media (min-width:600px){.al-sheet .card{border-radius:18px}}
+.al-sheet .x{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;border:1px solid var(--line2);background:transparent;color:var(--muted);font-size:20px;cursor:pointer;line-height:1;display:grid;place-items:center}
+.al-sheet .x:hover{color:var(--gold);border-color:var(--gold)}
+.al-sheet .eye{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 36px 8px 0}
+.al-sheet h3{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:36px;line-height:1;letter-spacing:.03em;margin:0 0 8px;color:var(--gold2)}
+.al-sheet .song{font-weight:600;font-size:15px;margin:0 0 8px}
+.al-sheet p.b{font-size:13.5px;line-height:1.5;color:#D9D2F0;margin:0 0 14px}
+.al-amts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.al-amt{border:1px solid var(--line2);background:rgba(28,15,19,.9);color:var(--text);border-radius:10px;padding:12px 12px;cursor:pointer;text-align:left;font:inherit;display:flex;flex-direction:column;gap:4px;transition:border-color .15s,transform .1s}
+.al-amt b{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;font-size:30px;letter-spacing:.04em;line-height:1;color:var(--gold2)}
+.al-amt span{font-family:"JetBrains Mono",monospace;font-size:10.5px;letter-spacing:.06em;color:var(--muted)}
+.al-amt:hover,.al-amt:focus-visible{border-color:var(--gold);transform:translateY(-1px);outline:none}
+.al-amt.custom{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between}
+.al-amt.custom b{font-size:22px}
+.al-sheet .ca{display:none;border:1px solid rgba(0,214,54,.45);background:rgba(0,214,54,.07);border-radius:12px;padding:14px;margin-top:4px}
+.al-sheet.step2 .ca{display:block}.al-sheet.step2 .al-amts{display:none}
+.al-sheet .ca .tag{display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:"JetBrains Mono",monospace;font-size:14px;letter-spacing:.04em;color:#F2EEFF;margin:0 0 10px}
+.al-sheet .ca .tag b{color:#00D636;font-size:18px}
+.al-sheet .ca .tag button{font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.1em;color:var(--gold);background:transparent;border:1px solid var(--gold);border-radius:999px;padding:6px 10px;cursor:pointer}
+.al-sheet .ca p{font-size:13.5px;line-height:1.5;color:#D9D2F0;margin:0 0 12px}
+.al-sheet .ca .row{display:flex;flex-wrap:wrap;gap:8px}
+.al-sheet .ca .again{font:600 11px "JetBrains Mono",monospace;letter-spacing:.1em;color:var(--muted);background:transparent;border:1px solid var(--line2);border-radius:999px;padding:11px 14px;cursor:pointer}
+.al-sheet .ca .al-gold{flex:1 1 auto;justify-content:center}
+.al-sheet .fine{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.06em;color:var(--dim);margin:12px 0 0;text-align:center}
+.al-wave{position:relative;height:96px;border-radius:10px;background:#07050F;border:1px solid var(--line);cursor:pointer;touch-action:none}
+.al-wave canvas{display:block;width:100%;height:100%}
+.al-now{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.1em;color:var(--gold);text-transform:uppercase;margin:0}
+.al-tp{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.al-play{width:54px;height:54px;border-radius:50%;border:0;background:var(--gold);color:#1A0E05;display:grid;place-items:center;cursor:pointer;box-shadow:0 0 24px -4px rgba(255,79,184,.75);flex:none}
+.al-play:hover{background:var(--gold2)}
+.al-play svg{width:22px;height:22px}
+.al-sm{border:1px solid var(--line);background:transparent;color:var(--text);border-radius:8px;padding:7px 10px;font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.06em;cursor:pointer}
+.al-sm:hover{border-color:var(--gold);color:var(--gold)}
+.al-time{font-family:"JetBrains Mono",monospace;font-variant-numeric:tabular-nums;font-size:13px;display:flex;flex-direction:column;line-height:1.3;margin-right:auto}
+.al-time .bar{font-size:10.5px;color:var(--muted);letter-spacing:.08em}
+
+.al-dla{display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;text-decoration:none;color:var(--text);font-size:13px;font-weight:600;background:rgba(20,10,13,.85);font:inherit;cursor:pointer;text-align:left;width:100%}
+.al-dla span{font-family:"JetBrains Mono",monospace;font-size:10.5px;color:var(--muted);font-weight:400;white-space:nowrap}
+.al-dla:hover{border-color:var(--gold)}
+.al-dla.all{border-color:var(--gold);color:var(--gold)}
+.al-dla[aria-busy="true"]{opacity:.6;pointer-events:none}
+
+.al-about{display:grid;grid-template-columns:minmax(0,1fr);gap:18px;border-top:1px solid var(--line);padding-top:18px}
+@container (min-width:680px){.al-about{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px}}
+.al-about h2{font-family:"Cormorant Garamond",serif;font-weight:600;font-size:30px;letter-spacing:.04em;margin:0 0 6px;line-height:1;color:var(--gold2)}
+.al-bio{font-size:15px;line-height:1.65;color:#D9D2F0;margin:0;max-width:65ch;white-space:pre-line}
+.al-tips{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.al-tips li{font-size:13.5px;line-height:1.45;color:#D9D2F0;padding-left:16px;position:relative}
+.al-tips li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.al-tips li b{color:var(--gold2);font-weight:600}
+.al-side{display:flex;flex-direction:column;gap:16px}
+.al-socs{display:flex;flex-direction:column;gap:6px}
+.al-socg{display:flex;flex-direction:column;gap:6px;margin-bottom:8px}
+.al-socg h4{margin:4px 0 2px;font-family:"Exo 2","Segoe UI",sans-serif;font-size:13px;font-weight:700;letter-spacing:.02em;color:var(--gold2)}
+.al-socg h4 span{font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:400;color:var(--muted);margin-left:8px}
+.al-soc{display:flex;align-items:baseline;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:8px;padding:9px 12px;font-size:12.5px;font-weight:600;color:var(--text);text-decoration:none;background:rgba(28,15,19,.85)}
+.al-soc span{font-family:"JetBrains Mono",monospace;font-size:10.5px;font-weight:400;color:var(--muted)}
+.al-soc:hover{border-color:var(--gold);color:var(--gold)}
+.al-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;font-family:"JetBrains Mono",monospace;font-size:11px;color:var(--muted);letter-spacing:.06em}
+.al-back{position:relative;margin:0 -22px -22px;background:#07050F;display:flex;flex-direction:column}
+.al-back .cap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;padding:0 22px 12px}
+.al-back .cap .al-sec{color:var(--gold)}
+.al-back .cap .al-sec+.al-sec{color:var(--muted)}
+.al-back .bimg{position:relative;aspect-ratio:1;overflow:hidden;background:#07050F}
+.al-back .bimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;display:block}
+.al-back .bimg::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(11,6,8,.55) 0%,rgba(11,6,8,0) 7%)}
+.al-back .cred{padding:16px 22px 22px;font-family:"Cormorant Garamond",serif;font-style:italic;font-size:clamp(17px,2.2cqi,21px);letter-spacing:.02em;color:var(--gold2);text-align:center;background:#07050F}
+@media (prefers-reduced-motion:reduce){.al.playing .al-grooves{animation:none}.al-disc{transition:none}}
+</style>
+<style>html,body{margin:0}</style>
+</head>
+<body>
+<main><div id="app"></div><p class="msg" id="msg" role="status" aria-live="polite"></p><p class="hint">Tap a track to play · Space pauses · ← → skip 10 seconds · Listening is free · Tip a song to own the file</p></main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script>
+const PACK={"title":"Futuristic","artist":"Trill Will","kicker":"The Virtual Disc","slug":"futuristic","subtitle":"Ten records from DeLand to the holographic stage. Press play on the future.","label":"The Album","genre":"Hip-Hop","releaseText":"2026","art":"art.jpg","frontUrl":"cover-front.png","backUrl":"cover-back.png","artAspect":"1081/1455","frontFilename":"Trill Will - Futuristic (Front Cover).png","backFilename":"Trill Will - Futuristic (Back Cover).png","zipFilename":"Trill Will - Futuristic (The Virtual Disc).zip","credits":"Trill Will · GFM Empire · all songs written by Willie Harpe Jr","closing":"God 1st. Family 2nd. Money 3rd. The music is the receipt.","footerLeft":"10 TRACKS · FULL VERSIONS · BOTH COVERS INCLUDED","footer":"UANDI AI · THE VIRTUAL DISC","labels":{"tracklist":"Tracklist · tap one, we’ll handle the rest","downloads":"Downloads · take it all, we counted","about":"About the album","playIt":"How to listen · unsolicited advice","follow":"Follow · stay close to the record","back":"Back cover · the tracklist, the producers, the fine print","backRight":"10 tracks · 33:55","zip":"Everything · ZIP","followTitle":"The man behind it.","followCopy":"New records, shows, GFM Lounge nights and bookings land here first. Tap through and tell him you came from the Virtual Disc."},"bio":"Trill is a contraction. It means too real. Futuristic is Trill Will doing what the name says: ten records that sound like DeLand, Florida at 2 a.m. with the city lights on, built by the man who runs GFM Empire on one rule, God 1st, Family 2nd, Money 3rd.\n\nThe sequencing is deliberate. Come and Look and Zoom each show up twice, the slowed-down version first and the original right behind it, so you hear the record the way the car plays it and then the way the club plays it. 45-50 brings in 0072BRI3X and Eastside Y.J. over a Gibbo beat. Xotic pulls FTO Meechy and Richie Snow into the booth on an Eternal Money production. Dresser is Q Tha Producer and Trill Will, nothing else needed. 7eventy 5ive with TrendSetta, then Game Vision slowed with Wyte The Plug, and It’s Lit Now with Ayo Sk3tch and Glitzy as the bonus to send you out.\n\nThis is the same Trill Will who ran the country with Savage Life and Supa Unit, played SXSW, put a million views on WorldStar with Ya Ya Ya, signed a distribution deal with UMG and dropped ten million SoundCloud plays on Bankrupt. Every song here is the full version, exactly as mixed. Play it right here for free, as many times as you want. Want to own the files? Tip what it’s worth to you and they’re yours.","playIt":["\u003cb>Play the pairs back to back.\u003c/b> Come and Look slowed, then Come and Look. Zoom slowed, then Zoom. The slowed one is the ride; the original is the room.","\u003cb>Zoom\u003c/b> is the 2026 anthem. If you only know one record off this, it’s that one.","\u003cb>45-50 and Xotic\u003c/b> are the posse cuts: two guests each, one beat each, nobody wasted a bar.","\u003cb>Game Vision (Slowed)\u003c/b> is five minutes long on purpose. Windows down.","\u003cb>DJs:\u003c/b> BPMs and Camelot keys are on every row, and the slowed versions sit in the 64 to 68 range for your chopped sets.","\u003cb>Listening is free. Owning is a tip away.\u003c/b> Tip Trill Will on any song and the file is yours; tip the album and take everything, covers included."],"socials":[{"group":"Trill Will","links":[{"name":"Instagram","handle":"@trillwillisrael","url":"https://www.instagram.com/trillwillisrael/"},{"name":"TikTok","handle":"@trillwill9","url":"https://www.tiktok.com/@trillwill9"},{"name":"YouTube","handle":"@trillwillgfm","url":"https://youtube.com/@trillwillgfm"},{"name":"X","handle":"@TrillWillIsrael","url":"https://twitter.com/TrillWillIsrael"},{"name":"Facebook","handle":"Trill Will","url":"https://www.facebook.com/booktherealtrillwill"},{"name":"Website","handle":"trillwill.org","url":"https://www.trillwill.org"},{"name":"Linktree","handle":"TrillWillGFM","url":"https://linktr.ee/TrillWillGFM"}]},{"group":"Bookings · GFM Empire","links":[{"name":"Email","handle":"trillwill.pr@gmail.com","url":"mailto:trillwill.pr@gmail.com"},{"name":"Phone","handle":"(386) 220-4283","url":"tel:+13862204283"}]}],"tracks":[{"id":"01-come-and-look-slowed","title":"Come and Look (Slowed Down)","feat":"","prod":"DJ Rell","bpm":"65","keyName":"E MIN","camelot":"9A","duration":166.57,"peaks":[0.68,0.522,0.738,0.682,0.64,0.719,0.476,0.496,0.414,0.415,0.737,0.628,0.634,0.468,0.327,0.316,0.68,0.724,0.784,0.454,0.449,0.816,0.885,0.788,1.0,0.878,0.896,0.59,0.418,0.751,0.825,0.958,0.816,0.779,0.668,0.506,0.597,0.393,0.738,0.643,0.383,0.516,0.58,0.707,0.578,1.0,0.835,0.737,0.972,0.622,0.908,0.768,0.522,1.0,1.0,0.968,1.0,1.0,1.0,1.0,0.958,1.0,1.0,1.0,0.726,0.799,0.976,0.841,0.81,0.689,1.0,0.946,0.809,0.759,0.766,1.0,1.0,1.0,1.0,0.926,1.0,1.0,0.96,1.0,1.0,1.0,1.0,0.785,0.846,1.0,0.871,0.807,0.575,0.814,0.751,0.804,0.842,0.668,1.0,0.973,1.0,1.0,1.0,1.0,1.0,0.987,1.0,1.0,1.0,1.0,1.0,1.0,0.98,1.0,0.933,0.837,1.0,0.817,0.883,0.813,0.842,0.921,0.705,1.0,1.0,0.744,0.945,1.0,1.0,1.0,1.0,1.0,0.984,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.926,0.889,0.839,1.0,0.779,0.998,0.778,0.761,0.716,0.812,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.908,1.0,0.895,1.0,1.0,1.0,1.0,1.0,1.0,0.888,0.856,0.752,0.882,0.835,0.808,0.905,0.692,0.8,0.599,0.904,1.0,0.974,0.988,1.0,1.0,1.0,1.0,0.964,1.0,1.0,1.0,1.0,1.0,1.0,0.841,0.947,0.633,1.0,0.694,0.817,0.724,1.0,0.978,0.978,1.0,1.0,1.0,1.0,0.973,0.926,1.0,1.0,1.0,0.97,1.0,1.0,1.0,1.0,1.0,0.862,0.928,0.77,0.963,0.862,0.818,0.974,0.653,0.874,1.0,0.803,0.722,0.696,0.841,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.921,1.0,1.0,1.0,0.807,0.939,1.0,0.771,0.84,0.742,0.831,0.784,0.727,1.0,0.782,1.0,1.0,1.0,1.0,0.933,0.911,0.841,0.857,1.0,1.0,1.0,1.0,1.0,1.0,0.949,1.0,0.933,0.822,1.0,0.71,0.982,0.934,0.769,0.815,0.648,1.0,0.864,0.855,0.676,0.791,1.0,1.0,0.795,1.0,0.936,1.0,1.0,1.0,1.0,0.983,1.0,1.0,0.868,0.938,0.87,1.0,0.903,0.731,0.873,0.72,0.843,1.0,0.682,1.0,0.935,1.0,0.987,1.0,0.969,1.0,0.93,1.0,0.938,0.991,1.0,0.959,1.0,1.0,0.897,0.736,0.656,1.0,0.718,0.742,0.745,0.826,0.785,0.594,1.0,0.772,0.841,0.8,0.841,1.0,0.95,1.0,1.0,0.943,1.0,0.945,1.0,0.827,0.876,1.0,0.884,0.857,0.783,0.776,1.0,0.884,0.777,0.775,0.873,0.775,0.829,0.997,1.0,0.868,1.0,1.0,1.0,0.948,1.0,0.973,0.97,1.0,1.0,1.0,1.0,1.0,0.988,0.93,0.856,1.0,1.0,1.0,0.903,0.711,0.918,0.768,0.905,1.0,0.693,0.812,0.605,0.767,0.898,0.973,0.912,1.0,1.0,0.978,0.881,1.0,1.0,1.0,1.0,0.997,0.983,0.919,0.889,1.0,0.757,0.771,0.684,0.76,0.874,1.0,1.0,0.972,1.0,0.995,1.0,1.0,0.993,1.0,1.0,0.903,0.84,0.863,0.811,0.72,0.62,0.824,0.879,0.867,0.763,0.666,0.913,0.995,0.789,0.747,0.57,0.862,0.872,0.749,0.816,0.717,1.0,0.742,1.0,0.93,0.968,0.841,0.776,0.915,0.898,0.799,0.768,0.757,0.762,0.878,0.735,0.882,0.786,0.95,0.829,0.853,0.784,0.881,0.742,0.806,0.698,0.639,0.755,0.819,0.873,0.525,0.835,0.738,0.766,1.0,1.0,1.0,1.0,0.961,1.0,0.939,0.804,0.938,0.763,1.0,0.652,0.682,0.865,0.776,0.807,0.755,1.0,0.911,0.947,0.646,0.799,1.0,0.917,0.948,1.0,1.0,1.0,1.0,0.97,0.942,1.0,1.0,0.893,0.765,0.873,0.673,0.922,0.916,0.55,0.946,0.666,1.0,1.0,1.0,1.0,0.945,1.0,1.0,1.0,0.967,1.0,0.912,1.0,1.0,1.0,0.936,1.0,1.0,0.957,0.725,0.987,0.718,1.0,0.952,1.0,0.852,0.923,0.916,0.715,1.0,0.749,0.887,0.723,0.792,1.0,0.961,1.0,1.0,0.981,1.0,1.0,1.0,0.981,0.936,0.928,1.0,0.754,0.668,0.739,0.881,0.942,1.0,1.0,1.0,1.0,1.0,1.0,0.965,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.737,0.488,0.326,0.106,0.043,0.034,0.022,0.012,0.006,0.004,0.001,0.001,0.0,0.0],"url":"audio/01-come-and-look-slowed.mp3","filename":"Trill Will - 01 Come and Look (Slowed Down).mp3"},{"id":"02-come-and-look","title":"Come and Look","feat":"","prod":"DJ Rell","bpm":"86","keyName":"G MIN","camelot":"6A","duration":125.65,"peaks":[0.634,0.54,0.62,0.543,0.594,0.611,0.531,0.536,0.48,0.492,0.693,0.639,0.549,0.525,0.266,0.479,0.796,0.591,0.66,0.477,0.257,0.697,0.804,0.667,0.914,0.806,0.779,0.583,0.413,0.633,0.693,0.784,0.762,0.748,0.642,0.551,0.637,0.448,0.639,0.65,0.669,0.572,0.615,0.685,0.646,0.952,0.802,0.798,0.709,0.582,0.696,0.618,0.653,0.987,0.965,0.948,0.919,0.953,0.975,0.931,0.959,0.909,0.82,0.931,0.65,0.831,0.824,0.812,0.825,0.742,0.939,0.888,0.855,0.673,0.704,0.97,0.971,0.929,0.965,0.916,0.971,0.942,0.922,0.965,0.936,0.961,0.969,0.935,0.825,0.75,0.972,0.734,0.707,0.927,0.643,0.911,0.95,0.795,0.966,0.963,0.958,0.975,0.989,0.89,0.975,0.965,0.953,0.976,0.974,0.957,0.97,0.967,0.952,0.949,0.929,0.777,0.961,0.834,0.714,0.795,0.9,0.851,0.696,0.93,0.721,0.823,0.78,0.845,0.947,0.96,0.969,0.968,0.965,0.981,0.975,0.955,0.969,0.951,0.971,0.973,0.788,0.86,0.762,0.947,0.858,0.804,0.75,0.805,0.681,0.767,0.963,0.975,0.96,0.958,0.961,0.969,0.954,0.978,0.947,0.928,0.982,0.959,0.965,0.899,0.957,0.969,0.95,0.961,0.896,0.9,0.955,0.755,0.807,0.895,0.703,0.795,0.88,0.685,0.799,0.692,0.834,0.964,0.938,0.943,0.976,0.951,0.958,0.957,0.981,0.954,0.94,0.951,0.954,0.952,0.931,0.874,1.0,0.833,0.772,0.669,0.745,0.895,0.979,0.955,0.912,0.961,0.939,0.947,0.961,0.933,0.955,0.961,0.945,0.968,0.934,0.972,0.971,0.961,0.951,0.954,0.877,0.912,0.613,0.951,0.787,0.767,0.793,0.752,0.889,0.728,0.991,0.804,0.814,0.835,0.939,0.966,0.969,0.955,0.964,0.953,0.978,0.935,0.978,0.954,0.928,0.962,0.948,0.838,0.797,0.998,0.983,0.782,0.855,0.878,0.632,0.83,0.933,0.843,0.957,0.95,0.956,0.99,0.794,0.731,0.76,0.682,0.972,0.952,0.924,0.938,0.946,0.964,0.966,0.943,0.874,0.738,0.943,0.612,0.857,0.89,0.85,0.758,0.821,1.0,0.697,0.823,0.647,0.69,0.982,0.981,0.933,0.915,0.888,0.958,0.917,0.936,0.974,0.912,0.963,0.919,0.93,0.864,0.819,0.865,0.789,0.736,0.784,0.699,0.889,0.935,0.92,0.95,0.868,0.923,0.967,0.936,0.935,0.931,0.911,0.899,0.968,0.933,0.969,0.926,0.902,0.955,0.909,0.853,0.748,0.78,0.941,0.641,0.697,0.792,0.749,0.614,0.903,0.667,0.769,0.67,0.795,0.902,0.865,0.882,0.953,0.972,0.95,0.95,0.932,0.912,0.899,0.902,0.907,0.792,0.76,0.842,0.918,0.715,0.764,0.736,0.772,0.714,0.667,0.939,0.978,0.976,0.95,0.921,0.965,0.984,0.962,0.974,0.977,0.963,0.941,0.94,0.918,0.946,0.943,0.881,0.953,0.946,0.878,0.916,0.844,0.785,0.9,0.75,0.795,0.98,0.922,0.722,0.738,0.741,0.624,0.94,0.929,0.954,0.933,0.971,0.953,0.582,0.959,0.963,0.986,0.962,0.898,0.897,0.837,0.95,0.94,0.764,0.823,0.807,0.755,0.964,0.94,0.918,0.958,0.734,0.956,0.948,0.872,0.93,0.956,0.958,0.821,0.768,0.744,0.73,0.84,0.71,0.785,0.812,0.784,0.746,0.881,0.823,0.736,0.766,0.713,0.853,0.808,0.757,0.713,0.774,0.937,0.87,0.784,0.877,0.845,0.878,0.824,0.822,0.856,0.758,0.768,0.799,0.739,0.73,0.795,0.832,0.506,0.858,0.839,0.817,0.819,0.934,0.818,0.756,0.686,0.635,0.638,0.726,0.64,0.739,0.776,0.705,0.809,0.944,0.977,0.954,0.951,0.926,0.977,0.958,0.741,0.793,0.75,0.874,0.81,0.716,0.731,0.822,0.722,0.703,0.972,0.625,0.862,0.594,0.807,0.96,0.947,0.872,0.957,0.946,0.982,0.944,0.954,0.938,0.963,0.934,0.975,0.937,0.763,0.851,0.918,0.711,0.808,0.764,0.827,0.773,0.949,0.974,0.957,0.954,0.952,0.982,0.957,0.904,0.962,0.952,0.938,0.952,0.926,0.899,0.907,0.951,0.968,0.839,0.671,0.804,0.696,0.914,0.937,0.805,0.779,0.784,0.763,0.992,0.976,0.8,0.816,0.881,0.947,0.948,0.969,0.954,0.934,0.958,0.941,0.949,0.938,0.953,0.909,0.926,0.746,0.527,0.632,0.696,0.749,0.914,0.653,0.973,0.938,0.985,0.971,0.953,0.948,0.98,0.959,0.965,0.941,0.978,0.959,0.956,0.901,0.563,0.497,0.102,0.06,0.035,0.028,0.018,0.008,0.006,0.003,0.001,0.0,0.0],"url":"audio/02-come-and-look.mp3","filename":"Trill Will - 02 Come and Look.mp3"},{"id":"03-zoom-slowed","title":"Zoom (Slowed Down) [Clean]","feat":"","prod":"Gentle Beatz","bpm":"64","keyName":"C MIN","camelot":"5A","duration":214.42,"peaks":[1.0,1.0,1.0,0.823,1.0,0.847,0.572,0.483,0.648,0.833,0.731,0.39,0.464,0.673,0.964,0.874,0.318,0.719,0.884,0.637,0.449,1.0,1.0,0.83,1.0,1.0,1.0,0.645,0.528,0.677,0.927,0.965,0.421,0.452,0.746,0.478,0.538,0.252,0.665,0.711,0.751,0.553,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.858,0.919,0.911,0.589,0.822,0.887,0.703,0.964,0.794,0.78,0.82,0.713,0.906,0.638,0.699,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.814,0.811,0.772,0.773,0.914,0.722,1.0,0.577,0.8,0.814,1.0,0.893,1.0,0.981,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.945,1.0,0.671,0.755,0.928,0.843,0.623,0.867,0.836,0.762,0.852,0.722,1.0,0.658,0.702,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.781,0.844,0.79,0.823,0.876,0.789,0.96,0.905,0.744,0.733,1.0,0.878,0.733,0.679,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.883,0.804,0.733,0.795,0.995,0.974,0.825,0.725,0.819,0.876,0.792,0.927,0.756,0.805,1.0,1.0,1.0,0.991,1.0,1.0,0.91,0.815,0.91,0.944,0.763,0.763,0.905,0.96,0.899,0.903,0.832,0.905,0.964,0.605,0.96,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.813,0.749,0.72,1.0,0.917,0.788,0.742,0.665,0.742,0.901,0.895,0.911,0.907,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.93,0.845,0.704,0.695,0.908,0.719,0.511,0.937,0.86,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.929,1.0,0.837,0.763,0.828,0.858,0.861,1.0,0.674,0.711,0.798,0.726,0.821,1.0,0.89,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.79,0.893,0.88,0.755,0.884,0.811,0.788,0.775,0.942,0.772,0.724,0.996,0.941,0.865,0.727,1.0,1.0,1.0,1.0,1.0,1.0,0.926,0.582,0.933,0.652,0.848,0.656,0.896,0.979,0.826,0.555,0.877,0.731,0.997,0.662,0.688,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.761,0.821,0.806,0.778,0.845,0.689,0.778,0.736,0.826,0.926,0.829,0.656,0.802,0.595,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.889,0.851,0.737,0.685,1.0,0.88,0.762,0.975,0.796,0.812,0.948,0.787,1.0,0.664,0.707,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.822,0.835,0.792,0.862,0.877,0.743,0.852,0.824,0.811,0.813,0.91,0.763,0.966,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.766,1.0,0.694,0.903,0.757,0.805,0.757,0.779,0.751,0.866,0.692,0.86,0.995,0.69,0.67,1.0,1.0,1.0,1.0,1.0,1.0,0.854,0.798,0.975,0.82,0.858,0.71,1.0,0.872,0.689,1.0,0.68,0.96,0.997,0.752,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.906,0.93,0.759,0.741,0.867,0.65,0.893,0.811,0.728,0.911,0.871,0.791,0.855,0.849,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.882,0.918,0.999,0.669,1.0,0.962,0.915,0.717,0.81,0.652,0.748,0.895,0.793,0.922,0.892,1.0,1.0,1.0,1.0,1.0,1.0,0.952,1.0,0.785,0.84,0.681,1.0,0.816,0.976,0.612,0.781,0.897,0.703,0.75,0.827,0.761,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.523,1.0,1.0,1.0,1.0,1.0,1.0,0.994,0.866,0.987,0.591,0.932,0.789,0.875,0.955,0.749,0.622,0.911,0.861,0.903,0.854,0.803,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.846,0.87,0.828,0.832,1.0,0.862,0.806,0.782,0.791,1.0,0.787,0.722,0.832,0.64,0.56,1.0,1.0,1.0,1.0,1.0,1.0,0.916,0.655,0.863,0.777,1.0,0.721,0.741,1.0,0.755,0.636,0.835,0.741,0.909,0.702,0.754,1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.789,0.822,0.795,0.88,0.821,0.69,0.874,0.465,0.973,0.757,0.987,0.867,1.0,0.853,1.0,1.0,1.0,1.0,0.988,0.708,0.526,0.33,0.521,0.314,0.223,0.202,0.239,0.221,0.353,0.172,0.11,0.09,0.125,0.286,0.107,0.05,0.395,0.316,0.267,0.186,0.258,0.121,0.075,0.052,0.088,0.025,0.028,0.026,0.019,0.031,0.013,0.007,0.005,0.006,0.003,0.003,0.001,0.0],"url":"audio/03-zoom-slowed.mp3","filename":"Trill Will - 03 Zoom (Slowed Down) (Clean).mp3"},{"id":"04-zoom","title":"Zoom [Clean]","feat":"","prod":"Gentle Beatz","bpm":"81","keyName":"D# MIN","camelot":"2A","duration":171.28,"peaks":[0.956,0.777,0.739,0.697,0.978,0.968,0.619,0.47,0.692,0.739,0.666,0.463,0.468,0.588,0.913,0.95,0.265,0.604,0.684,0.611,0.475,0.861,0.776,0.721,0.774,0.984,0.966,0.673,0.602,0.559,0.833,0.802,0.404,0.461,0.585,0.537,0.529,0.26,0.62,0.618,0.666,0.597,0.728,0.988,0.995,1.0,0.97,0.956,0.931,0.845,0.6,0.809,0.553,0.827,0.706,0.843,0.846,0.734,0.729,0.737,0.692,0.85,0.628,0.711,0.973,0.982,0.94,0.992,0.952,0.971,0.923,0.72,0.797,0.746,0.764,0.872,0.704,0.779,0.437,0.778,0.725,0.915,0.768,0.939,0.756,0.974,0.97,0.981,0.979,0.967,0.896,0.926,0.824,0.907,0.711,0.668,0.781,0.753,0.845,0.809,0.735,0.775,0.723,0.738,0.972,0.632,0.724,0.972,0.972,0.974,0.977,0.97,0.955,0.95,0.677,0.765,0.697,0.782,0.842,0.738,0.781,0.738,0.683,0.665,0.939,0.771,0.651,0.672,0.964,0.96,0.969,0.968,0.969,0.959,0.972,0.877,0.905,0.704,0.78,0.813,0.899,0.826,0.772,0.72,0.768,0.787,0.729,0.827,0.75,0.75,0.982,0.97,1.0,0.965,0.975,0.956,0.962,0.787,0.855,0.766,0.754,0.713,0.873,0.95,0.85,0.993,0.843,0.811,0.876,0.642,0.873,0.951,0.962,0.957,0.982,0.961,0.962,0.918,0.906,0.788,0.682,0.712,0.891,0.909,0.792,0.728,0.771,0.767,0.745,0.741,0.897,0.784,0.981,0.969,0.973,0.999,0.973,0.974,0.946,0.96,0.816,0.745,0.823,0.85,0.642,0.549,0.896,0.83,0.846,0.984,1.0,0.994,0.976,0.974,0.984,0.966,0.963,1.0,0.985,0.968,0.905,0.934,0.845,0.799,0.79,0.805,0.81,0.843,0.678,0.863,0.741,0.773,0.662,0.868,0.891,0.964,0.973,0.973,0.987,0.97,0.973,0.966,0.895,0.825,0.753,0.766,0.901,0.902,0.863,0.808,0.785,0.765,0.785,0.837,0.831,0.782,0.665,0.983,0.976,0.98,0.97,0.945,0.937,0.871,0.813,0.836,0.593,0.857,0.795,0.776,0.828,0.728,0.677,0.759,0.72,0.891,0.916,0.674,0.974,0.98,0.969,0.968,0.965,0.968,0.938,0.731,0.753,0.769,0.769,0.896,0.811,0.674,0.761,0.794,0.72,0.763,0.689,0.677,0.614,0.488,0.992,0.981,0.978,0.97,0.9,0.947,0.868,0.559,0.844,0.713,0.836,0.789,0.828,0.823,0.703,0.634,0.782,0.735,0.805,0.635,0.702,0.974,0.971,0.946,0.975,0.969,0.958,0.952,0.772,0.785,0.68,0.76,0.845,0.727,0.847,0.539,0.746,0.622,0.886,0.749,0.814,0.76,0.952,0.961,0.997,0.987,0.984,0.975,0.934,0.731,0.844,0.806,0.756,0.961,0.817,0.826,0.852,0.766,0.766,0.658,0.877,0.811,0.596,0.716,0.95,0.962,0.991,0.973,0.962,0.94,0.866,0.782,0.812,0.711,0.743,0.904,0.832,0.78,0.67,0.868,0.663,0.766,0.826,0.789,0.741,0.979,0.975,0.951,0.995,0.967,0.966,0.954,0.899,0.842,0.612,0.728,0.874,0.721,0.884,0.758,0.704,0.812,0.807,0.72,0.813,0.733,0.7,0.994,0.979,1.0,0.972,0.981,0.966,0.821,0.943,0.862,0.722,0.872,0.861,0.947,0.777,0.79,0.756,0.833,0.83,0.823,0.835,0.787,0.972,0.976,0.957,1.0,0.97,0.984,0.942,0.929,0.845,0.815,0.727,0.851,0.863,0.818,0.775,0.887,0.802,0.705,0.777,0.774,0.71,0.988,0.976,0.969,1.0,0.99,0.975,0.992,0.986,0.965,0.997,0.971,0.977,0.959,0.978,0.982,0.963,0.974,0.973,0.975,0.98,1.0,0.594,0.975,0.984,0.931,0.996,0.906,0.93,0.845,0.82,0.859,0.615,0.574,0.892,0.756,0.853,0.592,0.721,0.765,0.699,0.57,0.809,0.634,0.984,0.965,0.966,0.978,0.953,0.966,0.967,0.752,0.803,0.61,0.77,0.866,0.855,0.642,0.809,0.772,0.717,0.681,0.76,0.673,0.605,0.496,0.978,0.975,0.997,0.983,0.911,0.936,0.857,0.815,0.864,0.762,0.849,0.775,0.813,0.833,0.698,0.637,0.784,0.765,0.833,0.8,0.717,0.978,0.961,0.973,0.988,0.978,0.961,0.951,0.79,0.797,0.633,0.76,0.852,0.803,0.636,0.815,0.764,0.686,0.599,0.893,0.856,0.666,0.709,0.843,0.816,0.754,0.649,0.692,0.613,0.464,0.291,0.432,0.22,0.205,0.215,0.218,0.309,0.205,0.137,0.104,0.105,0.188,0.094,0.071,0.224,0.197,0.171,0.17,0.139,0.124,0.097,0.053,0.061,0.026,0.022,0.022,0.019,0.024,0.016,0.015,0.004,0.005,0.004,0.002,0.001,0.0],"url":"audio/04-zoom.mp3","filename":"Trill Will - 04 Zoom (Clean).mp3"},{"id":"05-45-50","title":"45-50","feat":"0072BRI3X & Eastside Y.J.","prod":"Gibbo","bpm":"112","keyName":"G# MIN","camelot":"1A","duration":213.5,"peaks":[0.982,0.523,0.271,0.508,0.983,0.974,0.507,0.495,0.509,0.548,0.491,0.984,0.977,0.655,0.695,0.545,0.98,0.749,0.564,0.456,0.637,0.582,0.976,0.975,0.979,0.572,0.714,0.722,0.987,0.747,0.595,0.58,0.755,0.591,0.35,0.982,0.974,0.593,0.596,0.703,0.982,0.463,0.225,0.196,0.199,0.954,0.982,0.989,0.875,0.554,0.627,0.982,0.979,0.766,0.501,0.451,0.639,0.503,0.542,0.987,0.942,0.37,0.897,0.992,0.969,0.477,0.662,0.387,0.682,0.98,0.876,0.978,0.659,0.501,0.699,0.978,0.96,0.655,0.527,0.668,0.781,0.574,0.975,0.993,0.571,0.745,0.548,0.98,0.835,0.529,0.608,0.706,0.569,0.99,0.983,0.979,0.708,0.797,0.416,0.985,0.776,0.642,0.526,0.743,0.599,0.578,0.988,0.953,0.682,0.718,0.467,0.98,0.632,0.521,0.672,0.749,0.962,0.985,0.986,0.934,0.445,0.649,0.993,0.979,0.645,0.695,0.539,0.8,0.56,0.58,0.996,0.81,0.537,0.696,0.977,0.979,0.536,0.584,0.461,0.656,0.985,0.975,1.0,0.706,0.633,0.761,0.978,0.978,0.57,0.652,0.719,0.776,0.692,0.952,0.98,0.667,0.72,0.621,0.977,0.891,0.443,0.579,0.881,0.486,0.992,0.982,0.982,0.592,0.789,0.543,0.982,0.868,0.546,0.631,0.725,0.6,0.621,0.975,0.978,0.981,0.985,0.989,0.503,0.558,0.511,0.448,0.607,0.72,0.808,0.985,0.889,0.537,0.585,0.978,0.975,0.838,0.429,0.423,0.592,0.505,0.473,0.983,0.94,0.36,0.89,0.976,0.974,0.483,0.63,0.413,0.625,0.983,0.887,0.981,0.619,0.452,0.74,0.994,0.969,0.607,0.538,0.7,0.639,0.515,0.98,0.979,0.586,0.834,0.576,0.981,0.841,0.527,0.63,0.661,0.469,0.979,0.984,0.974,0.852,0.709,0.772,0.977,0.682,0.495,0.605,0.924,0.606,0.549,0.982,0.935,0.691,0.707,0.494,0.985,0.866,0.533,0.506,0.78,0.801,0.98,0.978,0.917,0.465,0.832,0.97,0.979,0.541,0.611,0.635,0.621,0.664,0.525,0.981,0.768,0.617,0.71,0.978,0.977,0.685,0.778,0.527,0.76,0.976,0.944,0.982,0.691,0.63,0.945,0.979,0.971,0.808,0.833,0.578,0.718,0.479,0.963,0.979,0.581,0.882,0.471,0.977,0.887,0.463,0.878,0.789,0.38,0.968,0.973,0.975,0.714,0.9,0.551,0.983,0.894,0.43,0.466,0.775,0.502,0.51,0.974,0.857,0.704,0.821,0.454,0.977,0.776,0.532,0.453,0.61,0.557,0.444,0.998,0.881,0.556,0.562,0.971,0.983,0.709,0.504,0.468,0.616,0.506,0.609,0.975,0.958,0.393,0.745,0.981,0.979,0.502,0.612,0.347,0.642,0.985,0.884,0.989,0.68,0.476,0.726,0.987,0.964,0.664,0.497,0.68,0.634,0.562,0.978,0.993,0.645,0.82,0.6,0.98,0.799,0.481,0.604,0.706,0.508,0.984,0.982,0.977,0.587,0.848,0.515,0.984,0.693,0.572,0.541,0.677,0.559,0.532,0.996,0.788,0.526,0.782,0.551,0.998,0.609,0.554,0.514,0.832,0.959,0.985,0.984,0.852,0.537,0.838,0.979,0.985,0.418,0.585,0.664,0.698,0.477,0.387,0.979,0.817,0.678,0.82,0.983,0.975,0.597,0.539,0.517,0.774,0.983,0.975,0.974,0.92,0.334,0.752,0.986,0.966,0.441,0.613,0.618,0.794,0.546,0.973,0.989,0.696,0.779,0.556,0.978,0.865,0.522,0.543,0.815,0.546,0.979,0.978,0.968,0.496,0.809,0.615,0.978,0.737,0.582,0.392,0.668,0.585,0.624,0.986,0.968,0.546,0.687,0.515,0.982,0.562,0.547,0.504,0.596,0.381,0.366,0.982,0.817,0.521,0.586,0.981,0.972,0.748,0.516,0.431,0.694,0.539,0.524,0.983,0.953,0.368,0.822,0.979,0.981,0.519,0.597,0.357,0.689,0.979,0.884,0.984,0.744,0.461,0.751,0.977,0.971,0.621,0.577,0.722,0.624,0.548,0.962,0.975,0.56,0.792,0.567,0.975,0.812,0.507,0.609,0.708,0.462,0.986,0.983,0.978,0.303,0.203,0.157,0.983,0.63,0.142,0.163,0.205,0.191,0.16,0.982,0.974,0.297,0.603,0.297,0.981,0.462,0.298,0.256,0.532,0.979,0.982,0.986,0.785,0.267,0.514,0.98,0.98,0.343,0.293,0.298,0.498,0.275,0.312,0.984,0.624,0.241,0.425,0.976,0.841,0.227,0.188,0.221,0.384,0.979,0.67,0.983,0.324,0.209,0.391,0.871,0.465,0.142,0.118,0.19,0.192,0.119,0.575,0.418,0.147,0.152,0.114,0.429,0.198,0.068,0.062,0.104,0.042,0.234,0.156,0.1,0.023,0.018,0.005,0.001,0.0,0.0,0.0],"url":"audio/05-45-50.mp3","filename":"Trill Will - 05 45-50 (ft. 0072BRI3X & Eastside Y.J.).mp3"},{"id":"06-xotic","title":"Xotic","feat":"FTO Meechy & Richie Snow","prod":"Eternal Money","bpm":"81","keyName":"D# MAJ","camelot":"5B","duration":243.1,"peaks":[0.968,0.975,0.967,0.917,0.968,0.62,0.955,0.963,0.976,0.964,0.962,0.802,0.954,0.959,0.945,0.967,0.961,0.969,0.787,0.957,0.587,0.958,0.96,0.959,0.795,0.957,0.924,0.969,0.958,0.809,0.695,0.473,0.736,0.362,0.189,0.117,0.389,0.521,0.319,0.546,0.366,0.292,0.27,0.764,0.627,0.386,0.218,0.168,0.158,0.196,0.156,0.655,0.529,0.486,0.442,0.279,0.262,0.368,0.632,0.967,0.802,0.961,0.964,0.978,0.963,0.965,0.988,0.968,0.958,0.954,0.939,0.96,0.809,0.958,0.98,0.857,0.983,0.971,0.978,0.958,0.96,0.971,0.951,0.953,0.96,0.775,0.964,0.86,0.964,0.981,0.958,0.852,0.959,0.975,0.953,0.983,0.961,0.897,0.959,0.957,0.857,0.972,0.947,0.959,0.982,0.956,0.726,0.973,0.963,0.966,0.984,0.95,0.894,0.957,0.958,0.955,0.97,0.962,0.887,0.718,0.454,0.627,0.446,0.753,0.522,0.501,0.965,0.714,0.959,0.967,0.648,0.967,0.954,0.763,0.956,0.959,0.957,0.966,0.966,0.728,0.956,0.968,0.783,0.962,0.954,0.757,0.967,0.88,0.827,0.977,0.966,0.958,0.767,0.954,0.701,0.492,0.988,0.965,0.956,0.962,0.681,0.974,0.963,0.843,0.962,0.955,0.967,0.811,0.962,0.762,0.962,0.955,0.983,0.879,0.953,0.725,0.967,0.669,0.977,0.954,0.962,0.957,0.736,0.959,0.955,0.968,0.962,0.963,0.791,0.957,0.955,0.973,0.955,0.969,0.938,0.954,0.956,0.941,0.957,0.963,0.965,0.956,0.959,0.825,0.955,0.579,0.565,0.549,0.965,0.928,0.956,0.955,0.959,0.946,0.956,0.959,0.973,0.959,0.954,0.948,0.961,0.886,0.962,0.957,0.969,0.961,0.961,0.958,0.985,0.958,0.965,0.995,0.957,0.973,0.748,0.828,0.445,0.647,0.716,0.584,0.488,0.569,0.592,0.419,0.592,0.545,0.643,0.492,0.471,0.47,0.531,0.49,0.536,0.672,0.546,0.551,0.412,0.455,0.705,0.74,0.834,0.535,0.504,0.37,0.658,0.506,0.482,0.612,0.963,0.964,0.665,0.97,0.962,0.953,0.966,0.984,0.729,0.955,0.965,0.943,0.962,0.972,0.913,0.987,0.963,0.959,0.958,0.963,0.762,0.966,0.968,0.871,0.958,0.954,0.779,0.966,0.958,0.767,0.994,0.978,0.977,0.955,0.972,0.752,0.955,0.969,0.955,0.955,0.953,0.845,0.956,0.962,0.926,0.964,0.956,0.964,0.742,0.975,0.861,0.962,0.969,0.958,0.837,0.956,0.933,0.961,0.961,0.942,0.728,0.618,0.42,0.399,0.546,0.469,0.516,0.99,0.953,0.678,0.971,0.679,0.954,0.974,0.962,0.84,0.976,0.961,0.97,0.972,0.958,0.963,0.958,0.96,0.842,0.965,0.961,0.947,0.71,0.972,0.808,0.962,0.962,0.959,0.971,0.977,0.959,0.954,0.959,0.953,0.95,0.962,0.823,0.967,0.971,0.754,0.958,0.958,0.955,0.982,0.961,1.0,0.951,0.959,0.896,0.985,0.959,0.995,0.971,0.981,0.97,0.943,0.958,0.967,0.954,0.96,0.957,0.968,0.955,0.962,0.911,0.97,0.801,0.958,0.983,0.975,0.805,0.995,0.973,0.96,0.963,0.967,0.863,0.955,0.983,0.819,0.958,0.964,0.943,0.977,0.964,0.786,0.963,0.956,0.95,0.966,0.96,0.793,0.957,0.961,0.882,0.971,0.959,0.913,0.965,0.964,0.705,1.0,0.962,0.816,0.965,0.966,0.902,0.96,0.978,0.883,0.968,0.962,0.974,0.689,0.773,0.598,0.54,0.533,0.577,0.6,0.972,0.957,0.958,0.948,0.747,0.965,0.964,0.853,0.96,0.993,0.958,0.785,0.969,0.69,0.964,0.96,0.957,0.87,0.965,0.656,0.965,0.438,0.964,0.95,0.981,0.962,0.703,0.972,0.942,0.971,0.962,0.958,0.779,0.975,0.796,0.955,0.623,0.969,0.7,0.988,0.978,0.696,0.957,0.963,0.963,0.962,0.954,0.783,0.96,0.985,0.961,0.8,0.965,0.842,0.961,0.965,0.953,0.966,0.959,0.975,0.978,0.956,0.912,0.953,0.98,0.847,0.968,0.961,0.865,0.962,0.966,0.973,0.961,0.966,0.974,0.957,0.955,0.966,0.756,0.971,0.769,0.952,0.986,0.956,0.965,0.961,0.963,0.958,0.958,0.961,0.952,0.956,0.956,0.901,0.964,0.896,0.961,0.965,0.957,0.743,0.974,0.96,0.966,0.958,0.962,0.927,0.957,0.956,0.933,0.962,0.955,0.958,0.59,0.32,0.255,0.152,0.123,0.298,0.275,0.446,0.445,0.294,0.169,0.178,0.535,0.307,0.296,0.42,0.272,0.202,0.272,0.211,0.174,0.491,0.475,0.384,0.303,0.304,0.175,0.284,0.382,0.364,0.197,0.044,0.035,0.029],"url":"audio/06-xotic.mp3","filename":"Trill Will - 06 Xotic (ft. FTO Meechy & Richie Snow).mp3"},{"id":"07-dresser","title":"Dresser","feat":"","prod":"Q Tha Producer","bpm":"136","keyName":"C# MIN","camelot":"12A","duration":168.52,"peaks":[0.425,0.279,0.573,0.646,0.896,0.798,0.445,0.569,0.55,0.625,0.333,0.527,0.526,0.492,0.414,0.682,0.675,0.393,0.515,0.576,0.583,0.408,0.648,0.971,0.67,0.946,0.5,0.759,0.778,0.539,0.678,0.69,0.884,0.682,0.814,0.766,0.669,0.436,0.366,0.26,0.435,0.301,0.638,0.902,0.776,0.691,0.782,0.922,0.57,0.814,0.963,0.946,0.831,0.693,0.962,0.955,0.888,0.858,0.972,0.963,0.946,1.0,0.977,0.954,0.944,0.912,0.856,0.717,0.819,0.968,0.958,0.963,0.894,0.971,0.911,0.46,1.0,0.944,0.978,0.95,0.936,0.866,0.618,0.941,0.971,0.938,0.941,0.985,0.971,0.949,0.879,0.974,0.902,0.737,0.706,0.968,0.969,0.953,0.967,0.942,0.96,0.943,0.952,0.907,0.77,0.964,0.947,0.804,0.776,0.975,0.965,0.937,0.986,0.973,0.955,0.943,0.707,0.63,0.985,0.872,0.992,0.948,0.965,0.898,0.964,0.97,0.965,0.96,0.926,0.969,0.941,0.907,0.718,0.916,0.968,0.979,0.951,0.963,0.952,0.956,0.97,0.908,0.876,0.399,0.915,0.871,0.806,0.947,0.542,0.768,0.934,0.606,0.968,0.929,0.968,0.987,0.721,0.98,0.946,0.967,0.961,0.976,0.938,0.963,0.953,0.956,0.922,0.97,0.956,0.98,0.969,0.958,0.957,0.998,0.956,0.894,0.769,0.969,0.95,0.964,0.958,0.856,0.775,0.941,0.841,0.973,0.953,0.943,0.989,0.971,0.959,0.943,0.728,0.755,0.758,0.629,0.961,0.954,0.97,0.96,0.848,0.917,0.962,0.946,0.805,0.907,1.0,0.955,0.921,0.861,0.977,0.95,0.987,0.966,0.959,0.97,0.961,0.951,0.955,0.951,0.959,0.956,0.982,0.96,0.898,0.983,0.979,0.966,0.975,0.949,1.0,0.943,0.855,0.677,0.589,0.977,0.968,0.992,0.954,0.986,0.954,0.957,0.951,1.0,0.967,0.954,0.999,0.967,0.962,0.961,0.955,0.949,0.971,0.957,0.989,0.966,0.959,0.875,0.951,0.804,0.775,0.974,0.981,0.959,0.962,0.978,0.971,0.953,0.803,0.896,0.793,0.666,0.974,0.965,0.969,0.953,0.907,1.0,0.953,0.985,0.952,0.887,0.968,0.941,0.896,0.811,0.974,0.977,0.962,0.974,0.981,0.965,0.95,0.991,0.907,0.822,0.91,0.968,0.96,0.977,0.826,0.971,0.938,0.964,0.961,0.928,0.998,0.951,0.917,0.726,0.67,0.975,0.963,0.958,0.947,0.984,0.958,0.958,0.9,0.82,0.711,0.936,0.977,0.978,0.954,0.948,0.958,0.951,0.966,0.92,0.96,0.955,0.74,0.622,0.941,0.529,0.763,0.928,0.802,0.746,0.943,0.599,0.731,0.862,0.41,0.953,0.941,0.743,0.725,0.761,0.825,0.79,0.434,0.464,0.914,0.584,0.65,0.668,0.53,0.664,0.747,0.703,0.842,0.64,0.685,0.935,0.539,0.948,0.827,0.493,0.938,0.508,0.865,0.737,0.621,0.72,0.596,0.665,0.634,0.589,0.641,0.785,0.682,0.952,0.769,0.705,0.582,0.816,0.629,0.7,0.549,0.496,0.883,0.421,0.794,0.837,0.537,0.904,0.936,0.892,0.944,0.596,0.636,0.757,0.524,0.973,0.964,0.966,0.936,0.789,0.787,0.831,0.719,0.965,0.954,0.951,0.957,0.97,0.967,0.959,0.952,0.824,0.636,0.753,0.948,0.518,0.439,0.672,0.461,0.743,0.961,0.952,0.967,0.957,0.887,0.907,0.919,0.739,0.982,0.965,0.942,0.963,0.95,0.952,0.955,0.778,0.921,0.821,0.685,0.971,0.961,0.959,0.952,0.925,0.952,0.953,1.0,0.935,0.839,0.971,0.955,0.917,0.797,0.976,0.96,0.991,0.968,0.974,0.964,0.969,1.0,0.908,0.805,0.884,0.973,0.958,0.962,0.947,1.0,0.938,0.961,0.978,0.941,0.984,0.955,0.934,0.891,0.66,0.872,0.968,0.943,0.949,0.971,0.948,0.965,0.928,0.829,0.761,0.92,0.874,0.981,0.964,0.952,0.958,0.95,0.955,0.942,0.601,0.943,0.7,0.667,0.915,0.558,0.788,0.923,0.95,0.744,0.951,0.574,0.735,0.808,0.656,0.956,0.92,0.801,0.721,0.74,0.864,0.504,0.756,0.323,0.299,0.166,0.159,0.157,0.151,0.192,0.168,0.169,0.125,0.142,0.092,0.1,0.17,0.156,0.144,0.136,0.116,0.134,0.132,0.148,0.103,0.12,0.113,0.154,0.213,0.203,0.224,0.101,0.223,0.117,0.087,0.184,0.14,0.181,0.201,0.065,0.065,0.065,0.132,0.084,0.064,0.125,0.055,0.056,0.085,0.106,0.088,0.059,0.049,0.092,0.046,0.054,0.033,0.055,0.039,0.019,0.038,0.034,0.041,0.037,0.014,0.011,0.009,0.009,0.017,0.004,0.01,0.002,0.002],"url":"audio/07-dresser.mp3","filename":"Trill Will - 07 Dresser.mp3"},{"id":"08-7eventy-5ive","title":"7eventy 5ive","feat":"TrendSetta","prod":"","bpm":"112","keyName":"C# MAJ","camelot":"3B","duration":217.21,"peaks":[0.591,0.419,0.335,0.354,0.322,0.287,0.445,0.364,0.355,0.281,0.23,0.314,0.447,0.322,0.309,0.57,0.541,0.505,0.493,0.627,0.354,0.395,0.303,0.471,0.543,0.259,0.583,0.401,0.492,0.335,0.373,0.681,0.559,0.713,0.657,0.649,0.706,0.763,0.466,0.493,0.448,0.694,0.715,0.464,0.627,0.642,0.675,0.949,0.939,0.94,0.859,0.464,0.933,0.852,0.923,0.895,0.892,0.724,0.813,0.445,0.945,0.88,0.886,0.862,0.907,0.636,0.913,0.338,0.948,0.895,0.45,0.897,0.881,0.66,0.883,0.33,0.945,0.878,0.844,0.879,0.867,0.825,0.875,0.846,0.957,0.841,0.849,0.85,0.955,0.849,0.9,0.935,0.852,0.892,0.857,0.622,0.853,0.797,0.644,0.933,0.684,0.838,0.902,0.669,0.906,0.817,0.586,0.877,0.623,0.865,0.915,0.637,0.843,0.888,0.622,0.876,0.635,0.824,0.907,0.778,0.878,0.911,0.578,0.886,0.87,0.906,0.852,0.827,0.736,0.863,0.63,0.917,0.846,0.636,0.878,0.888,0.673,0.868,0.635,0.924,0.827,0.899,0.799,0.824,0.606,0.875,0.625,0.884,0.852,0.496,0.907,0.9,0.629,0.807,0.604,0.567,0.606,0.636,0.687,0.698,0.67,0.656,0.636,0.657,0.604,0.689,0.693,0.684,0.599,0.626,0.703,0.687,0.695,0.94,0.666,0.903,0.915,0.736,0.87,0.775,0.873,0.886,0.593,0.855,0.854,0.575,0.893,0.598,0.864,0.805,0.618,0.832,0.852,0.61,0.913,0.756,0.813,0.897,0.918,0.863,0.845,0.582,0.891,0.833,0.822,0.829,0.857,0.653,0.867,0.629,0.845,0.851,0.603,0.872,0.896,0.626,0.894,0.605,0.905,0.848,0.759,0.869,0.856,0.57,0.899,0.624,0.907,0.833,0.629,0.841,0.915,0.871,0.887,0.813,0.88,0.867,0.821,0.719,0.901,0.894,0.72,0.924,0.671,0.808,0.864,0.623,0.909,0.832,0.638,0.915,0.629,0.825,0.815,0.603,0.906,0.857,0.632,0.913,0.677,0.802,0.873,0.654,0.898,0.864,0.658,0.874,0.689,0.809,0.829,0.879,0.868,0.786,0.627,0.921,0.887,0.776,0.869,0.892,0.687,0.849,0.568,0.89,0.877,0.829,0.596,0.587,0.676,0.619,0.649,0.65,0.617,0.578,0.646,0.681,0.656,0.665,0.661,0.677,0.72,0.626,0.942,0.923,0.674,0.865,0.802,0.932,0.545,0.512,0.58,0.518,0.573,0.609,0.554,0.572,0.956,0.887,0.651,0.879,0.906,0.629,0.892,0.716,0.899,0.834,0.614,0.937,0.853,0.587,0.939,0.683,0.834,0.812,0.648,0.897,0.817,0.612,0.859,0.646,0.915,0.825,0.803,0.908,0.862,0.574,0.936,0.808,0.832,0.792,0.92,0.784,0.897,0.579,0.913,0.834,0.634,0.843,0.931,0.702,0.888,0.629,0.906,0.847,0.749,0.822,0.857,0.667,0.818,0.608,0.948,0.813,0.53,0.813,0.912,0.636,0.923,0.659,0.886,0.944,0.945,0.941,0.956,0.968,0.96,0.958,0.945,0.886,0.95,0.896,0.946,0.956,0.821,0.996,0.777,0.957,0.915,0.827,1.0,1.0,0.858,0.956,0.842,0.898,0.954,0.607,0.95,0.957,0.906,0.925,0.864,0.93,0.759,0.387,0.873,0.493,0.512,0.415,0.724,0.565,0.85,0.482,0.716,0.634,0.602,0.403,0.393,0.752,0.961,0.963,0.779,0.948,0.691,0.957,0.966,0.738,0.954,0.971,0.696,0.959,0.672,0.959,0.959,0.952,0.931,0.948,0.787,0.963,0.951,0.956,0.954,0.972,0.953,0.945,0.951,0.921,0.956,0.906,0.949,0.959,0.817,0.938,0.954,0.735,0.958,0.87,0.953,0.978,0.699,0.954,0.944,0.611,0.98,0.742,0.955,0.95,0.779,0.952,0.944,0.72,0.959,0.73,0.926,0.959,0.818,0.962,0.953,0.676,0.952,0.851,0.952,0.957,0.937,0.882,0.957,0.659,0.956,0.952,0.63,0.966,0.951,0.771,0.953,0.775,0.964,0.959,0.945,0.95,0.836,0.791,0.868,0.637,0.939,0.841,0.602,0.914,0.924,0.592,0.79,0.647,0.891,0.883,0.853,0.833,0.887,0.852,0.832,0.888,0.883,0.864,0.88,0.734,0.87,0.84,0.65,0.606,0.584,0.597,0.94,0.65,0.915,0.844,0.622,0.916,0.626,0.797,0.922,0.652,0.897,0.827,0.667,0.911,0.629,0.591,0.645,0.63,0.731,0.658,0.63,0.669,0.77,0.622,0.572,0.68,0.604,0.668,0.622,0.68,0.692,0.624,0.942,0.898,0.678,0.915,0.336,0.942,0.889,0.522,0.911,0.919,0.65,0.825,0.332,0.95,0.89,0.835,0.815,0.888,0.673,0.847,0.312,0.946,0.879,0.364,0.954,0.928,0.719,0.886,0.936,0.93,0.884,0.83],"url":"audio/08-7eventy-5ive.mp3","filename":"Trill Will - 08 7eventy 5ive (ft. TrendSetta).mp3"},{"id":"09-game-vision-slowed","title":"Game Vision (Slowed Down)","feat":"Wyte The Plug","prod":"Wyte The Plug","bpm":"68","keyName":"A# MAJ","camelot":"6B","duration":308.49,"peaks":[0.501,0.36,0.33,0.464,0.147,0.304,0.552,0.379,0.567,0.189,0.144,0.417,0.475,0.506,0.329,0.472,0.484,0.725,0.64,0.532,0.179,0.42,0.299,0.165,0.109,0.089,0.254,0.121,0.075,0.315,0.208,0.222,0.222,0.162,0.381,0.255,0.15,0.109,0.106,0.1,0.066,0.04,0.043,0.223,0.134,0.214,0.194,0.117,0.09,0.111,0.091,0.047,0.021,0.046,0.238,0.41,0.833,0.449,0.519,0.401,0.649,0.474,0.418,0.8,0.732,0.498,0.352,0.625,0.518,0.627,0.441,0.488,0.402,0.635,0.615,0.418,0.623,0.758,0.485,0.438,0.635,0.275,0.623,0.449,0.484,0.4,0.654,0.868,0.603,0.878,0.879,0.813,0.607,0.811,0.602,0.714,0.753,0.539,0.41,0.393,0.939,0.558,0.557,0.619,0.484,0.339,0.421,0.588,0.593,0.596,0.318,0.542,0.317,0.808,0.545,0.583,0.726,0.793,0.532,0.245,0.765,0.876,0.589,0.542,0.461,0.339,0.635,0.626,0.53,0.853,0.871,0.646,0.464,0.935,0.94,0.538,0.633,0.335,0.511,0.294,0.633,0.268,0.173,0.628,0.648,0.259,0.402,0.638,0.51,0.699,0.408,0.496,0.295,0.623,0.621,0.64,0.865,0.933,0.771,0.723,0.705,0.736,0.637,0.667,0.503,0.466,0.653,0.639,0.438,0.726,0.598,0.459,0.283,0.446,0.633,0.633,0.728,0.546,0.581,0.26,0.642,0.584,0.573,0.899,0.595,0.355,0.622,0.648,0.648,1.0,0.886,0.718,0.467,0.62,0.642,0.795,0.854,0.735,0.624,0.296,0.471,0.612,0.605,0.641,0.628,0.445,0.192,0.478,0.9,0.627,0.644,0.519,0.609,0.638,0.541,0.75,0.902,0.89,0.911,0.955,0.458,0.836,0.85,0.832,0.453,0.955,0.957,0.605,0.69,0.229,0.621,0.583,0.629,0.468,0.277,0.504,0.62,0.261,0.424,0.682,0.167,0.547,0.533,0.24,0.351,0.246,0.48,0.696,0.631,0.393,0.492,0.41,0.14,0.646,0.64,0.667,0.558,0.613,0.501,0.421,0.697,0.454,0.676,0.623,0.808,0.534,0.391,0.576,0.282,0.313,0.601,0.616,0.656,0.408,0.774,0.594,0.614,0.94,0.608,0.302,0.406,0.602,0.599,0.638,0.369,0.515,0.298,0.313,0.263,0.257,0.561,0.812,0.5,0.321,0.519,0.607,0.611,0.643,0.736,0.312,0.638,0.567,0.581,0.921,0.816,0.722,0.37,0.523,0.893,0.159,0.761,0.297,0.488,0.368,0.67,0.477,0.306,0.639,0.649,0.277,0.362,0.953,0.718,0.466,0.676,0.474,0.328,0.662,0.623,0.437,0.628,0.727,0.508,0.349,0.537,0.574,0.617,0.623,0.353,0.502,0.654,0.651,0.441,0.288,0.638,0.58,0.302,0.389,0.46,0.51,0.855,0.454,0.823,0.389,0.905,0.918,0.262,0.675,0.683,0.517,0.241,0.736,0.185,0.149,0.879,0.558,0.305,0.264,0.659,0.519,0.792,0.866,0.713,0.651,0.724,0.979,0.724,0.697,0.352,0.46,0.63,0.819,0.672,0.279,0.648,0.533,0.562,0.333,0.341,0.319,0.192,0.907,0.565,0.59,0.474,0.426,0.621,0.685,0.435,0.625,0.657,0.447,0.533,0.273,0.649,0.65,0.483,0.586,0.406,0.458,0.622,0.636,0.535,0.592,0.625,0.382,0.759,0.651,0.637,0.581,0.632,0.336,0.998,0.67,0.647,0.255,0.541,0.639,0.28,0.528,0.641,0.61,0.593,0.654,0.563,0.467,0.854,0.952,0.754,0.432,0.441,0.27,0.465,0.697,0.912,0.898,0.618,0.949,0.373,0.348,0.995,0.88,0.265,0.245,0.807,0.333,0.78,0.234,0.608,0.507,0.442,0.621,0.613,0.544,0.632,0.638,0.568,0.402,0.676,0.666,0.663,0.697,0.352,0.524,0.423,0.631,0.478,0.377,0.707,0.624,0.311,0.421,0.686,0.713,0.637,0.426,0.548,0.386,0.674,0.675,0.332,0.558,0.614,0.436,0.416,0.66,0.591,0.655,0.573,0.487,0.507,0.356,0.704,0.517,0.348,0.644,0.489,0.335,0.453,0.676,0.656,0.667,0.38,0.54,0.455,0.731,0.513,0.309,0.631,0.63,0.523,0.358,0.646,0.657,0.715,0.658,0.571,0.415,0.582,0.633,0.474,0.798,0.609,0.496,0.363,0.424,0.677,0.751,0.659,0.251,0.513,0.28,0.664,0.515,0.28,0.628,0.547,0.265,0.181,0.517,0.411,0.437,0.304,0.202,0.13,0.349,0.344,0.104,0.182,0.51,0.454,0.368,0.299,0.162,0.139,0.521,0.524,0.452,0.281,0.019,0.397,0.45,0.417,0.393,0.437,0.463,0.271,0.514,0.026,0.017,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],"url":"audio/09-game-vision-slowed.mp3","filename":"Trill Will - 09 Game Vision (Slowed Down) (ft. Wyte The Plug).mp3"},{"id":"10-its-lit-now","title":"It’s Lit Now (Bonus)","feat":"Ayo Sk3tch & Glitzy","prod":"","bpm":"123","keyName":"F MIN","camelot":"4A","duration":205.98,"peaks":[0.267,0.22,0.251,0.216,0.252,0.224,0.256,0.47,0.408,0.316,0.305,0.368,0.424,0.504,0.551,0.406,0.284,0.209,0.265,0.386,0.398,0.291,0.238,0.233,0.604,0.396,0.43,0.236,0.189,0.243,0.218,0.315,0.433,0.338,0.194,0.686,0.293,0.247,0.432,0.567,0.513,0.378,0.48,0.479,0.959,0.714,0.962,0.721,0.935,0.822,0.822,0.581,0.61,0.733,0.582,0.966,0.901,0.959,0.947,0.665,0.946,0.755,0.664,0.62,0.775,0.54,0.968,0.947,0.679,0.964,0.661,0.966,0.524,0.867,0.675,0.76,0.598,0.532,0.978,0.772,0.951,0.841,0.954,0.796,0.678,0.579,0.752,0.544,0.521,0.962,0.747,0.97,0.676,0.953,0.797,0.4,0.837,0.751,0.616,0.553,0.958,0.675,0.958,0.742,0.954,0.739,0.422,0.722,0.814,0.543,0.575,0.964,0.743,0.968,0.932,0.968,0.777,0.52,0.643,0.763,0.519,0.618,0.959,0.751,0.952,0.716,0.966,0.825,0.458,0.833,0.786,0.726,0.764,0.599,0.832,0.599,0.674,0.634,0.655,0.604,0.78,0.685,0.627,0.73,0.705,0.652,0.691,0.914,0.695,0.633,0.637,0.641,0.823,0.779,0.586,0.961,0.881,0.958,0.825,0.949,0.916,0.846,0.726,0.761,0.863,0.614,0.965,0.958,0.958,0.946,0.834,0.963,0.876,0.696,0.603,0.762,0.709,0.973,0.931,0.824,0.964,0.895,0.964,0.859,0.727,0.79,0.741,0.621,0.66,0.96,0.823,0.965,0.914,0.963,0.885,0.785,0.658,0.828,0.539,0.648,0.964,0.903,0.965,0.955,0.958,0.925,0.806,0.639,0.72,0.74,0.687,0.971,0.847,0.964,0.872,0.97,0.892,0.839,0.68,0.769,0.536,0.445,0.753,0.638,0.572,0.53,0.578,0.621,0.695,0.569,0.514,0.762,0.642,0.751,0.641,0.585,0.575,0.647,0.651,0.599,0.538,0.681,0.701,0.649,0.682,0.522,0.295,0.609,0.661,0.643,0.221,0.273,0.68,0.678,0.75,0.535,0.241,0.321,0.835,0.632,0.725,0.626,0.663,0.644,0.758,0.43,0.972,0.621,0.961,0.777,0.933,0.833,0.719,0.663,0.648,0.684,0.595,0.958,0.81,0.966,0.95,0.941,0.964,0.705,0.635,0.66,0.769,0.563,0.976,0.918,0.964,0.96,0.67,0.961,0.547,0.83,0.595,0.694,0.649,0.951,0.961,0.73,0.955,0.826,0.97,0.813,0.695,0.514,0.843,0.545,0.54,0.966,0.743,0.949,0.598,0.969,0.613,0.858,0.835,0.763,0.55,0.554,0.96,0.69,0.966,0.699,0.956,0.679,0.388,0.775,0.779,0.554,0.52,0.966,0.743,0.96,0.77,0.944,0.758,0.615,0.601,0.818,0.558,0.606,0.966,0.701,0.962,0.759,0.958,0.854,0.419,0.8,0.747,0.573,0.578,0.595,0.324,0.139,0.562,0.367,0.885,0.679,0.572,0.745,0.492,0.845,0.716,0.718,0.631,0.781,0.708,0.743,0.614,0.5,0.636,0.719,0.635,0.975,0.848,0.967,0.885,0.942,0.975,0.747,0.919,0.675,0.935,0.787,0.964,0.9,0.958,0.937,0.964,0.971,0.873,0.595,0.682,0.955,0.637,0.967,0.945,0.974,0.966,0.924,0.957,0.91,1.0,0.539,0.757,0.869,0.968,0.967,0.976,0.975,0.8,0.965,0.827,0.6,0.522,0.904,0.838,0.738,0.971,0.893,0.95,0.823,0.945,0.919,0.686,0.778,0.885,0.715,0.57,0.972,0.777,0.95,0.806,0.987,0.854,0.641,0.914,0.918,0.607,0.687,0.718,0.57,0.523,0.868,0.664,0.822,0.565,0.86,0.93,0.589,0.779,0.695,0.615,0.596,0.762,0.686,0.856,0.687,0.699,0.732,0.81,0.566,0.552,0.545,0.809,0.746,0.616,0.57,0.546,0.745,0.901,0.641,0.895,0.519,0.553,0.605,0.639,0.725,0.692,0.819,0.779,0.627,0.877,0.587,0.971,0.92,0.959,0.95,0.999,0.936,0.809,0.572,0.708,0.699,0.566,0.962,0.802,0.963,0.916,0.952,0.955,0.741,0.713,0.702,0.747,0.584,0.962,0.832,0.966,0.93,0.647,0.966,0.524,0.76,0.568,0.684,0.606,0.963,0.95,0.722,0.958,0.791,0.963,0.773,0.659,0.542,0.786,0.505,0.551,0.956,0.756,0.967,0.531,0.969,0.631,0.821,0.605,0.767,0.679,0.547,0.965,0.722,0.957,0.672,0.944,0.693,0.428,0.74,0.729,0.533,0.514,0.962,0.764,0.956,0.809,0.966,0.783,0.507,0.622,0.782,0.509,0.619,0.957,0.74,0.955,0.8,0.96,0.799,0.36,0.804,0.774,0.612,0.59,0.621,0.323,0.19,0.154,0.172,0.148,0.147,0.121,0.106,0.115,0.122,0.086,0.087,0.077,0.085,0.08,0.041,0.033,0.027,0.019,0.014,0.009,0.003],"url":"audio/10-its-lit-now.mp3","filename":"Trill Will - 10 It’s Lit Now (Bonus) (ft. Ayo Sk3tch & Glitzy).mp3"}],"donate":{"provider":"external","providerName":"Tip jar · trillwill.org","handle":"direct.me/trillwill","tipUrl":"https://direct.me/trillwill/send-a-tip/8Lnb/buy","sectionLabel":"Own it · tip to unlock the files","sectionTitle":"Listening is free. Owning it costs whatever you say.","sectionCopy":"Stream every song right here as many times as you like, no catch. Want the files? Tip Trill Will through the same tip jar that runs trillwill.org, any amount, and the full-quality MP3 unlocks on this page. Tip the whole album and all ten songs plus both covers are yours. Every dollar goes to Trill Will and GFM Empire: no label, no middleman.","title":"Name your price.","blurb":"Pick an amount and his tip jar opens in a new tab (same checkout as trillwill.org, card, no account). Send it, come back, tap “I sent it,” and the download unlocks on this device.","presets":[{"amount":3,"label":"Coffee money"},{"amount":5,"label":"Fair"},{"amount":25,"label":"Trillionaire Club energy"}],"customLabel":"Name your number","fine":"Secure card checkout on Direct.me · same tip jar as trillwill.org · no account needed","refPrefix":"futuristic","sentButton":"I SENT IT · UNLOCK","againButton":"OPEN THE TIP JAR AGAIN","sentCopy":"The tip jar just opened{amt}. Pick your amount there and drop “{song}” in the message so he knows what you bought. Sent it? Tap below and the download unlocks here.","thanks":"Your tip on {song} went straight to Trill Will. He owes you one.","albumButton":"GET THE WHOLE ALBUM","songButton":"GET THIS SONG","albumRow":"Everything · 10 songs + both covers","unlockLabel":"TIP TO UNLOCK","coversLabel":"FREE WITH ANY TIP","blurbAlbum":"One tip, all ten songs and both covers. Pay what the whole ride is worth to you through his tip jar, then come back and unlock everything.","thanksUnlock":"Thank you. Your tip on {song} went straight to Trill Will, and the files are yours. Download below; they stay unlocked on this device."},"dj":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSenCPkrc6x6B0yUktfaWXSX6hLOn8uBWPNQMyancg7CIMOvnQ/formResponse","fields":{"name":"entry.1219474688","phone":"entry.1724030610","email":"entry.1291497609","where":"entry.669065555"},"wherePrefix":"[Trill Will · Futuristic] ","deliver":"instant","sectionLabel":"DJs · request the pack","sectionTitle":"Spinning this out? Say the word.","sectionCopy":"Working DJs get the full pack, all ten songs plus both covers, no tip required. Drop your name, number and email so we know who’s playing it, and the files unlock right here.","hint":"Spinning this out?","hintLink":"DJs get the pack free →","nameLabel":"DJ name","namePh":"DJ Whoever","phoneLabel":"Phone","phonePh":"(386) 555-0199","emailLabel":"Email","emailPh":"you@yourcrew.com","whereLabel":"Where do you spin? (optional)","wherePh":"City · club · radio · online","button":"SEND ME THE PACK","sending":"SENDING…","fine":"We text and email DJs about new records and nothing else. No spam, nobody gets your info.","doneTitle":"Pack unlocked.","doneCopy":"Welcome aboard, {name}. Everything is open above, and it stays unlocked on this device.","doneLink":"Go to the files →","toast":"Pack unlocked for {name}. Downloads are open.","errName":"Give us a name to put on the list.","errPhone":"That phone number is a little short.","errEmail":"That email doesn’t look right.","errSend":"Couldn’t send that. Check your signal and try again."},"share":{"url":"https://uandiai.github.io/Dj-Packs/futuristic/","qr":"qr.png","qrFilename":"Trill Will - Futuristic (QR).png","text":"Futuristic — the new album from Trill Will of GFM Empire. Ten tracks, free to listen. Press play:","sectionLabel":"Share it · spread the record","sectionTitle":"Good records travel. Help this one.","sectionCopy":"Pick the album or one song, then one tap opens your phone’s share sheet: text, Instagram, TikTok, Facebook, X, WhatsApp, email. Every link you send carries your code, so friends who press play count toward your free download. Or send the QR; a camera pointed at it lands right here.","button":"SHARE THIS","qrCaption":"Scan or tap · opens this page","igHint":"Link copied. Paste it in your story, bio or caption.","songText":"“{song}” by {artist}, from {album}. Free to listen, press play:"},"streams":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSeclXLXeRW5at7UT8lF4s-pPobrc_-WLzLo8HxGUxcdahzTug/formResponse","field":"entry.1899505910","sheetId":"1DSudnrjv7ZLBMdzdsqM3bu6otGNQj0-80ok06vWPWPI","sheet":"Form Responses 1","threshold":30},"referral":{"action":"https://docs.google.com/forms/d/e/1FAIpQLSd6fUWMsay3LuJEngrM162IfNq5PL8bMKHdiiW2AHnnAbOpFQ/formResponse","field":"entry.543866783","sheetId":"1LxPi8W4ytdf4fTijsF0zl4GOwr8peCe81p5f9B723vY","sheet":"Form Responses 1","tier1":3,"tier2":10,"tease":"Send a song, earn a free download. Ten friends, the whole album.","title":"Share it forward, earn it back.","intro":"Share any song with your link. When 3 friends open it and press play, you pick a free download. At 10, the whole album is yours. Ten songs, ten friends.","progress":"{n} of {t1} friends have pressed play. {left} more and you pick a free song.","pickTitle":"Three friends listened. Pick your free song:","picked":"{song} is yours.","keepGoing":"Keep going: {left} more and the whole album, covers included, is yours.","doneAlbum":"Ten for ten. The whole album is unlocked for you. Covers too.","fine":"counts once per friend, after 30 s of play","arriveTitle":"Special delivery.","arrive":"A friend sent you {song}. Press play; once it runs 30 seconds it counts toward their free download.","credited":"That play just counted for the friend who sent you here."},"visits":null};
+function mountAlbum(root, pack) {
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const fmt = t => { if (!isFinite(t) || t < 0) t = 0; const m = Math.floor(t / 60), s = Math.floor(t % 60); return m + ':' + String(s).padStart(2, '0'); };
+  const tracks = pack.tracks;
+  let cur = tracks[0];
+  const total = tracks.reduce((a, t) => a + (t.duration || 0), 0);
+  const playIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+  const pauseIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 4h4.5v16H6zM13.5 4H18v16h-4.5z"/></svg>';
+  const okUrl = u => /^https?:\/\//i.test(u || '');
+  const socs = (pack.socials || []).map(x => x && x.links ? { ...x, links: x.links.filter(l => okUrl(l.url)) } : x).filter(x => x && (x.links ? x.links.length : okUrl(x.url)));
+  const socLink = (name, handle, url) => `<a class="al-soc" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(name)}<span>${esc(handle || '')}</span></a>`;
+  const DN = pack.donate || null;
+  const DJ = pack.dj && pack.dj.action ? pack.dj : null;
+  const RF = pack.referral && pack.referral.action ? pack.referral : null;
+  const LSK = k => 'djpack.' + k + '.' + (pack.slug || 'repeat');
+  const lsGet = k => { try { return localStorage.getItem(LSK(k)); } catch (e) { return null; } };
+  const lsSet = (k, v) => { try { localStorage.setItem(LSK(k), v); } catch (e) {} };
+  let myRef = lsGet('ref') || '';
+  const mintRef = () => { if (!myRef) { myRef = Math.random().toString(36).slice(2, 8); lsSet('ref', myRef); } return myRef; };
+  let arriveTrack = null, arriveMsg = '';
+  try {
+    const q0 = new URLSearchParams(location.search);
+    const tq = q0.get('t'), rq = q0.get('ref');
+    if (tq || rq) {
+      if (tq) arriveTrack = tracks.find(x => x.id === tq) || null;
+      if (rq && /^[a-z0-9]{4,12}$/i.test(rq) && rq !== myRef && !lsGet('refby')) lsSet('refby', JSON.stringify({ ref: rq, at: Date.now() }));
+      if (arriveTrack && RF) arriveMsg = (RF.arrive || 'A friend sent you {song}. Press play; it counts for them.').replace('{song}', arriveTrack.title);
+      if (!q0.get('tip')) try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    }
+  } catch (e) {}
+  const SH = Object.assign({ url: location.href.split('?')[0], qr: 'qr.png' }, pack.share || {});
+  const coinIco = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M14.6 9.4c-.4-.9-1.4-1.5-2.6-1.5-1.6 0-2.6.8-2.6 1.8 0 2.6 5.3 1.1 5.3 3.9 0 1.2-1.1 2-2.7 2-1.4 0-2.5-.7-2.9-1.7M12 6.3v1.6M12 16.1v1.6"/></svg>';
+  const heartIco = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.5-9.3C1.2 8.3 3.3 5 6.8 5c2 0 3.5 1.1 5.2 3 1.7-1.9 3.2-3 5.2-3 3.5 0 5.6 3.3 4.3 6.7C19.5 16.4 12 21 12 21z"/></svg>';
+  // ---- unlock state: which files this device has paid for
+  const LS_UNLOCK = 'djpack.unlocked.' + (pack.slug || 'repeat');
+  const unlocked = new Set();
+  try { JSON.parse(localStorage.getItem(LS_UNLOCK) || '[]').forEach(x => unlocked.add(x)); } catch (e) {}
+  const saveUnlocked = () => { try { localStorage.setItem(LS_UNLOCK, JSON.stringify([...unlocked])); } catch (e) {} };
+  const isUnlocked = t => unlocked.has('album') || (t && unlocked.has(t.id));
+  const anyUnlocked = () => unlocked.size > 0;
+  const nn = t => String(tracks.indexOf(t) + 1).padStart(2, '0');
+  let thanksMsg = '', justUnlocked = null;
+  if (DN) try {
+    const q = new URLSearchParams(location.search);
+    if (q.get('tip') === 'thanks') {
+      const cs = q.get('cs') || '';
+      const paid = /^cs_(live|test)_[A-Za-z0-9]{8,}$/.test(cs);
+      let pending = null;
+      try { pending = JSON.parse(localStorage.getItem('djpack.tip') || 'null'); localStorage.removeItem('djpack.tip'); } catch (e) {}
+      const id = pending && pending.id ? pending.id : 'album';
+      const t = tracks.find(x => x.id === id);
+      const song = t ? nn(t) + ' ' + t.title : 'the whole album';
+      if (paid) { unlocked.add(id); saveUnlocked(); justUnlocked = id; }
+      thanksMsg = ((paid ? DN.thanksUnlock : DN.thanks) || 'Your tip just went into the push.').replace('{song}', song);
+      try { history.replaceState(null, '', location.pathname); } catch (e) {}
+    }
+  } catch (e) {}
+
+  root.innerHTML = `
+  <div class="al-wrap"><div class="al">
+    <div class="al-hero">
+      <div class="pic" style="${pack.artAspect ? `--art-ar:${pack.artAspect}` : ''}"><img src="${pack.frontUrl}" alt="${esc(pack.title)} front cover: ${esc(pack.artist)}, a velvet booth, and the record on the turntable"></div>
+      <div class="al-meta">
+        <div class="row"><div class="al-eyebrow">${esc(pack.kicker || 'The Virtual Disc')} · ${esc(pack.label)}</div><div class="al-disc" aria-hidden="true"></div></div>
+        <h1 class="al-title">${esc(pack.title)}</h1>
+        <div class="al-artist"><b>${esc(pack.artist)}</b></div>
+        <div class="al-sub">${esc(pack.subtitle)}</div>
+        <div class="al-chips">
+          <span class="al-chip"><b>${tracks.length}</b> TRACKS</span>
+          <span class="al-chip"><b>${fmt(total)}</b> RUNTIME</span>
+          <span class="al-chip"><b>${esc(pack.genre)}</b></span>
+          <span class="al-chip">OUT <b>${esc(pack.releaseText)}</b></span>
+          <span class="al-chip streams" id="al-streams" hidden><b>0</b> STREAMS</span>
+          <span class="al-chip streams" id="al-visitors" hidden><b>0</b> VISITORS</span>
+        </div>
+        <div class="al-chips"><button type="button" class="al-chip share" data-share>SHARE ↗</button></div>
+      </div>
+    </div>
+    ${arriveMsg ? `<div class="al-arrive" role="status">${heartIco}<div><b>${esc(RF && RF.arriveTitle || 'Special delivery.')}</b> ${esc(arriveMsg)}</div></div>` : ''}
+    ${thanksMsg ? `<div class="al-thanks" role="status">${heartIco}<div><b>Thank you.</b> ${esc(thanksMsg)}</div>${justUnlocked ? (justUnlocked === 'album' ? `<button type="button" class="al-sm" data-zip="all">DOWNLOAD EVERYTHING ↓</button>` : (() => { const t = tracks.find(x => x.id === justUnlocked); return t ? `<a class="al-sm" href="${t.url}" download="${esc(t.filename)}">DOWNLOAD MP3 ↓</a>` : ''; })()) : ''}</div>` : ''}
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-sec">${esc(pack.labels.tracklist)}</p>
+      <div class="al-list">
+        ${tracks.map((t, i) => `<div class="al-tr" data-i="${i}" role="button" tabindex="0" aria-pressed="false">
+          <span class="n">${String(i + 1).padStart(2, '0')}</span>
+          <span class="t">${esc(t.title)}${(t.feat || t.prod) ? `<span class="f">${t.feat ? 'feat. ' + esc(t.feat) : ''}${t.feat && t.prod ? ' · ' : ''}${t.prod ? 'prod. ' + esc(t.prod) : ''}</span>` : ''}</span>
+          <span class="pl" data-pl="${esc(t.id)}" hidden title="Streams"></span>
+          <span class="d">${fmt(t.duration)}</span>
+          ${DN ? `<span class="tipslot" data-slot="${i}"></span>` : ''}
+        </div>`).join('')}
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-now" id="al-now"></p>
+      <div class="al-wave" aria-label="Waveform, click to seek"><canvas></canvas></div>
+      <div class="al-tp">
+        <button type="button" class="al-play" aria-label="Play">${playIco}</button>
+        <div class="al-time"><span><span class="tc">0:00</span> / <span class="td">0:00</span></span></div>
+        <button type="button" class="al-sm" data-jump="-10">−10 SEC</button>
+        <button type="button" class="al-sm" data-jump="10">+10 SEC</button>
+        <button type="button" class="al-sm" data-step="-1" aria-label="Previous track">◀ PREV</button>
+        <button type="button" class="al-sm" data-step="1" aria-label="Next track">NEXT ▶</button>
+        ${DN ? `<button type="button" class="al-sm al-tipnow" data-tipnow>${coinIco}GET THIS SONG</button>` : ''}
+        <button type="button" class="al-sm" data-sharesong>SHARE SONG ↗</button>
+      </div>
+    </div>
+
+    <div class="al-share" id="al-share">
+      <div>
+        <p class="al-sec">${esc(SH.sectionLabel)}</p><h3>${esc(SH.sectionTitle)}</h3><p>${esc(SH.sectionCopy)}</p>
+        <div class="al-shpick" id="al-shpick"><button type="button" data-shpick="album">ALBUM</button>${tracks.map((t, i) => `<button type="button" data-shpick="${esc(t.id)}" title="${esc(t.title)}">${String(i + 1).padStart(2, '0')}</button>`).join('')}</div>
+        <p class="al-shnow" id="al-shnow"></p>
+        <div class="al-shbtns">
+          <button type="button" class="al-gold" data-share>${esc(SH.button)}</button>
+          <button type="button" class="al-sm" data-copy>COPY LINK</button>
+          <a class="al-sm" data-sh="sms" href="#">TEXT IT</a>
+          <a class="al-sm" data-sh="wa" href="#" target="_blank" rel="noopener">WHATSAPP</a>
+          <a class="al-sm" data-sh="fb" href="#" target="_blank" rel="noopener">FACEBOOK</a>
+          <a class="al-sm" data-sh="x" href="#" target="_blank" rel="noopener">X</a>
+          <a class="al-sm" data-sh="mail" href="#">EMAIL</a>
+          <button type="button" class="al-sm" data-copy data-hint="ig">INSTAGRAM / TIKTOK</button>
+        </div>
+      </div>
+      <div class="al-qr">
+        <a class="img" href="${esc(SH.url)}" target="_blank" rel="noopener"><img src="${esc(SH.qr)}" alt="QR code that opens ${esc(pack.title)}"></a>
+        <small>${esc(SH.qrCaption)}</small>
+        <div class="row"><button type="button" class="al-sm" data-shareqr>SHARE QR</button><a class="al-sm" href="${esc(SH.qr)}" download="${esc(SH.qrFilename)}">SAVE QR</a></div>
+      </div>
+      ${RF ? `<div class="al-ref" id="al-ref" style="grid-column:1/-1"></div>` : ''}
+    </div>
+
+    ${DN ? `<div class="al-jar" id="al-own">
+      <div><p class="al-sec">${esc(DN.sectionLabel)}</p><h3>${esc(DN.sectionTitle)}</h3><p>${esc(DN.sectionCopy)}</p></div>
+      <div class="al-jarbtns"><button type="button" class="al-gold" data-tipalbum>${coinIco}${esc(DN.albumButton || 'GET THE WHOLE ALBUM')}</button><button type="button" class="al-sm" data-tipnow>${esc(DN.songButton || 'GET THIS SONG')}</button>${DJ ? `<p class="djhint">${esc(DJ.hint || 'Spinning this out?')} <a href="#al-dj" data-djgo>${esc(DJ.hintLink || 'DJs get the pack free →')}</a></p>` : ''}</div>
+      <div class="al-fl" id="al-files"></div>
+    </div>
+    ${DJ ? `<div class="al-dj" id="al-dj">
+      <div><p class="al-sec">${esc(DJ.sectionLabel)}</p><h3>${esc(DJ.sectionTitle)}</h3><p>${esc(DJ.sectionCopy)}</p></div>
+      <div id="al-djbody"></div>
+    </div>` : ''}` : `<div style="display:flex;flex-direction:column;gap:8px">
+      <p class="al-sec">${esc(pack.labels.downloads)}</p>
+      <div class="al-fl">
+        <button type="button" class="al-dla all" data-zip="all">${esc(pack.labels.zip)}<span>ZIP ↓</span></button>
+        ${tracks.map((t, i) => `<a class="al-dla" href="${t.url}" download="${esc(t.filename)}">${String(i + 1).padStart(2, '0')} · ${esc(t.title)}<span>MP3 ↓</span></a>`).join('')}
+      </div>
+    </div>`}
+
+    <div class="al-about">
+      <div>
+        <h2>${esc(pack.labels.about)}</h2>
+        <p class="al-bio">${esc(pack.bio)}</p>
+      </div>
+      <div class="al-side">
+        <div><p class="al-sec" style="margin-bottom:10px">${esc(pack.labels.playIt)}</p><ul class="al-tips">${pack.playIt.map(t => `<li>${t}</li>`).join('')}</ul></div>
+      </div>
+    </div>
+
+    ${socs.length ? `<div class="al-follow"><div class="fh"><p class="al-sec">${esc(pack.labels.follow)}</p><h2>${esc(pack.labels.followTitle || 'Stay close to the record.')}</h2><p>${esc(pack.labels.followCopy || '')}</p></div><div class="al-socs">${socs.map(x => x.links ? `<div class="al-socg"><h4>${esc(x.group)}${x.handle ? `<span>${esc(x.handle)}</span>` : ''}</h4>${x.links.map(l => socLink(l.name, l.handle || x.handle, l.url)).join('')}</div>` : socLink(x.name, x.handle, x.url)).join('')}</div></div>` : ''}
+
+    <div class="al-foot"><span>${esc(pack.footerLeft)}</span><span>${esc(pack.footer)}</span></div>
+
+    <div class="al-back">
+      <div class="cap"><p class="al-sec">${esc(pack.labels.back)}</p><p class="al-sec">${esc(pack.labels.backRight)}</p></div>
+      <div class="bimg"><img src="${pack.backUrl}" alt="REPEAT back cover: the bed, the petals, the tracklist, written and produced by ${esc(pack.credits)}"></div>
+      <div class="cred">${esc(pack.closing)}</div>
+    </div>
+  </div></div>`;
+
+  const al = root.querySelector('.al');
+  const audio = new Audio(); audio.preload = 'auto';
+  const cv = root.querySelector('canvas'), ctx = cv.getContext('2d');
+  const wave = root.querySelector('.al-wave');
+  const playBtn = root.querySelector('.al-play');
+  const tc = root.querySelector('.tc'), td = root.querySelector('.td'), nowEl = root.querySelector('#al-now');
+  const css = getComputedStyle(al);
+  const C = { gold: css.getPropertyValue('--gold').trim(), rose: css.getPropertyValue('--rose').trim(), muted: '#2B1F4A', grid: 'rgba(168,146,127,.16)', gridStrong: 'rgba(168,146,127,.34)', label: '#6D5F8E' };
+  let raf = 0, pendingSeek = null;
+  const dur = () => (isFinite(audio.duration) && audio.duration) || cur.duration || 0;
+
+  function draw() {
+    const w = cv.clientWidth, h = cv.clientHeight, dpr = window.devicePixelRatio || 1;
+    if (!w) return;
+    if (cv.width !== Math.round(w * dpr)) { cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr); }
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, w, h);
+    const D = dur(), t = audio.currentTime || 0, prog = D ? t / D : 0;
+    for (let q = 1; q < 4; q++) { const x = Math.round(q * w / 4) + .5; ctx.fillStyle = C.grid; ctx.fillRect(x, h - 8, 1, 8); }
+    const peaks = cur.peaks || [], step = 3, n = Math.floor(w / step), mid = h / 2 + 4;
+    const g = ctx.createLinearGradient(0, 0, w, 0); g.addColorStop(0, C.gold); g.addColorStop(1, C.rose);
+    for (let i = 0; i < n; i++) {
+      const p = peaks.length ? peaks[Math.min(peaks.length - 1, Math.floor(i / n * peaks.length))] : .12, bh = Math.max(2, p * (h - 20));
+      ctx.fillStyle = (i / n) <= prog ? g : C.muted; ctx.fillRect(i * step, mid - bh / 2, 2, bh);
+    }
+    ctx.fillStyle = '#FFA6DC'; ctx.fillRect(Math.round(prog * w) - 1, 0, 2, h);
+  }
+  function ui() {
+    const t = audio.currentTime || 0;
+    tc.textContent = fmt(t); td.textContent = fmt(dur());
+    const playing = !audio.paused;
+    al.classList.toggle('playing', playing);
+    playBtn.innerHTML = playing ? pauseIco : playIco; playBtn.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+    nowEl.textContent = 'Now playing · ' + String(tracks.indexOf(cur) + 1).padStart(2, '0') + ' ' + cur.title + (cur.feat ? ' feat. ' + cur.feat : '') + ' · ' + fmt(cur.duration);
+    root.querySelectorAll('.al-tr').forEach(r => { const on = tracks[+r.dataset.i] === cur; r.classList.toggle('on', on); r.setAttribute('aria-pressed', on); });
+    draw();
+  }
+  function loop() { ui(); if (!audio.paused) raf = requestAnimationFrame(loop); }
+  function load(t, at, autoplay) {
+    cur = t; pendingSeek = at || 0; audio.src = t.url;
+    audio.addEventListener('loadedmetadata', function once() { audio.removeEventListener('loadedmetadata', once); if (pendingSeek) audio.currentTime = Math.min(pendingSeek, Math.max(0, audio.duration - .05)); pendingSeek = null; ui(); });
+    if (autoplay) audio.play().catch(() => {}); else audio.load();
+    ui();
+  }
+  function pick(i, autoplay) { const t = tracks[i]; if (!t) return; if (t === cur) { if (autoplay) toggle(); return; } load(t, 0, autoplay); }
+  function toggle() { if (audio.paused) audio.play().catch(() => {}); else audio.pause(); }
+  function seekTo(t) { const D = dur(); audio.currentTime = Math.max(0, Math.min(D ? D - .05 : 0, t)); ui(); }
+
+  audio.addEventListener('play', () => { cancelAnimationFrame(raf); loop(); });
+  audio.addEventListener('pause', ui);
+
+  // ---- stream counter: a play counts once it has run 30s (or finished); totals live in a Google Sheet
+  const ST = pack.streams && pack.streams.action ? pack.streams : null;
+  const counts = {}; let countsLoaded = false;
+  const fmtN = n => n >= 1e6 ? (n / 1e6).toFixed(1).replace(/\.0$/, '') + 'M' : n >= 1e4 ? (n / 1e3).toFixed(1).replace(/\.0$/, '') + 'K' : String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  function renderCounts() {
+    if (!countsLoaded) return;
+    let total = 0;
+    tracks.forEach(t => { const n = counts[t.id] || 0; total += n; const el = root.querySelector('[data-pl="' + t.id + '"]'); if (el) { el.hidden = false; el.innerHTML = '<i></i>' + fmtN(n); } });
+    const chip = root.querySelector('#al-streams'); if (chip) { chip.hidden = false; chip.querySelector('b').textContent = fmtN(total); }
+  }
+  function loadCounts() {
+    if (!ST) return;
+    const cb = '__djst' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { (res.table.rows || []).forEach(r => { const id = r.c[0] && r.c[0].v, n = r.c[1] && r.c[1].v; if (id != null) counts[id] = Number(n) || 0; }); countsLoaded = true; renderCounts(); } catch (e) {} delete window[cb]; sc.remove(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + ST.sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(ST.sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent('select B, count(A) group by B') + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); };
+    document.head.appendChild(sc);
+  }
+  const played = {}; let lastT = null, lastId = null;
+  function streamTick() {
+    if (!ST || !cur) return;
+    const t = audio.currentTime || 0;
+    if (lastId === cur.id && lastT != null) { const d = t - lastT; if (d > 0 && d < 2) played[cur.id] = (played[cur.id] || 0) + d; }
+    lastT = t; lastId = cur.id;
+    const need = Math.min(ST.threshold || 30, Math.max(5, (cur.duration || 60) * 0.5));
+    if ((played[cur.id] || 0) >= need) countStream(cur);
+  }
+  function countStream(t) {
+    const key = 'djpack.streamed.' + (pack.slug || 'repeat') + '.' + t.id;
+    try { if (sessionStorage.getItem(key)) return; sessionStorage.setItem(key, '1'); } catch (e) { if (played[t.id] === -1) return; }
+    played[t.id] = -1e9;
+    counts[t.id] = (counts[t.id] || 0) + 1; renderCounts();
+    try { creditReferrer(t); } catch (e) {}
+    try { vlog('play', t.id); } catch (e) {}
+    try { const fd = new URLSearchParams(); fd.append(ST.field, t.id); fetch(ST.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {}
+  }
+  audio.addEventListener('timeupdate', streamTick);
+  audio.addEventListener('ended', () => { if (ST && cur && (played[cur.id] || 0) >= 0) countStream(cur); });
+  loadCounts();
+
+  // ---- visitors: one row per new visitor, one per return visit, one per counted play (anon id)
+  const VS = pack.visits && pack.visits.action ? pack.visits : null;
+  const vidGet = () => { let v = lsGet('vid'); if (!v) { v = 'v' + Math.random().toString(36).slice(2, 10); lsSet('vid', v); } return v; };
+  const vlog = (ev, track) => { if (!VS) return; try { const fd = new URLSearchParams(); fd.append(VS.field, vidGet() + '|' + ev + '|' + (track || '-')); fetch(VS.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {} };
+  const isStats = /[?&]stats=1/.test(location.search);
+  if (VS && !isStats) {
+    if (!lsGet('visited')) { lsSet('visited', String(Date.now())); try { sessionStorage.setItem(LSK('sess'), '1'); } catch (e) {} vlog('visit'); }
+    else { try { if (!sessionStorage.getItem(LSK('sess'))) { sessionStorage.setItem(LSK('sess'), '1'); vlog('return'); } } catch (e) {} }
+  }
+  function gviz(sheetId, sheet, tq, done) {
+    const cb = '__djq' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { done(res.table.rows || []); } catch (e) {} delete window[cb]; sc.remove(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent(tq) + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); };
+    document.head.appendChild(sc);
+  }
+  const setVisitors = n => { const chip = root.querySelector('#al-visitors'); if (chip) { chip.hidden = false; chip.querySelector('b').textContent = fmtN(n); } };
+  if (VS) { setVisitors(VS.baseline || 0); gviz(VS.sheetId, VS.sheet, "select count(A) where B ends with '|visit|-'", rows => { const n = rows[0] && rows[0].c[0] ? Number(rows[0].c[0].v) || 0 : 0; setVisitors((VS.baseline || 0) + n); }); }
+  if (VS && isStats) gviz(VS.sheetId, VS.sheet, 'select A, B', rows => {
+    const ev = rows.map(r => ({ t: r.c[0] && r.c[0].f, v: String(r.c[1] && r.c[1].v || '') })).map(x => { const p = x.v.split('|'); return { ts: x.t, vid: p[0], ev: p[1], tr: p[2] }; }).filter(x => x.vid && !/test/.test(x.vid));
+    const visitors = new Set(ev.filter(x => x.ev === 'visit').map(x => x.vid)); const sessions = ev.filter(x => x.ev === 'visit' || x.ev === 'return').length;
+    const plays = ev.filter(x => x.ev === 'play'); const listeners = new Set(plays.map(x => x.vid));
+    const per = tracks.map((t, i) => { const p = plays.filter(x => x.tr === t.id); const l = new Set(p.map(x => x.vid)); const rep = {}; p.forEach(x => rep[x.vid] = (rep[x.vid] || 0) + 1); const repeaters = Object.values(rep).filter(n => n > 1).length; return { n: String(i + 1).padStart(2, '0'), title: t.title, plays: p.length, listeners: l.size, per: l.size ? (p.length / l.size).toFixed(2) : '—', repeaters }; });
+    const el = document.createElement('div'); el.className = 'al-stats';
+    el.innerHTML = `<div class="card"><button type="button" class="x" aria-label="Close">×</button><h2>${esc(pack.title)} · stats</h2><small>FROM THE VISITS SHEET · ${ev.length} EVENTS · PLAY = 30 S OR MORE</small>
+      <div class="kp"><div><b>${fmtN(visitors.size + (VS.baseline || 0))}</b><span>UNIQUE VISITORS${VS.baseline ? ' (INCL. ' + VS.baseline + ' PRE-TRACKING)' : ''}</span></div><div><b>${fmtN(sessions)}</b><span>VISITS (SESSIONS)</span></div><div><b>${fmtN(plays.length)}</b><span>PLAYS</span></div><div><b>${fmtN(listeners.size)}</b><span>LISTENERS</span></div><div><b>${listeners.size ? (plays.length / listeners.size).toFixed(2) : '—'}</b><span>PLAYS PER LISTENER</span></div><div><b>${visitors.size ? Math.round(listeners.size / visitors.size * 100) + '%' : '—'}</b><span>VISITORS WHO PLAYED</span></div></div>
+      <table><thead><tr><th>#</th><th>SONG</th><th>PLAYS</th><th>LISTENERS</th><th>PLAYS / LISTENER</th><th>REPEATED BY</th></tr></thead><tbody>${per.map(r => `<tr><td>${r.n}</td><td>${esc(r.title)}</td><td>${r.plays}</td><td>${r.listeners}</td><td>${r.per}</td><td>${r.repeaters}</td></tr>`).join('')}</tbody></table>
+      <p><small>Visitors are counted by an anonymous id stored on the device, so one person on two phones is two visitors. This view is not linked anywhere; only people with ?stats=1 see it.</small></p></div>`;
+    document.body.appendChild(el); el.querySelector('.x').addEventListener('click', () => el.remove());
+  });
+  audio.addEventListener('durationchange', ui);
+  audio.addEventListener('ended', () => { const i = tracks.indexOf(cur); if (i + 1 < tracks.length) pick(i + 1, true); else ui(); });
+  playBtn.addEventListener('click', toggle);
+  root.querySelectorAll('.al-tr').forEach(r => {
+    r.addEventListener('click', () => pick(+r.dataset.i, true));
+    r.addEventListener('keydown', e => { if (e.key === 'Enter' || e.code === 'Space') { e.preventDefault(); e.stopPropagation(); pick(+r.dataset.i, true); } });
+  });
+  root.querySelectorAll('[data-jump]').forEach(b => b.addEventListener('click', () => seekTo((audio.currentTime || 0) + (+b.dataset.jump))));
+  root.querySelectorAll('[data-step]').forEach(b => b.addEventListener('click', () => { const i = tracks.indexOf(cur) + (+b.dataset.step); if (i >= 0 && i < tracks.length) pick(i, !audio.paused); }));
+  let dragging = false;
+  const seekFromEvent = e => { const r = wave.getBoundingClientRect(); seekTo(((e.clientX - r.left) / r.width) * dur()); };
+  wave.addEventListener('pointerdown', e => { dragging = true; wave.setPointerCapture(e.pointerId); seekFromEvent(e); });
+  wave.addEventListener('pointermove', e => { if (dragging) seekFromEvent(e); });
+  wave.addEventListener('pointerup', () => { dragging = false; });
+  document.addEventListener('keydown', e => {
+    if (sheet && sheet.classList.contains('open')) { if (e.key === 'Escape') closeSheet(); return; }
+    if (/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)) return;
+    if (e.code === 'Space') { e.preventDefault(); toggle(); }
+    else if (/^[1-9]$/.test(e.key)) pick(+e.key - 1, true);
+    else if (e.key === 'ArrowRight') seekTo(audio.currentTime + 10);
+    else if (e.key === 'ArrowLeft') seekTo(audio.currentTime - 10);
+  });
+  new ResizeObserver(() => draw()).observe(wave);
+
+  const msg = document.getElementById('msg');
+  const say = (t, w) => { msg.textContent = t; msg.className = 'msg' + (w ? ' warn' : ''); };
+  async function buildZip(zipBtn) {
+    if (typeof JSZip === 'undefined') { say('ZIP isn\'t available here; use the single-track links.', true); return; }
+    if (zipBtn) zipBtn.setAttribute('aria-busy', 'true');
+    try {
+      const zip = new JSZip(); let n = 0;
+      for (const t of tracks) { say('Packing ' + (++n) + ' of ' + tracks.length + '…'); const r = await fetch(t.url); if (!r.ok) throw new Error(t.title + ' is missing'); zip.file(t.filename, await r.blob()); }
+      for (const [u, f] of [[pack.frontUrl, pack.frontFilename], [pack.backUrl, pack.backFilename]]) { const r = await fetch(u); if (r.ok) zip.file(f, await r.blob()); }
+      const blob = await zip.generateAsync({ type: 'blob', compression: 'STORE' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = pack.zipFilename; document.body.appendChild(a); a.click(); a.remove();
+      say('Full album downloading.');
+    } catch (e) { say('Download failed: ' + (e && e.message || 'unknown error'), true); }
+    finally { if (zipBtn) zipBtn.removeAttribute('aria-busy'); }
+  }
+
+  // ---- lock/unlock rendering
+  const dlIco = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:13px;height:13px"><path d="M12 4v11m0 0 4-4m-4 4-4-4M4 19h16"/></svg>';
+  function refreshLocks() {
+    if (!DN) return;
+    root.querySelectorAll('.tipslot').forEach(sl => {
+      const t = tracks[+sl.dataset.slot];
+      sl.innerHTML = isUnlocked(t)
+        ? `<a class="tip got" href="${t.url}" download="${esc(t.filename)}" aria-label="Download ${esc(t.title)}">${dlIco}MP3</a>`
+        : `<button type="button" class="tip" data-tip="${tracks.indexOf(t)}" aria-label="Tip to unlock ${esc(t.title)}">${coinIco}GET</button>`;
+    });
+    const fl = root.querySelector('#al-files');
+    if (fl) {
+      const rows = [];
+      rows.push(unlocked.has('album')
+        ? `<button type="button" class="al-dla all got" data-zip="all">${esc(DN.albumRow || 'Everything · ' + tracks.length + ' songs + both covers')}<span>ZIP ↓</span></button>`
+        : `<button type="button" class="al-dla all lock" data-tipalbum>${esc(DN.albumRow || 'Everything · ' + tracks.length + ' songs + both covers')}<span>${esc(DN.unlockLabel || 'TIP TO UNLOCK')} →</span></button>`);
+      tracks.forEach((t, i) => rows.push(isUnlocked(t)
+        ? `<a class="al-dla got" href="${t.url}" download="${esc(t.filename)}">${nn(t)} · ${esc(t.title)}<span>MP3 ↓</span></a>`
+        : `<button type="button" class="al-dla lock" data-tip="${i}">${nn(t)} · ${esc(t.title)}<span>${esc(DN.unlockLabel || 'TIP TO UNLOCK')} →</span></button>`));
+      if (anyUnlocked()) {
+        rows.push(`<a class="al-dla got" href="${pack.frontUrl}" download="${esc(pack.frontFilename)}">Front cover<span>PNG ↓</span></a>`);
+        rows.push(`<a class="al-dla got" href="${pack.backUrl}" download="${esc(pack.backFilename)}">Back cover<span>PNG ↓</span></a>`);
+      } else {
+        rows.push(`<button type="button" class="al-dla lock" data-tipalbum>Front + back cover<span>${esc(DN.coversLabel || 'FREE WITH ANY TIP')}</span></button>`);
+      }
+      fl.innerHTML = rows.join('');
+    }
+    refreshNowBtn();
+  }
+  function refreshNowBtn() {
+    const b = root.querySelector('[data-tipnow].al-tipnow'); if (!b) return;
+    b.innerHTML = isUnlocked(cur) ? dlIco + ' DOWNLOAD MP3' : coinIco + (DN.songButton || 'GET THIS SONG');
+  }
+  audio.addEventListener('loadstart', refreshNowBtn);
+
+  // ---- Tip jar: per-song tips through Stripe Payment Links (no server needed)
+  var sheet = null; let tipTarget = null;
+  const tipRef = t => ((DN && DN.refPrefix) || 'tip') + '-' + (t ? t.id : 'album');
+  const tipUrl = (base, ref) => base + (base.includes('?') ? '&' : '?') + 'client_reference_id=' + encodeURIComponent(ref.replace(/[^A-Za-z0-9_-]/g, '-').slice(0, 200));
+  const EXT = DN && DN.provider === 'external' && DN.tipUrl ? DN : null;
+  const CA = EXT ? (EXT.handle || EXT.providerName || 'tip jar') : (DN && DN.provider === 'cashapp' && DN.cashtag ? DN.cashtag.replace(/^\$/, '') : null);
+  const caUrl = amt => EXT ? EXT.tipUrl : 'https://cash.app/$' + CA + (amt ? '/' + amt : '');
+  const caOpen = amt => { const a = document.createElement('a'); a.href = caUrl(amt); a.target = '_blank'; a.rel = 'noopener'; document.body.appendChild(a); a.click(); a.remove(); };
+  const wired = () => !!(DN && (CA || DN.customUrl || (DN.presets || []).some(p => p.url)));
+  function buildSheet() {
+    sheet = document.createElement('div'); sheet.className = 'al-sheet'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true'); sheet.setAttribute('aria-label', 'Tip jar');
+    const demo = !wired();
+    const presets = (DN.presets || []).map((p, i) => ({ ...p, i })).filter(p => demo || CA || p.url);
+    sheet.innerHTML = `<div class="card"><button type="button" class="x" aria-label="Close">×</button><p class="eye"></p><h3>${esc(DN.title)}</h3><p class="song"></p><p class="b"></p>
+      <div class="al-amts">${presets.map(p => `<button type="button" class="al-amt" data-p="${p.i}"><b>$${esc(p.amount)}</b><span>${esc(p.label)}</span></button>`).join('')}
+      ${(demo || CA || DN.customUrl) ? `<button type="button" class="al-amt custom" data-p="custom"><b>${esc(DN.customLabel || 'Name your number')}</b><span>ANY AMOUNT →</span></button>` : ''}</div>
+      ${CA ? `<div class="ca"><div class="tag"><span>${EXT ? esc(EXT.providerName || 'Tip jar') : 'Cash App'} <b>${EXT ? esc(EXT.handle || '') : '$' + esc(CA)}</b></span>${EXT ? '' : '<button type="button" data-cacopy>COPY</button>'}</div><p class="ca-copy"></p><div class="row"><button type="button" class="al-gold" data-casent>${heartIco}${esc(DN.sentButton || 'I SENT IT · UNLOCK')}</button><button type="button" class="again" data-caagain>${esc(DN.againButton || 'OPEN CASH APP AGAIN')}</button></div></div>` : ''}
+      <p class="fine">${esc(DN.fine || '')}</p></div>`;
+    document.body.appendChild(sheet);
+    sheet.addEventListener('click', e => { if (e.target === sheet) closeSheet(); });
+    sheet.querySelector('.x').addEventListener('click', closeSheet);
+    sheet.querySelectorAll('.al-amt').forEach(b => b.addEventListener('click', () => goTip(b.dataset.p)));
+    if (CA) {
+      const cc = sheet.querySelector('[data-cacopy]'); if (cc) cc.addEventListener('click', async () => { try { await navigator.clipboard.writeText('$' + CA); say('$' + CA + ' copied.'); } catch (e) { say('Cashtag: $' + CA); } });
+      sheet.querySelector('[data-caagain]').addEventListener('click', () => caOpen(sheet.dataset.amt || ''));
+      sheet.querySelector('[data-casent]').addEventListener('click', () => {
+        const id = tipTarget ? tipTarget.id : 'album'; const t = tipTarget;
+        unlocked.add(id); saveUnlocked(); refreshLocks(); refreshNowBtn(); closeSheet();
+        say((DN.thanksUnlock || 'Thank you. The files are yours.').replace('{song}', t ? nn(t) + ' ' + t.title : 'the whole album'));
+        const fl = root.querySelector('#al-files'); if (fl) { try { openAcc('own', true, false); } catch (e) {} fl.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+      });
+    }
+  }
+  function openSheet(t) {
+    if (!DN) return; if (!sheet) buildSheet(); tipTarget = t;
+    sheet.querySelector('.eye').textContent = t ? 'Unlock · ' + nn(t) + ' ' + t.title : 'Unlock · the whole album';
+    sheet.querySelector('.song').textContent = (t ? t.title + (t.feat ? ' feat. ' + t.feat : '') : pack.title + ' · all ' + tracks.length + ' songs + both covers') + ' · ' + pack.artist;
+    sheet.querySelector('.b').textContent = t ? (DN.blurb || '') : (DN.blurbAlbum || DN.blurb || '');
+    sheet.classList.remove('step2'); sheet.classList.add('open'); document.body.style.overflow = 'hidden';
+    const f = sheet.querySelector('.al-amt'); if (f) f.focus();
+  }
+  function closeSheet() { if (!sheet) return; sheet.classList.remove('open'); document.body.style.overflow = ''; }
+  function goTip(p) {
+    const preset = p === 'custom' ? null : (DN.presets || [])[+p];
+    const base = (preset && preset.url) || DN.customUrl || '';
+    const ref = tipRef(tipTarget);
+    if (CA) {
+      const amt = preset ? preset.amount : ''; sheet.dataset.amt = amt;
+      const song = tipTarget ? nn(tipTarget) + ' ' + tipTarget.title : pack.title + ' (whole album)';
+      sheet.querySelector('.ca-copy').textContent = (DN.sentCopy || 'Cash App just opened{amt}. Put “{song}” in the note so she knows what you bought. Sent it? Tap below and the download unlocks here.').replace('{amt}', amt ? ' for $' + amt : '').replace('{song}', song);
+      sheet.classList.add('step2');
+      if (audio && !audio.paused) audio.pause();
+      caOpen(amt);
+      return;
+    }
+    closeSheet();
+    if (!base) { say('The tip jar isn\'t wired to Stripe yet. Soon.', true); return; }
+    try { localStorage.setItem('djpack.tip', JSON.stringify({ ref, id: tipTarget ? tipTarget.id : 'album', amount: preset ? preset.amount : null, at: Date.now() })); } catch (e) {}
+    const u = tipUrl(base, ref);
+    say('Taking you to Stripe for ' + (tipTarget ? tipTarget.title : 'the whole album') + '. You\'ll land right back here.');
+    if (audio && !audio.paused) audio.pause();
+    location.href = u;
+  }
+  // one delegated handler: GET buttons, file rows, album button, zip
+  root.addEventListener('click', e => {
+    const tip = e.target.closest('[data-tip]'); if (tip) { e.stopPropagation(); openSheet(tracks[+tip.dataset.tip]); return; }
+    const got = e.target.closest('.tip.got'); if (got) { e.stopPropagation(); return; }
+    const now = e.target.closest('[data-tipnow]'); if (now) { if (isUnlocked(cur)) { const a = document.createElement('a'); a.href = cur.url; a.download = cur.filename; document.body.appendChild(a); a.click(); a.remove(); say('Downloading ' + cur.title + '.'); } else openSheet(cur); return; }
+    const alb = e.target.closest('[data-tipalbum]'); if (alb) { openSheet(null); return; }
+    const zip = e.target.closest('[data-zip]'); if (zip) { if (DN && !unlocked.has('album')) { openSheet(null); return; } buildZip(zip); return; }
+  });
+  refreshLocks();
+
+  // ---- DJ pack request: posts into a Google Form (lands in a Sheet), then unlocks the pack
+  const LS_DJ = 'djpack.dj.' + (pack.slug || 'repeat');
+  function djRender() {
+    const body = root.querySelector('#al-djbody'); if (!body || !DJ) return;
+    let saved = null; try { saved = JSON.parse(localStorage.getItem(LS_DJ) || 'null'); } catch (e) {}
+    if (saved && saved.name) {
+      body.innerHTML = `<div class="done">${heartIco}<div><b>${esc(DJ.doneTitle || 'Pack unlocked.')}</b> ${esc((DJ.doneCopy || 'Welcome aboard, {name}. Your downloads are open above.').replace('{name}', saved.name))} <a href="#al-files" data-djfiles style="color:var(--gold)">${esc(DJ.doneLink || 'Go to the files →')}</a></div></div>`;
+      return;
+    }
+    body.innerHTML = `<form class="al-djf" novalidate>
+      <label>${esc(DJ.nameLabel || 'DJ name')}<input name="name" autocomplete="name" placeholder="${esc(DJ.namePh || 'DJ Whoever')}" required></label>
+      <label>${esc(DJ.phoneLabel || 'Phone')}<input name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="${esc(DJ.phonePh || '(314) 555-0199')}" required></label>
+      <label class="wide">${esc(DJ.emailLabel || 'Email')}<input name="email" type="email" autocomplete="email" inputmode="email" placeholder="${esc(DJ.emailPh || 'you@yourcrew.com')}" required></label>
+      <label class="wide">${esc(DJ.whereLabel || 'Where do you spin? (optional)')}<input name="where" placeholder="${esc(DJ.wherePh || 'City · club · radio · online')}"></label>
+      <div class="act"><button type="submit" class="al-gold">${coinIco.replace('<svg', '<svg style="display:none"')}${esc(DJ.button || 'SEND ME THE PACK')}</button><p class="err" aria-live="polite"></p></div>
+      <p class="fine wide">${esc(DJ.fine || '')}</p>
+    </form>`;
+    const f = body.querySelector('form');
+    f.addEventListener('submit', async e => {
+      e.preventDefault();
+      const v = k => (f.elements[k].value || '').trim();
+      const name = v('name'), phone = v('phone'), email = v('email'), where = v('where');
+      const err = f.querySelector('.err'); let bad = null;
+      f.querySelectorAll('input').forEach(i => i.classList.remove('bad'));
+      if (name.length < 2) bad = ['name', DJ.errName || 'Give us a name to put on the list.'];
+      else if (phone.replace(/\D/g, '').length < 7) bad = ['phone', DJ.errPhone || 'That phone number is a little short.'];
+      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) bad = ['email', DJ.errEmail || 'That email doesn\u2019t look right.'];
+      if (bad) { f.elements[bad[0]].classList.add('bad'); f.elements[bad[0]].focus(); err.textContent = bad[1]; return; }
+      err.textContent = '';
+      const btn = f.querySelector('button'); btn.disabled = true; btn.textContent = DJ.sending || 'SENDING…';
+      const fd = new URLSearchParams();
+      fd.append(DJ.fields.name, name); fd.append(DJ.fields.phone, phone); fd.append(DJ.fields.email, email);
+      if (DJ.fields.where) fd.append(DJ.fields.where, (DJ.wherePrefix || '') + (where || ''));
+      try {
+        await fetch(DJ.action, { method: 'POST', mode: 'no-cors', body: fd });
+        try { localStorage.setItem(LS_DJ, JSON.stringify({ name, at: Date.now() })); } catch (e) {}
+        if ((DJ.deliver || 'instant') === 'instant') { unlocked.add('album'); saveUnlocked(); refreshLocks(); }
+        djRender();
+        say((DJ.toast || 'Pack unlocked for {name}. Downloads are open.').replace('{name}', name));
+        try { openAcc('own', true, false); } catch (e) {} const fl = root.querySelector('#al-files'); if (fl) setTimeout(() => fl.scrollIntoView({ behavior: 'smooth', block: 'center' }), 350);
+      } catch (ex) {
+        btn.disabled = false; btn.textContent = DJ.button || 'SEND ME THE PACK';
+        err.textContent = DJ.errSend || 'Couldn\u2019t send that. Check your signal and try again.';
+      }
+    });
+  }
+  djRender();
+
+  // ---- share kit
+  let shTarget = 'album';
+  const shTrack = () => shTarget === 'album' ? null : tracks.find(x => x.id === shTarget);
+  const shUrl = () => { const r = RF ? mintRef() : ''; const t = shTrack(); const p = []; if (t) p.push('t=' + t.id); if (r) p.push('ref=' + r); return SH.url + (p.length ? '?' + p.join('&') : ''); };
+  const shText = () => { const t = shTrack(); return t ? (SH.songText || '\u201c{song}\u201d by {artist}, from {album}. Free to listen, press play:').replace('{song}', t.title + (t.feat ? ' feat. ' + t.feat : '')).replace('{artist}', pack.artist).replace('{album}', pack.title) : (SH.text || (pack.title + ' by ' + pack.artist)); };
+  const shTitle = () => { const t = shTrack(); return t ? t.title + ' · ' + pack.artist : pack.title + ' · ' + pack.artist; };
+  function renderShPick() {
+    root.querySelectorAll('[data-shpick]').forEach(b => b.classList.toggle('on', b.dataset.shpick === shTarget));
+    const now = root.querySelector('#al-shnow'); const t = shTrack();
+    if (now) now.innerHTML = t ? 'Sharing <b>' + String(tracks.indexOf(t) + 1).padStart(2, '0') + ' ' + esc(t.title) + '</b> · the link opens the page with this song cued' : 'Sharing <b>the whole album</b> · tap a number to share one song instead';
+  }
+  const copyLink = async hint => { const u = shUrl(); try { await navigator.clipboard.writeText(u); say(hint === 'ig' ? (SH.igHint || 'Link copied. Paste it in your bio, story or caption.') : 'Link copied.'); } catch (e) { prompt('Copy this link', u); } };
+  async function nativeShare() {
+    const u = shUrl();
+    if (navigator.share) { try { await navigator.share({ title: shTitle(), text: shText(), url: u }); return; } catch (e) { if (e && e.name === 'AbortError') return; } }
+    const el = root.querySelector('#al-share'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); copyLink();
+  }
+  async function shareQr() {
+    try {
+      const r = await fetch(SH.qr); const blob = await r.blob(); const file = new File([blob], SH.qrFilename || 'qr.png', { type: blob.type || 'image/png' });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: pack.title, text: shText() + ' ' + SH.url }); return; }
+    } catch (e) { if (e && e.name === 'AbortError') return; }
+    const a = document.createElement('a'); a.href = SH.qr; a.download = SH.qrFilename || 'qr.png'; document.body.appendChild(a); a.click(); a.remove(); say('QR saved. Send it anywhere; a phone camera opens the page.');
+  }
+  const enc = encodeURIComponent;
+  function setShLinks() {
+    const t = shText(), u = shUrl();
+    root.querySelectorAll('[data-sh]').forEach(a => {
+      a.href = { sms: 'sms:?&body=' + enc(t + ' ' + u), wa: 'https://wa.me/?text=' + enc(t + ' ' + u), fb: 'https://www.facebook.com/sharer/sharer.php?u=' + enc(u), x: 'https://twitter.com/intent/tweet?text=' + enc(t) + '&url=' + enc(u), mail: 'mailto:?subject=' + enc(shTitle()) + '&body=' + enc(t + '\n\n' + u) }[a.dataset.sh] || u;
+    });
+  }
+  setShLinks(); renderShPick();
+  root.addEventListener('click', e => {
+    const pk = e.target.closest('[data-shpick]'); if (pk) { shTarget = pk.dataset.shpick; renderShPick(); setShLinks(); return; }
+    if (e.target.closest('[data-sharesong]')) { if (cur) { shTarget = cur.id; renderShPick(); setShLinks(); } nativeShare(); return; }
+    if (e.target.closest('[data-sh]')) { if (RF) mintRef(); setShLinks(); return; }
+    if (e.target.closest('[data-share]')) nativeShare();
+    else if (e.target.closest('[data-shareqr]')) shareQr();
+    else { const c = e.target.closest('[data-copy]'); if (c) copyLink(c.dataset.hint); }
+  });
+
+  // ---- referral rewards: friends who arrive through your link and listen 30 s count for you
+  const refRows = () => { try { return JSON.parse(lsGet('refrows') || 'null'); } catch (e) { return null; } };
+  function refN(rows) { const v = new Set(); (rows || []).forEach(r => { const p = String(r).split('|'); if (p.length >= 3) v.add(p[2]); else v.add(r); }); return v.size; }
+  function applyRefRewards(n) {
+    if (!RF) return;
+    const t1 = RF.tier1 || 3, t2 = RF.tier2 || 7;
+    if (n >= t2 && !unlocked.has('album')) { unlocked.add('album'); saveUnlocked(); refreshLocks(); }
+    const pick = lsGet('refpick'); if (n >= t1 && pick && !unlocked.has(pick)) { unlocked.add(pick); saveUnlocked(); refreshLocks(); }
+  }
+  function renderRef() {
+    const box = root.querySelector('#al-ref'); if (!box || !RF) return;
+    const t1 = RF.tier1 || 3, t2 = RF.tier2 || 7, n = refN(refRows()), pick = lsGet('refpick');
+    const pct = Math.min(100, n / t2 * 100);
+    const marks = [t1, t2].map(m => `<em class="${n >= m ? 'hit' : ''}" style="left:${m / t2 * 100}%">${m}</em>`).join('');
+    let status;
+    if (!myRef) status = `<p>${esc(RF.intro || 'Share any song. When 3 friends press play, you pick a free download. At 7, the whole album is yours.')}</p>`;
+    else if (n >= t2) status = `<p><b>${esc(RF.doneAlbum || 'Seven for seven. The whole album is unlocked for you.')}</b></p>`;
+    else if (n >= t1 && !pick) status = `<p><b>${esc(RF.pickTitle || 'Three friends listened. Pick your free song:')}</b></p><div class="al-refpick">${tracks.map((t, i) => `<button type="button" class="al-sm" data-refpick="${esc(t.id)}">${String(i + 1).padStart(2, '0')} ${esc(t.title)}</button>`).join('')}</div><p style="margin-top:8px">${esc(RF.keepGoing || 'Keep sharing: {left} more and the whole album is yours.').replace('{left}', t2 - n)}</p>`;
+    else if (n >= t1) { const pt = tracks.find(x => x.id === pick); status = `<p><b>${esc((RF.picked || '{song} is yours.').replace('{song}', pt ? pt.title : 'Your song'))}</b> ${esc((RF.keepGoing || 'Keep sharing: {left} more and the whole album is yours.').replace('{left}', t2 - n))}</p>`; }
+    else status = `<p>${esc((RF.progress || '{n} of {t1} friends have pressed play. {left} more and you pick a free song.').replace('{n}', n).replace('{t1}', t1).replace('{left}', t1 - n))}</p>`;
+    box.innerHTML = `<h4>${esc(RF.title || 'Share it forward, earn it back.')}</h4>${status}<div class="al-refbar"><i style="width:${pct}%"></i>${marks}</div><div class="al-refmeta"><span><b>${n}</b> OF ${t2} FRIENDS LISTENED</span><span>${t1} = A SONG · ${t2} = THE ALBUM</span></div>${myRef ? `<p class="al-refmeta" style="margin-top:6px"><span>YOUR CODE · ${esc(myRef)}</span><span>${esc(RF.fine || 'counts once per friend, after 30 s of play')}</span></p>` : ''}`;
+    applyRefRewards(n);
+    try { refMini(); } catch (e) {}
+  }
+  function loadRef() {
+    if (!RF || !myRef) { renderRef(); return; }
+    const cb = '__djrf' + Math.floor(Math.random() * 1e9);
+    window[cb] = res => { try { const rows = (res.table.rows || []).map(r => r.c[0] && r.c[0].v).filter(Boolean); lsSet('refrows', JSON.stringify(rows)); } catch (e) {} delete window[cb]; sc.remove(); renderRef(); };
+    const sc = document.createElement('script');
+    sc.src = 'https://docs.google.com/spreadsheets/d/' + RF.sheetId + '/gviz/tq?tqx=out:json;responseHandler:' + cb + '&sheet=' + encodeURIComponent(RF.sheet || 'Form Responses 1') + '&tq=' + encodeURIComponent("select B where B starts with '" + myRef + "|'") + '&_=' + Date.now();
+    sc.onerror = () => { delete window[cb]; sc.remove(); renderRef(); };
+    document.head.appendChild(sc);
+  }
+  function creditReferrer(t) {
+    if (!RF) return; let by = null; try { by = JSON.parse(lsGet('refby') || 'null'); } catch (e) {}
+    if (!by || !by.ref || lsGet('refcredited')) return;
+    let vid = lsGet('vid'); if (!vid) { vid = 'v' + Math.random().toString(36).slice(2, 10); lsSet('vid', vid); }
+    lsSet('refcredited', '1');
+    try { const fd = new URLSearchParams(); fd.append(RF.field, by.ref + '|' + t.id + '|' + vid); fetch(RF.action, { method: 'POST', mode: 'no-cors', body: fd, keepalive: true }).catch(() => {}); } catch (e) {}
+    say(RF.credited || 'That play just counted for the friend who sent you here.');
+  }
+  root.addEventListener('click', e => { const b = e.target.closest('[data-refpick]'); if (!b) return; lsSet('refpick', b.dataset.refpick); renderRef(); say('Unlocked. Your free song is in the files below.'); });
+  if (RF) { renderRef(); loadRef(); if (arriveTrack) { pick(tracks.indexOf(arriveTrack), false); } }
+  root.addEventListener('click', e => {
+    const go = e.target.closest('[data-djgo],[data-djfiles]'); if (!go) return;
+    e.preventDefault(); const el = root.querySelector(go.getAttribute('href')); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // ---- accordion: fold the four sections into tabs so the music comes first
+  const ACC = [
+    { id: 'share', sel: '#al-share', label: 'Share It', tease: (RF && RF.tease) || 'Send a song, earn a free download. Seven friends, the whole album.' },
+    { id: 'own', sel: '#al-own', label: 'Own It', tease: 'Listening is free. Name your price for the files.' },
+    { id: 'dj', sel: '#al-dj', label: 'DJ Request It', tease: 'Working DJs: the full pack, free, in exchange for a hello.' },
+    { id: 'about', sel: '.al-about', label: 'About The Album', tease: 'The story behind the record and how to listen to it.' },
+  ];
+  (function buildAcc() {
+    const first = root.querySelector(ACC[0].sel); if (!first) return;
+    const wrap = document.createElement('div'); wrap.className = 'al-accs'; first.parentNode.insertBefore(wrap, first);
+    ACC.forEach((a, i) => {
+      const el = root.querySelector(a.sel); if (!el) return;
+      const sec = document.createElement('section'); sec.className = 'al-acc'; sec.dataset.acc = a.id;
+      sec.innerHTML = `<button type="button" class="al-accbtn" aria-expanded="false"><span class="n">0${i + 1}</span><span class="t"><b>${esc(a.label)}</b><span>${esc(a.tease)}</span><span class="mini" hidden></span></span><span class="ch"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span></button><div class="al-accbody"><div></div></div>`;
+      sec.querySelector('.al-accbody > div').appendChild(el); wrap.appendChild(sec);
+    });
+    // the old "al-about" heading grid loses its outer spacing inside a panel
+    wrap.addEventListener('click', e => { const b = e.target.closest('.al-accbtn'); if (!b) return; const sec = b.parentNode; openAcc(sec.dataset.acc, !sec.classList.contains('open')); });
+  })();
+  function openAcc(id, open = true, scroll = true) {
+    root.querySelectorAll('.al-acc').forEach(sec => { const on = sec.dataset.acc === id && open; sec.classList.toggle('open', on); sec.querySelector('.al-accbtn').setAttribute('aria-expanded', on ? 'true' : 'false'); });
+    if (open && scroll) { const sec = root.querySelector('.al-acc[data-acc="' + id + '"]'); if (sec) setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60); }
+  }
+  function refMini() {
+    const m = root.querySelector('.al-acc[data-acc="share"] .mini'); if (!m || !RF || !myRef) return;
+    const n = refN(refRows()), t2 = RF.tier2 || 7; m.hidden = false; m.innerHTML = `<i style="--w:${Math.min(100, n / t2 * 100)}%"></i>${n} OF ${t2} FRIENDS LISTENED`;
+  }
+  refMini();
+  // open the tab the visit is about; otherwise everything stays folded
+  if (arriveMsg) openAcc('share', true, false);
+  else if (thanksMsg) openAcc('own', true, false);
+  // anchors inside the page open their panel first
+  root.addEventListener('click', e => { const a = e.target.closest('[data-djgo],[data-djfiles]'); if (!a) return; const h = a.getAttribute('href'); openAcc(h === '#al-dj' ? 'dj' : 'own', true, false); }, true);
+  const _openSheetFiles = root.querySelector('#al-files');
+  load(cur, 0, false);
+}
+mountAlbum(document.getElementById('app'), PACK);
+</script>
+</body>
+</html>
