@@ -539,7 +539,7 @@ function mountAlbum(root, pack) {
   const setVisitors = n => { const chip = root.querySelector('#al-visitors'); if (chip) { chip.hidden = false; chip.querySelector('b').textContent = fmtN(n); } };
   if (VS) { setVisitors(VS.baseline || 0); gviz(VS.sheetId, VS.sheet, "select count(A) where B ends with '|visit|-'", rows => { const n = rows[0] && rows[0].c[0] ? Number(rows[0].c[0].v) || 0 : 0; setVisitors((VS.baseline || 0) + n); }); }
   if (VS && isStats) gviz(VS.sheetId, VS.sheet, 'select A, B', rows => {
-    const ev = rows.map(r => ({ t: r.c[0] && r.c[0].f, v: String(r.c[1] && r.c[1].v || '') })).map(x => { const p = x.v.split('|'); return { ts: x.t, vid: p[0], ev: p[1], tr: p[2] }; }).filter(x => x.vid && !/test/.test(x.vid));
+    const ev = rows.map(r => ({ t: r.c[0] && r.c[0].f, v: String(r.c[1] && r.c[1].v || '') })).map(x => { const p = x.v.split('|'); return { ts: x.t, vid: p[0], ev: p[1], tr: p[2], tag: p[3] || '' }; }).filter(x => x.vid && !/test/.test(x.vid) && !x.tag);
     const visitors = new Set(ev.filter(x => x.ev === 'visit').map(x => x.vid)); const sessions = ev.filter(x => x.ev === 'visit' || x.ev === 'return').length;
     const plays = ev.filter(x => x.ev === 'play'); const listeners = new Set(plays.map(x => x.vid));
     const per = tracks.map((t, i) => { const p = plays.filter(x => x.tr === t.id); const l = new Set(p.map(x => x.vid)); const rep = {}; p.forEach(x => rep[x.vid] = (rep[x.vid] || 0) + 1); const repeaters = Object.values(rep).filter(n => n > 1).length; return { n: String(i + 1).padStart(2, '0'), title: t.title, plays: p.length, listeners: l.size, per: l.size ? (p.length / l.size).toFixed(2) : '—', repeaters }; });
